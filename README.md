@@ -12,6 +12,20 @@ posting. Both numbers were emitted by `jobpilot.eval`; neither was typed by hand
 
 ---
 
+## For a judge, in three minutes
+
+| If you have | Do this |
+| ----------- | ------- |
+| **30 seconds** | The headline table below, then [`eval/results/compare.md`](eval/results/compare.md) — every stage, every metric, machine-emitted. |
+| **3 minutes** | Add [*What the output actually looks like*](#what-the-output-actually-looks-like) and the [`iter3a`](CHANGELOG.md#iter3a) row — the experiment that was built in order to be removed. |
+| **15 minutes** | [`REPRODUCE.md`](REPRODUCE.md) → `python -m jobpilot.baseline` then `python -m jobpilot run --stage final --offline`. ~$3, ~10 minutes, needs your own API key. |
+| **No API key** | Everything above still works. The 15 postings, every `eval/results/` number and all six trajectories are committed; only `output/` (regenerable) is not. Nothing in this README requires you to run anything. |
+
+The one claim to check first: **fabricated claims per resume, 2.429 → 0**, on
+the same seven postings, same model, same fixture.
+
+---
+
 ## Who this is for, and what it fixes
 
 The author is an international MS CS student graduating May 2026 who needs H-1B
@@ -120,6 +134,69 @@ independent LLM judge agrees with the deterministic path on 165 of 169 verdicts.
 postings ask for *because it fabricates* — it claims Flask, Swift, C# and Unity.
 Coverage and fabrication trade against each other by construction. `iter4` is the
 honest way to buy coverage back: ask the author, and only then claim it.
+
+---
+
+## What the output actually looks like
+
+The point of the project is a document the author would sign her name to. Judge
+it directly — everything below is real, unedited output from the `final` run
+whose numbers this README quotes. Runs are not committed (`output/` is
+gitignored, since it is regenerated); `python -m jobpilot run --stage final
+--offline` reproduces it in about ten minutes, and the excerpts here are quoted
+verbatim.
+
+**The digest** she reads each morning (`output/final/<date>/digest.md`):
+
+```
+15 postings · 7 most matched · 3 less matched · 5 skipped · 0 failed.
+
+| JD    | company  | title                             | score | why                                    |
+| jd_09 | Abridge  | Software Engineer, Early Career   | 90    | Early-career level matches: M.S.       |
+|       |          |                                   |       | graduating 2026 plus 2 years SDE at    |
+|       |          |                                   |       | Amazon; explicit GenAI/agent           |
+|       |          |                                   |       | requirements map directly to LangChain,|
+|       |          |                                   |       | LangGraph, RAG, Qdrant, Google ADK     |
+```
+
+Skipped postings are **counted, not listed** — SpaceX and Mach are there, with
+the reason kept so an over-skip stays auditable.
+
+**A generated resume** (`packets/jd_09/resume.md`):
+
+> ### AIPetique LLC — Software Development Engineer Intern
+> *2025-05 – 2025-08*
+>
+> - Designed a RAG pipeline with GTE-Qwen2-7B-instruct embeddings, Qdrant vector
+>   storage, and hybrid semantic + keyword retrieval, improving answer relevance
+>   by 30% across a 10K-prompt evaluation set.
+> - Cached embeddings in Redis and optimized asynchronous request handling,
+>   reducing end-to-end query latency by 45% under concurrent load.
+
+Every number there — 30%, 45%, 10K — appears in the profile. None was rounded,
+improved, or moved to a different employer.
+
+**The receipt** (`packets/jd_09/verification_report.json`), 23 units, 23
+supported, 0 unsupported:
+
+```json
+{ "unit_id": "u04",
+  "status": "supported",
+  "evidence_ids": ["exp_1"] }
+```
+
+**And what it looks like when the verifier bites.** From
+[`trajectories/verify.json`](trajectories/verify.json), a real rejection that
+forced a revision:
+
+> **Rejected:** "Backend engineer with **two years at Amazon** building and
+> operating production APIs on AWS…"
+> **Reason:** *"two years at Amazon" overstates the profile's 2022-07 to 2024-04
+> tenure (~21 months); the duration figure does not appear in the profile.*
+
+That is the whole thesis in one line: a claim that is *almost* true, rounded in
+the candidate's favour, caught by a verifier that never saw the draft being
+written.
 
 ---
 
