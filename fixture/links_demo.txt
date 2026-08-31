@@ -1,0 +1,17 @@
+# A three-posting subset for the demo video. The full fixture is links.txt (15).
+#
+# Chosen so one short run exercises every capability the project claims:
+#
+#   Canonical  most_matched. Asks for Flask and Ubuntu, neither evidenced ->
+#              the gap question fires. Flask is also the posting the baseline
+#              fabricated on, so the same JD shows the problem and the fix.
+#   SpaceX     skip. Files 13 H-1B petitions AND bars this candidate on ITAR,
+#              so it shows the H-1B agent and triage disagreeing correctly.
+#   Abridge    most_matched, the strongest packet. Gap question asks about
+#              "LLM agents", which the author has genuinely used (proj_2).
+#
+# Run: python -m jobpilot run --stage final --offline --links fixture/links_demo.txt
+
+https://job-boards.greenhouse.io/canonical/jobs/4647417
+https://job-boards.greenhouse.io/spacex/jobs/8605075002
+https://jobs.ashbyhq.com/Abridge/7d6ae2be-cd53-466c-8151-2dae2e87aace
