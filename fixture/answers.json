@@ -1,0 +1,31 @@
+{
+  "_readme": [
+    "The author's own answers to gap questions, for reproducible runs.",
+    "",
+    "Keyed by tool, not by posting: 'have you used Ubuntu?' has one true answer",
+    "however many postings ask it. Anything absent from `used` is a NO, which is",
+    "written to `not_experienced` and never asked about again.",
+    "",
+    "`where` is the placement, and it is the load-bearing field. `self_study`",
+    "means the tool may appear on a skills line and NEVER inside an experience or",
+    "project bullet -- `classify_claim` returns `unplaced` if the tailor tries.",
+    "Two of these three are self_study on purpose: that is the honest answer, and",
+    "it is also the case that exercises the placement rule.",
+    "",
+    "Collected 2026-08-31 by asking the author directly. Nothing here is inferred."
+  ],
+  "used": {
+    "Ubuntu": {
+      "where": "self_study",
+      "evidence": "Author confirmed use outside any listed role or project (gap question, 2026-08-31). Skills-line only."
+    },
+    "Ruby": {
+      "where": "self_study",
+      "evidence": "Author confirmed use outside any listed role or project (gap question, 2026-08-31). Skills-line only."
+    },
+    "LLM agents": {
+      "where": "proj_2",
+      "evidence": "Author confirmed building LLM agents in the AI Talent Match Agent project: a coordinator agent orchestrating sub-agents over A2A on Google ADK (gap question, 2026-08-31)."
+    }
+  }
+}

@@ -1,0 +1,246 @@
+{
+  "jd_id": "jd_03",
+  "extracted_at": "2026-08-30",
+  "model": "claude-opus-5",
+  "requirements": [
+    {
+      "name": "Full-stack application development in production",
+      "type": "experience",
+      "required": true,
+      "aliases": [
+        "full stack development"
+      ]
+    },
+    {
+      "name": "React",
+      "type": "framework",
+      "required": true,
+      "aliases": [
+        "React.js",
+        "ReactJS"
+      ]
+    },
+    {
+      "name": "TypeScript",
+      "type": "language",
+      "required": true,
+      "aliases": [
+        "TS"
+      ]
+    },
+    {
+      "name": "Ruby",
+      "type": "language",
+      "required": true,
+      "aliases": []
+    },
+    {
+      "name": "Python",
+      "type": "language",
+      "required": true,
+      "aliases": []
+    },
+    {
+      "name": "Go",
+      "type": "language",
+      "required": true,
+      "aliases": [
+        "Golang"
+      ]
+    },
+    {
+      "name": "C++",
+      "type": "language",
+      "required": true,
+      "aliases": [
+        "CPP"
+      ]
+    },
+    {
+      "name": "PostgreSQL",
+      "type": "data",
+      "required": true,
+      "aliases": [
+        "Postgres"
+      ]
+    },
+    {
+      "name": "Scalable back-end systems",
+      "type": "concept",
+      "required": true,
+      "aliases": [
+        "backend systems",
+        "scalability"
+      ]
+    },
+    {
+      "name": "Cross-functional collaboration",
+      "type": "concept",
+      "required": true,
+      "aliases": []
+    },
+    {
+      "name": "Testing",
+      "type": "testing",
+      "required": true,
+      "aliases": []
+    },
+    {
+      "name": "System reliability and security",
+      "type": "concept",
+      "required": true,
+      "aliases": []
+    },
+    {
+      "name": "Mentoring",
+      "type": "concept",
+      "required": true,
+      "aliases": [
+        "code reviews",
+        "pairing"
+      ]
+    },
+    {
+      "name": "AI-assisted development tools",
+      "type": "ai_ml",
+      "required": false,
+      "aliases": [
+        "AI coding tools"
+      ]
+    },
+    {
+      "name": "GitHub Copilot",
+      "type": "ai_ml",
+      "required": false,
+      "aliases": [
+        "Copilot"
+      ]
+    },
+    {
+      "name": "ChatGPT",
+      "type": "ai_ml",
+      "required": false,
+      "aliases": [
+        "OpenAI ChatGPT"
+      ]
+    },
+    {
+      "name": "Claude",
+      "type": "ai_ml",
+      "required": false,
+      "aliases": [
+        "Anthropic Claude"
+      ]
+    },
+    {
+      "name": "WebAssembly",
+      "type": "framework",
+      "required": false,
+      "aliases": [
+        "Wasm"
+      ]
+    },
+    {
+      "name": "Growth engineering",
+      "type": "concept",
+      "required": false,
+      "aliases": []
+    },
+    {
+      "name": "Frontend platform work",
+      "type": "concept",
+      "required": false,
+      "aliases": [
+        "build systems",
+        "web performance",
+        "UI component infrastructure"
+      ]
+    },
+    {
+      "name": "Developer tooling",
+      "type": "concept",
+      "required": false,
+      "aliases": []
+    },
+    {
+      "name": "Billing and payments infrastructure",
+      "type": "concept",
+      "required": false,
+      "aliases": []
+    },
+    {
+      "name": "Extensibility platforms",
+      "type": "concept",
+      "required": false,
+      "aliases": [
+        "plugins",
+        "APIs",
+        "widgets"
+      ]
+    },
+    {
+      "name": "Stripe",
+      "type": "framework",
+      "required": false,
+      "aliases": []
+    },
+    {
+      "name": "Salesforce",
+      "type": "framework",
+      "required": false,
+      "aliases": [
+        "SFDC"
+      ]
+    },
+    {
+      "name": "Snowflake",
+      "type": "data",
+      "required": false,
+      "aliases": []
+    },
+    {
+      "name": "SCIM",
+      "type": "concept",
+      "required": false,
+      "aliases": []
+    },
+    {
+      "name": "SAML",
+      "type": "concept",
+      "required": false,
+      "aliases": []
+    },
+    {
+      "name": "Experimentation tooling",
+      "type": "concept",
+      "required": false,
+      "aliases": [
+        "A/B testing"
+      ]
+    },
+    {
+      "name": "Observability tooling",
+      "type": "concept",
+      "required": false,
+      "aliases": [
+        "monitoring"
+      ]
+    },
+    {
+      "name": "Leading large-scale projects",
+      "type": "experience",
+      "required": false,
+      "aliases": [
+        "technical leadership"
+      ]
+    },
+    {
+      "name": "Launching 0\u21921 products",
+      "type": "experience",
+      "required": false,
+      "aliases": [
+        "zero to one products"
+      ]
+    }
+  ]
+}

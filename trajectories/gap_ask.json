@@ -1,0 +1,27 @@
+{
+  "node": "gap_ask",
+  "stage": "iter4",
+  "source": "output/iter4/2026-08-31-run1/trajectory.json",
+  "step": {
+    "node": "gap_ask",
+    "instruction": null,
+    "inputs": {
+      "most_matched": 6
+    },
+    "output": {
+      "tools_to_ask": [
+        "Flask",
+        "Ubuntu",
+        "Ruby",
+        "LLM agents"
+      ]
+    },
+    "tool_calls": [],
+    "retries": 0,
+    "human_checkpoint": null,
+    "error": null,
+    "wall_clock_s": 0.0,
+    "input_tokens": 0,
+    "output_tokens": 0
+  }
+}

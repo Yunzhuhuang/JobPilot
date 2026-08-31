@@ -1,0 +1,602 @@
+<title>JobPilot Build Map</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wght@500;600;700&family=Source+Serif+4:opsz,wght@8..60,400;8..60,600&family=JetBrains+Mono:wght@400;500;700&display=swap">
+
+<style>
+  :root {
+    --paper:    #f3f4f1;
+    --card:     #fbfbf9;
+    --ink:      #191c1e;
+    --muted:    #5d6870;
+    --rule:     #d5d9d5;
+    --rule-soft:#e6e9e5;
+    --accent:   #0d5f5a;
+    --accent-w: #e0edea;
+    --stamp:    #a93226;
+    --ok:       #2f6b3a;
+    --pending:  #8a6512;
+    --shadow:   0 1px 2px rgba(25,28,30,.07), 0 6px 18px rgba(25,28,30,.05);
+  }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      --paper:    #14171a;  --card:     #1b1f23;  --ink:   #e7eae7;
+      --muted:    #98a3a8;  --rule:     #2c3339;  --rule-soft:#232a2f;
+      --accent:   #55bdb4;  --accent-w: #16302f;  --stamp: #e0796c;
+      --ok:       #71c184;  --pending:  #d3a84a;
+      --shadow:   0 1px 2px rgba(0,0,0,.4), 0 6px 20px rgba(0,0,0,.3);
+    }
+  }
+  :root[data-theme="dark"] {
+    --paper:    #14171a;  --card:     #1b1f23;  --ink:   #e7eae7;
+    --muted:    #98a3a8;  --rule:     #2c3339;  --rule-soft:#232a2f;
+    --accent:   #55bdb4;  --accent-w: #16302f;  --stamp: #e0796c;
+    --ok:       #71c184;  --pending:  #d3a84a;
+    --shadow:   0 1px 2px rgba(0,0,0,.4), 0 6px 20px rgba(0,0,0,.3);
+  }
+
+  * { box-sizing: border-box; }
+
+  body {
+    background: var(--paper); color: var(--ink);
+    font-family: "Source Serif 4", Georgia, serif;
+    font-size: 16.5px; line-height: 1.55; margin: 0;
+    padding: 0 20px 88px; -webkit-font-smoothing: antialiased;
+  }
+  .wrap { max-width: 960px; margin: 0 auto; }
+  .prose { max-width: 70ch; }
+
+  h1, h2, h3, .label, .chip, .lede, th { font-family: Archivo, Helvetica, sans-serif; }
+
+  header.mast { padding: 52px 0 22px; border-bottom: 2px solid var(--ink); margin-bottom: 30px; }
+  h1 { font-size: clamp(2rem, 5vw, 2.9rem); font-weight: 700; letter-spacing: -.022em;
+       line-height: 1.02; margin: 0 0 8px; text-wrap: balance; }
+  .lede { font-size: 1rem; font-weight: 500; color: var(--muted); margin: 0 0 20px; max-width: 60ch; }
+
+  .stats { display: grid; grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+           gap: 1px; background: var(--rule); border: 1px solid var(--rule); border-radius: 3px; }
+  .stat { background: var(--card); padding: 11px 14px; }
+  .stat b { display: block; font-family: "JetBrains Mono", monospace; font-size: 1.15rem;
+            font-weight: 700; letter-spacing: -.02em; font-variant-numeric: tabular-nums; }
+  .stat span { font-family: Archivo, sans-serif; font-size: .63rem; font-weight: 600;
+               letter-spacing: .1em; text-transform: uppercase; color: var(--muted); }
+
+  section { margin: 0 0 46px; }
+  .label { font-size: .67rem; font-weight: 600; letter-spacing: .13em;
+           text-transform: uppercase; color: var(--accent); margin: 0 0 7px; }
+  h2 { font-size: 1.36rem; font-weight: 600; letter-spacing: -.012em; margin: 0 0 12px;
+       text-wrap: balance; }
+  h3 { font-size: .95rem; font-weight: 600; margin: 24px 0 6px; }
+  p { margin: 0 0 12px; }
+  a { color: var(--accent); }
+  a:focus-visible { outline: 2px solid var(--accent); outline-offset: 3px; }
+  code, .mono { font-family: "JetBrains Mono", monospace; font-size: .85em; }
+  code { color: var(--accent); }
+
+  .figure { background: var(--card); border: 1px solid var(--rule); border-radius: 3px;
+            box-shadow: var(--shadow); padding: 20px 18px 12px; margin: 0 0 12px; }
+  .scroller { overflow-x: auto; }
+  .scroller svg { display: block; min-width: 900px; }
+  .legend { display: flex; flex-wrap: wrap; gap: 5px 20px;
+            font-family: "JetBrains Mono", monospace; font-size: .68rem; color: var(--muted);
+            padding-top: 12px; margin-top: 4px; border-top: 1px solid var(--rule-soft); }
+  .legend i { font-style: normal; color: var(--ink); }
+  figcaption { font-size: .85rem; color: var(--muted); max-width: 70ch; }
+
+  .tablewrap { overflow-x: auto; }
+  table { border-collapse: collapse; width: 100%; font-size: .86rem; min-width: 560px; }
+  th { font-size: .66rem; font-weight: 600; letter-spacing: .1em; text-transform: uppercase;
+       color: var(--muted); text-align: left; padding: 0 14px 7px 0;
+       border-bottom: 1px solid var(--ink); }
+  td { padding: 9px 14px 9px 0; border-bottom: 1px solid var(--rule-soft); vertical-align: top; }
+  td:first-child { white-space: nowrap; }
+  tbody tr:last-child td { border-bottom: none; }
+  .num-cell { font-family: "JetBrains Mono", monospace; font-variant-numeric: tabular-nums; }
+
+  .ledger { list-style: none; margin: 0; padding: 0; }
+  .ledger li { display: grid; grid-template-columns: 2.2rem 1fr auto; gap: 12px;
+               align-items: baseline; padding: 7px 0; border-bottom: 1px solid var(--rule-soft); }
+  .ledger li:last-child { border-bottom: none; }
+  .num { font-family: "JetBrains Mono", monospace; font-size: .72rem; color: var(--muted);
+         font-variant-numeric: tabular-nums; }
+  .step-name { font-size: .92rem; }
+  .step-name em { font-style: normal; color: var(--muted); font-size: .83rem; }
+  .chip { font-size: .61rem; font-weight: 600; letter-spacing: .09em; text-transform: uppercase;
+          padding: 2px 7px; border-radius: 2px; white-space: nowrap; border: 1px solid; }
+  .chip.done    { color: var(--ok);    border-color: var(--ok);     background: transparent; }
+  .chip.next    { color: var(--paper); border-color: var(--accent); background: var(--accent); }
+  .chip.todo    { color: var(--muted); border-color: var(--rule);   background: transparent; }
+  .chip.removed { color: var(--stamp); border-color: var(--stamp);  background: transparent; }
+  .chip.new     { color: var(--stamp); border-color: var(--stamp);  background: transparent; }
+
+  .phase-rule { display: flex; align-items: center; gap: 10px; margin: 20px 0 8px;
+                font-family: "JetBrains Mono", monospace; font-size: .68rem; letter-spacing: .09em;
+                text-transform: uppercase; color: var(--stamp); }
+  .phase-rule::after { content: ""; flex: 1; height: 1px; background: var(--stamp); opacity: .45; }
+
+  .callout { border-left: 3px solid var(--stamp); background: var(--card); padding: 14px 18px;
+             border-radius: 0 3px 3px 0; font-size: .93rem; }
+  .callout p:last-child { margin-bottom: 0; }
+
+  footer { margin-top: 56px; padding-top: 16px; border-top: 1px solid var(--rule);
+           font-family: "JetBrains Mono", monospace; font-size: .68rem; color: var(--muted); }
+
+  @media (max-width: 620px) {
+    body { font-size: 16px; }
+    .ledger li { grid-template-columns: 1.9rem 1fr; }
+    .ledger .chip { grid-column: 2; justify-self: start; }
+  }
+</style>
+
+<div class="wrap">
+
+  <header class="mast">
+    <h1>JobPilot Build Map</h1>
+    <p class="lede">A multi-agent job-application workflow that drafts nothing it cannot prove. Architecture, measurement, and progress on one page.</p>
+    <div class="stats">
+      <div class="stat"><b>2.43→0</b><span>fabrications/resume</span></div>
+      <div class="stat"><b>15</b><span>fixture JDs</span></div>
+      <div class="stat"><b>6·6·3</b><span>labels m/l/s</span></div>
+      <div class="stat"><b>252</b><span>requirements</span></div>
+      <div class="stat"><b>120</b><span>whitelist keys</span></div>
+      <div class="stat"><b>$0.118</b><span>cost / posting</span></div>
+      <div class="stat"><b>Aug 31</b><span>due, 11:00 PT</span></div>
+    </div>
+  </header>
+
+  <section class="prose">
+    <p class="label">Method</p>
+    <h2>Build the ruler before the thing it measures</h2>
+    <p>Phase 0 builds the fixture, the ground truth, the scorer, and a one-prompt baseline — and produces a number — <strong>before any agent exists</strong>. Every capability after that is one iteration: flip a flag in its stage preset, build the node, re-run the evaluation, write the changelog row. A feature is done when <code>eval/results/&lt;stage&gt;/</code> exists, not when it works.</p>
+  </section>
+
+  <section>
+    <p class="label">Runtime</p>
+    <h2>What happens on a run</h2>
+    <figure class="figure" style="margin-bottom:14px">
+      <div class="scroller">
+        <svg viewBox="0 0 940 486" role="img" aria-label="Pipeline: ingest, H-1B filter, parallel triage, then three routes — most matched through gap questions, tailoring and verification to a packet; less matched to a digest row; skip to a count.">
+          <defs><marker id="ar" viewBox="0 0 8 8" refX="7" refY="4" markerWidth="7" markerHeight="7" orient="auto"><path d="M0 0 L8 4 L0 8 z" fill="currentColor"/></marker></defs>
+          <g fill="none" stroke="currentColor" stroke-width="1.4" color="var(--muted)">
+            <path d="M92 53 H112" marker-end="url(#ar)"/><path d="M230 53 H276" marker-end="url(#ar)"/>
+            <path d="M394 53 H440" marker-end="url(#ar)"/><path d="M499 78 V104 H58 V330"/>
+            <path d="M58 148 H104" marker-end="url(#ar)"/><path d="M58 232 H104" marker-end="url(#ar)"/>
+            <path d="M58 316 H104" marker-end="url(#ar)"/><path d="M222 148 H254" marker-end="url(#ar)"/>
+            <path d="M372 148 H404" marker-end="url(#ar)"/><path d="M522 148 H554" marker-end="url(#ar)"/>
+            <path d="M672 148 H704" marker-end="url(#ar)"/>
+            <path d="M613 125 V108 H463 V125" marker-end="url(#ar)" stroke-dasharray="3 3"/>
+            <path d="M763 173 V414" marker-end="url(#ar)"/>
+            <path d="M254 232 H763 V414" marker-end="url(#ar)"/><path d="M254 316 H763"/>
+          </g>
+          <g font-family="JetBrains Mono, monospace" font-size="12" fill="currentColor" color="var(--muted)">
+            <text x="8" y="49">links.txt</text><text x="8" y="64">15 URLs</text>
+          </g>
+          <g>
+            <rect x="112" y="30" width="118" height="46" rx="3" fill="var(--card)" stroke="var(--ink)" stroke-width="1.3"/>
+            <rect x="276" y="30" width="118" height="46" rx="3" fill="var(--card)" stroke="var(--ink)" stroke-width="1.3" stroke-dasharray="4 3"/>
+            <rect x="450" y="20" width="118" height="46" rx="3" fill="var(--card)" stroke="var(--rule)" stroke-width="1.3"/>
+            <rect x="446" y="26" width="118" height="46" rx="3" fill="var(--card)" stroke="var(--rule)" stroke-width="1.3"/>
+            <rect x="440" y="32" width="118" height="46" rx="3" fill="var(--card)" stroke="var(--ink)" stroke-width="1.3"/>
+          </g>
+          <g font-family="Archivo, sans-serif" font-size="13" font-weight="600" fill="var(--ink)" text-anchor="middle">
+            <text x="171" y="52">ingest</text><text x="335" y="52">H-1B filter</text><text x="499" y="54">triage</text>
+          </g>
+          <g font-family="JetBrains Mono, monospace" font-size="10" fill="var(--muted)" text-anchor="middle">
+            <text x="171" y="66">cache-first</text><text x="335" y="66">USCIS lookup</text><text x="499" y="68">×N parallel</text>
+          </g>
+          <g font-family="JetBrains Mono, monospace" font-size="10" fill="var(--accent)">
+            <text x="64" y="140">most_matched</text><text x="64" y="224">less_matched</text><text x="64" y="308">skip</text>
+          </g>
+          <g>
+            <rect x="104" y="125" width="118" height="46" rx="3" fill="var(--card)" stroke="var(--ink)" stroke-width="1.3" stroke-dasharray="4 3"/>
+            <rect x="254" y="125" width="118" height="46" rx="3" fill="var(--accent-w)" stroke="var(--accent)" stroke-width="2"/>
+            <rect x="404" y="125" width="118" height="46" rx="3" fill="var(--card)" stroke="var(--ink)" stroke-width="1.3"/>
+            <rect x="554" y="125" width="118" height="46" rx="3" fill="var(--card)" stroke="var(--stamp)" stroke-width="2"/>
+            <rect x="704" y="125" width="118" height="46" rx="3" fill="var(--card)" stroke="var(--ink)" stroke-width="1.3"/>
+          </g>
+          <g font-family="Archivo, sans-serif" font-size="13" font-weight="600" fill="var(--ink)" text-anchor="middle">
+            <text x="163" y="147">gap diff</text><text x="313" y="147">ask you</text><text x="463" y="147">tailor</text>
+            <text x="613" y="147">verify</text><text x="763" y="147">packet</text>
+          </g>
+          <g font-family="JetBrains Mono, monospace" font-size="10" fill="var(--muted)" text-anchor="middle">
+            <text x="163" y="161">unknown tools</text><text x="313" y="161">pause · default no</text>
+            <text x="463" y="161">resume · letter</text><text x="613" y="161">vs. profile.json</text>
+            <text x="763" y="161">md · pdf · report</text>
+          </g>
+          <text x="538" y="102" font-family="JetBrains Mono, monospace" font-size="10" fill="var(--stamp)" text-anchor="middle">revise ≤ 2</text>
+          <g>
+            <rect x="104" y="209" width="150" height="46" rx="3" fill="var(--card)" stroke="var(--ink)" stroke-width="1.3"/>
+            <rect x="104" y="293" width="150" height="46" rx="3" fill="var(--card)" stroke="var(--rule)" stroke-width="1.3"/>
+          </g>
+          <g font-family="Archivo, sans-serif" font-size="13" font-weight="600" text-anchor="middle">
+            <text x="179" y="231" fill="var(--ink)">one digest row</text>
+            <text x="179" y="315" fill="var(--muted)">counted, not listed</text>
+          </g>
+          <g font-family="JetBrains Mono, monospace" font-size="10" fill="var(--muted)" text-anchor="middle">
+            <text x="179" y="245">generic application</text><text x="179" y="329">wrong level or domain</text>
+          </g>
+          <rect x="628" y="414" width="270" height="52" rx="3" fill="var(--card)" stroke="var(--ink)" stroke-width="2"/>
+          <text x="763" y="437" font-family="Archivo, sans-serif" font-size="14" font-weight="600" fill="var(--ink)" text-anchor="middle">digest.md</text>
+          <text x="763" y="452" font-family="JetBrains Mono, monospace" font-size="10" fill="var(--muted)" text-anchor="middle">two lists · skipped count · gap summary</text>
+          <g>
+            <rect x="330" y="378" width="200" height="52" rx="3" fill="var(--accent-w)" stroke="var(--accent)" stroke-width="1.6" stroke-dasharray="5 3"/>
+            <text x="430" y="400" font-family="JetBrains Mono, monospace" font-size="12" font-weight="700" fill="var(--accent)" text-anchor="middle">profile.json</text>
+            <text x="430" y="415" font-family="JetBrains Mono, monospace" font-size="10" fill="var(--muted)" text-anchor="middle">read by tailor · trusted by verify</text>
+          </g>
+          <g fill="none" stroke="var(--accent)" stroke-width="1.2" stroke-dasharray="3 3">
+            <path d="M463 378 V173"/><path d="M497 378 H613 V173"/><path d="M363 378 H163 V173"/>
+          </g>
+        </svg>
+      </div>
+      <div class="legend">
+        <span><i>——</i> always runs</span>
+        <span><i>- - -</i> flag-controlled by the stage preset</span>
+        <span><i style="color:var(--accent)">▭</i> human checkpoint</span>
+        <span><i style="color:var(--stamp)">▭</i> rejects unsupported claims</span>
+      </div>
+    </figure>
+    <figcaption>Every dashed box switches off by stage preset — <code>iter2</code> is the same graph as <code>iter1</code> with one flag flipped. That is what makes each changelog row re-runnable.</figcaption>
+  </section>
+
+  <section>
+    <p class="label">Verifier</p>
+    <h2>How a claim is judged</h2>
+    <p class="prose">The tailor drafts from <code>profile.json</code>. The verifier then sees the draft and the profile, and <strong>never the tailor's reasoning</strong> — so it cannot inherit the tailor's justification. Every document is checked twice over one shared, code-generated segmentation:</p>
+
+    <div class="tablewrap" style="margin-bottom:16px">
+      <table>
+        <thead><tr><th>Pass</th><th>Does</th><th>Why it exists</th></tr></thead>
+        <tbody>
+          <tr><td><strong>1 · segment</strong> <em style="color:var(--muted)">code</em></td><td>Markdown structure decides the claim units; role headings resolve to <code>exp_2</code> by matching company names</td><td>An LLM split moved between runs — 9 units then 6 — and silently dropped a fabricated employer</td></tr>
+          <tr><td><strong>2 · extract</strong> <em style="color:var(--muted)">LLM</em></td><td>Labels what each unit asserts: tools, company, title, metrics, dates. Never sees the profile</td><td>An extractor that knows the answer shapes its extraction toward it</td></tr>
+          <tr><td><strong>3a · rules</strong> <em style="color:var(--muted)">code</em></td><td>Adjudicates every element against the frozen profile. <strong>The primary metric</strong></td><td>Three runs give byte-identical verdicts, so a stage delta is caused by the stage</td></tr>
+          <tr><td><strong>3b · judge</strong> <em style="color:var(--muted)">LLM</em></td><td>The PRD §5.8 verifier, keyed to the same unit ids. A cross-check</td><td>Catches claims that name nothing checkable</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <h3>The five verdicts a claim can get</h3>
+    <div class="tablewrap">
+      <table>
+        <thead><tr><th>Verdict</th><th>Means</th><th>Repair</th></tr></thead>
+        <tbody>
+          <tr><td><strong style="color:var(--ok)">supported</strong></td><td>evidence places the tool in this role or project</td><td>—</td></tr>
+          <tr><td><strong style="color:var(--pending)">unplaced</strong></td><td>skills-line mention with nothing behind it — fine in a skills section, not in a bullet</td><td><strong>a gap question</strong></td></tr>
+          <tr><td><strong style="color:var(--stamp)">misplaced</strong></td><td>real evidence, wrong employer — Kafka-at-Amazon</td><td>drop the line</td></tr>
+          <tr><td><strong style="color:var(--stamp)">declined</strong></td><td>you said you have not used it</td><td>none, ever</td></tr>
+          <tr><td><strong style="color:var(--stamp)">unsupported</strong></td><td>not in the profile at all</td><td>drop the line</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <p class="prose" style="margin-top:14px">A sixth outcome, <strong>softened</strong>, applies to a whole unit that asserts nothing checkable. Counting it separately is what stops a resume scoring a perfect zero by turning vague — the failure mode a fabrication-only metric rewards.</p>
+    <p class="prose">Of your 61 evidenced tools, <strong>45 may appear in a bullet today, 16 need a gap answer first</strong>. That gap is what <code>iter4</code> measures: answer once where you used Kafka and it moves to <em>supported</em> permanently.</p>
+
+    <h3>What running both paths found</h3>
+    <div class="callout">
+      <p style="margin-bottom:8px"><em>"Led payments infrastructure work across a distributed billing platform."</em> &nbsp;→&nbsp; <strong style="color:var(--pending)">rules: softened</strong> · <strong style="color:var(--stamp)">judge: unsupported</strong></p>
+      <p>The judge is right. The sentence names no tool, employer, or number, so element-based checking has nothing to hold. <strong>A fabrication written entirely in abstractions passes straight through a whitelist</strong> — and that is the register a fluent model reaches for. Neither path alone is the metric.</p>
+    </div>
+  </section>
+
+  <section>
+    <p class="label">Measurement</p>
+    <h2>Metrics</h2>
+    <p class="prose">Fabricated claims is the headline, but it cannot grade the pipeline: a verifier that deletes every specific line scores zero and produces a worthless resume. Rows marked <span class="chip new" style="padding:1px 5px">new</span> are counterweights added beyond the PRD.</p>
+
+    <h3>Eval metrics — what <code>jobpilot.eval</code> emits per stage</h3>
+    <div class="tablewrap">
+      <table>
+        <thead><tr><th>Metric</th><th>Source</th><th>Target</th></tr></thead>
+        <tbody>
+          <tr><td><strong>Fabricated claims / resume</strong><br><em style="color:var(--muted);font-size:.8rem">primary</em></td><td>verifier rules path vs. frozen <code>fixture/profile.json</code></td><td class="num-cell"><strong>0</strong> at <code>final</code></td></tr>
+          <tr><td>Triage agreement</td><td>exact match vs. your <code>labels.json</code> (6/6/3)</td><td class="num-cell">↑ vs. baseline</td></tr>
+          <tr><td>JD keyword coverage</td><td>required <em>tool-typed</em> items from <code>fixture/requirements/</code>, canonical or alias</td><td class="num-cell">↑, and must not fall at <code>iter3b</code></td></tr>
+          <tr><td><span class="chip new">new</span> H-1B employer identified correctly</td><td>agent's chosen USCIS row vs. <code>fixture/h1b_truth.json</code></td><td class="num-cell"><strong>100%</strong> at <code>iter2</code> (15/15)</td></tr>
+          <tr><td>Non-sponsors dropped</td><td>H-1B verdict vs. fixture ground truth</td><td class="num-cell">n/a — no fixture posting refuses sponsorship</td></tr>
+          <tr><td>Gap questions, run 1 → run 2</td><td>pipeline log, two consecutive runs</td><td class="num-cell">↓ to 0 re-asks</td></tr>
+          <tr><td><span class="chip new">new</span> Softened claims / resume</td><td>verifier rules path</td><td class="num-cell">flat — a rising count means vagueness</td></tr>
+          <tr><td><span class="chip new">new</span> Rules vs. judge agreement</td><td>both verifier paths on the same units</td><td class="num-cell">reported, not optimised</td></tr>
+          <tr><td>Human review time / packet</td><td>author-measured, n=3</td><td class="num-cell">↓ vs. 30 min by hand</td></tr>
+          <tr><td>Cost / JD · wall-clock / JD</td><td>token usage · harness timer</td><td class="num-cell">reported</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <h3>Per-node checks — what each node is separately accountable for</h3>
+    <div class="tablewrap">
+      <table>
+        <thead><tr><th>Node</th><th>Measured by</th><th>Guards against</th></tr></thead>
+        <tbody>
+          <tr><td><strong>Ingest</strong></td><td>cache hit rate · fetch failures</td><td>a run silently scoring fewer JDs than it claims</td></tr>
+          <tr><td><strong>H-1B filter</strong></td><td>non-sponsors dropped · <span class="chip new">new</span> false drops</td><td>a fuzzy match discarding a real employer</td></tr>
+          <tr><td><strong>Triage</strong></td><td>label agreement · <span class="chip new">new</span> skip precision</td><td>hiding a good job in the skipped count</td></tr>
+          <tr><td><strong>Gap questions</strong></td><td>questions run 1 → 2 · <span class="chip new">new</span> re-ask rate = 0</td><td>memory that does not persist</td></tr>
+          <tr><td><strong>Tailor</strong></td><td>keyword coverage · would-I-sign-this 1–5</td><td>a safe, empty resume that survives verification</td></tr>
+          <tr><td><strong>Verifier</strong></td><td>fabricated claims · <span class="chip new">new</span> false-reject rate</td><td>scoring zero by deleting everything unusual</td></tr>
+          <tr><td><strong>Render</strong></td><td>PDF compiles · no verified line dropped</td><td>a PDF disagreeing with the checked markdown</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <p class="prose" style="margin-top:14px"><strong>Fabrications and coverage are a pair.</strong> Driving fabrications to zero is trivial if coverage may collapse. The PRD predicts exactly that at <code>iter3b</code>; <code>iter4</code>'s gap memory is the repair.</p>
+  </section>
+
+  <section>
+    <p class="label">Changelog</p>
+    <h2>Baseline to final, one capability at a time</h2>
+    <p class="prose">Each stage is the previous one with a single flag flipped, so a delta is attributable to that capability and nothing else. Measured values come from <code>eval/results/&lt;stage&gt;/summary.json</code>; none is typed by hand. Blank means not yet run.</p>
+    <div class="tablewrap">
+      <table>
+        <thead>
+          <tr><th>Stage</th><th>Adds</th><th>Fab.</th><th>Triage</th><th>Cov.</th><th>Expected signal</th></tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><strong>baseline</strong><br><span class="chip done" style="font-size:.55rem">measured</span></td>
+            <td>one prompt, raw resume text</td>
+            <td class="num-cell"><strong>1.6</strong></td>
+            <td class="num-cell">60%</td>
+            <td class="num-cell">63.8%</td>
+            <td>the starting point</td>
+          </tr>
+          <tr>
+            <td><strong>iter1</strong><br><span class="chip done" style="font-size:.55rem">measured</span></td>
+            <td>ADK graph + triage node reading <code>profile.json</code> and a rubric <em style="color:var(--muted)">· context</em></td>
+            <td class="num-cell">n/a</td>
+            <td class="num-cell"><strong>66.7%</strong></td>
+            <td class="num-cell">n/a</td>
+            <td>skip 1/3 → 3/3; cost −74%</td>
+          </tr>
+          <tr>
+            <td><strong>iter2</strong><br><span class="chip done" style="font-size:.55rem">measured</span></td>
+            <td>H-1B node: deterministic retrieval + agent with a search tool <em style="color:var(--muted)">· tools</em></td>
+            <td class="num-cell">n/a</td>
+            <td class="num-cell">73.3%</td>
+            <td class="num-cell">n/a</td>
+            <td><strong>100%</strong> employer resolution (15/15); cost ×2, labels unchanged</td>
+          </tr>
+          <tr>
+            <td><strong>iter3</strong><br><span class="chip done" style="font-size:.55rem">measured</span></td>
+            <td>tailoring node — first stage that writes claims <em style="color:var(--muted)">· generation</em></td>
+            <td class="num-cell"><strong>0.2</strong></td>
+            <td class="num-cell">73.3%</td>
+            <td class="num-cell">60.9%</td>
+            <td>vs <strong>2.4</strong> for the baseline on the same 5 postings</td>
+          </tr>
+          <tr>
+            <td><strong>iter3a</strong><br><span class="chip removed" style="font-size:.55rem">removed</span></td>
+            <td>tailor checks its own work <em style="color:var(--muted)">· naive verification</em></td>
+            <td class="num-cell">0.2</td>
+            <td class="num-cell">73.3%</td>
+            <td class="num-cell">46.9%</td>
+            <td>identical — self-review removed nothing</td>
+          </tr>
+          <tr>
+            <td><strong>iter3b</strong><br><span class="chip done" style="font-size:.55rem">measured</span></td>
+            <td>verifier as its own node + revision loop <em style="color:var(--muted)">· verification</em></td>
+            <td class="num-cell"><strong>0</strong></td>
+            <td class="num-cell">66.7%</td>
+            <td class="num-cell">46.9%</td>
+            <td>0 is tautological; supported claims held flat</td>
+          </tr>
+          <tr>
+            <td><strong>iter4</strong><br><span class="chip done" style="font-size:.55rem">measured</span></td>
+            <td>gap questions + profile write-back <em style="color:var(--muted)">· memory</em></td>
+            <td class="num-cell"><strong>0</strong></td>
+            <td class="num-cell">66.7%</td>
+            <td class="num-cell">52%</td>
+            <td>4 questions → <strong>0 re-asked</strong>; coverage +5pp</td>
+          </tr>
+          <tr>
+            <td><strong>iter5</strong><br><span class="chip removed" style="font-size:.55rem">cut</span></td>
+            <td>style exemplars <em style="color:var(--muted)">· voice</em></td>
+            <td class="num-cell">—</td><td class="num-cell">—</td><td class="num-cell">—</td>
+            <td>cut for time — first on the PRD's own cut list</td>
+          </tr>
+          <tr>
+            <td><strong>final</strong><br><span class="chip done" style="font-size:.55rem">measured</span></td>
+            <td>1 + 2 + 3b + 4 <em style="color:var(--muted)">(5 cut)</em></td>
+            <td class="num-cell"><strong>0</strong></td>
+            <td class="num-cell">66.7%</td>
+            <td class="num-cell">50%</td>
+            <td><strong>2.43 → 0</strong> vs baseline on the same 7, +28% cost</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="callout" style="margin-top:16px">
+      <p><strong>The H-1B lookup was specified as string matching, and string matching cannot do it.</strong> The PRD asked for normalize → exact → fuzzy ≥ 90 → "does not sponsor". Run against the real USCIS export, that broke three different ways inside fifteen postings, so it was rebuilt as deterministic retrieval plus an agent that can search — the counts stay facts read from the file, the choice of <em>which legal entity is this company</em> becomes a judgement.</p>
+      <ol class="prose" style="padding-left:1.2rem;margin-top:10px">
+        <li><strong>The legal name is not the brand name.</strong> SpaceX files as <code>SPACE EXPLORATION TECHNOLOGIES CORP</code>, which shares no token with "SpaceX" — the fuzzy shortlist is <code>ISPACE INC</code> and <code>DSPACE INC</code>. No threshold anywhere retrieves it, and the strict version reported "no petitions found" about a company with thirteen.</li>
+        <li><strong>Fuzzy ties span unrelated companies.</strong> <code>ABRIDGE AI INC</code> (CA/PA, health AI) and <code>ABRIDGE INFO SYSTEMS INC</code> (MA, IT staffing) both score exactly 100; <code>extractOne</code> picks by list order. The agent breaks the tie on filing state against the posting's "SF Office".</li>
+        <li><strong>Normalization collides distinct employers.</strong> Stripping <code>technologies</code>, <code>us</code> and <code>inc</code> maps <code>COHERE US, INC.</code> (6 approvals) and <code>COHERE TECHNOLOGIES INC</code> (0, a wireless company) onto one key — so even an <em>exact</em> hit named the wrong company and summed two firms' filings.</li>
+      </ol>
+      <p style="margin-top:10px">Result: <strong>15/15 employers identified correctly</strong> across 20 searches, at roughly double the cost per posting. The case that matters most is <code>jd_12</code> OnePay, absent from all 44,298 rows: the agent searched <strong>six times and still returned no entity</strong>, which is the behaviour a project measuring fabrication has to get right.</p>
+      <p style="margin-top:10px"><strong>Nothing is dropped, and that is correct.</strong> No company in the fixture is a non-sponsor — fourteen of fifteen actively file, and OnePay is <em>absent</em>, which is <code>unknown</code> rather than no. Dropping on absence would have removed a posting labelled <code>most_matched</code>. The two postings that genuinely cannot hire her, SpaceX and Mach, are caught by <em>triage</em> reading the ITAR and clearance text.</p>
+    </div>
+
+    <div class="callout" style="margin-top:16px">
+      <p><strong>The node was decorative, and fixing that did not move the number.</strong> As first built its verdict reached only the digest — <code>triage_prompt</code> never saw it — so <code>iter2</code> doubled cost while changing no label. It now feeds triage as evidence, guarded by an instruction that filing history <strong>never</strong> overrides a role-level bar. That guard is the whole risk: "SpaceX likely sponsors, 13 approvals" argues against the <code>skip</code> SpaceX requires. It held, and the agent said why unprompted — <em>"SpaceX's H-1B filing history is irrelevant here; export-control and clearance requirements govern this specific role"</em>. But triage stayed at 73.3% either way, cells reshuffling inside the noise band. The node buys correct employer identification and a digest column at 2× cost, and has <strong>not yet been shown to improve a label</strong>.</p>
+    </div>
+
+    <div class="callout" style="margin-top:16px">
+      <p><strong>Two postings flap between runs, so a 6.7-point move is not a result.</strong> Re-running <code>iter1</code> with no change to the triage node scored 66.7% where it had previously scored 73.3% — the whole difference is <code>jd_15</code> Cohere flipping between <code>skip</code> and <code>less_matched</code> on seniority. With fifteen items one posting is 6.7 points, and at least two are unstable, so differences under ~13 points on this fixture are reported but not claimed. <code>iter2</code>'s triage number moved for exactly this reason and the changelog says so: the H-1B node answers an employer-level question and is <em>forbidden</em> from touching role eligibility, which is triage's.</p>
+    </div>
+
+    <div class="callout" style="margin-top:16px">
+      <p><strong>Self-verification removes nothing, and the failure mode is worse than "barely helps".</strong> On the five postings <code>iter3</code> and <code>iter3a</code> both produced, fabrications were <strong>0.20 either way</strong> — one each, identical per posting. On <code>jd_01</code> self-review did not fix the fabrication, it <em>swapped</em> it: the hedge "Flask-style web services via FastAPI" went away and "Backend engineer", a title the profile does not contain, took its place.</p>
+      <p style="margin-top:10px">The self-assessments are the evidence. On <code>jd_03</code> the model reported <em>"No fabricated claims … All metrics, dates and tool-to-role attachments"</em> verified; on <code>jd_10</code>, <em>"kept all tools inside the exact roles/projects they belong to"</em>. A model auditing its own draft, with its own reasoning still in context, ratifies it. That is why <code>iter3b</code>'s verifier gets its own node, its own instruction, and no sight of the tailor's context — and why this stage stays in the table with its evidence rather than being deleted.</p>
+    </div>
+
+    <div class="callout" style="margin-top:16px">
+      <p><strong>Read <code>iter3b</code>'s zero with suspicion — we do.</strong> The pipeline verifier and the harness scorer share code by design (PRD §5.8). The scorer counts what the rules path rejects, and the verifier node now deletes precisely that, so <strong>0 fabricated claims is close to guaranteed and is not evidence the stage works</strong>. It proves only that the loop terminates and never ships a rejected claim.</p>
+      <p style="margin-top:10px"><strong>The real result is that content held.</strong> The failure to fear was reaching zero by gutting the resume — <code>iter3a</code>'s mistake in a new costume. On the five postings <code>iter3</code> and <code>iter3b</code> both produced, <strong>supported claims per document went 24.0 → 23.6</strong>, flat. <code>jd_01</code> ended with <em>more</em> supported claims than before (22 → 24) once its Flask hedge was removed.</p>
+      <p style="margin-top:10px">Two apparent regressions, both attributable and neither the verifier's: softening rose because four units are bare school headings that assert nothing checkable (a formatting change), and coverage fell entirely on <code>jd_09</code> — which needed <strong>zero revision rounds</strong>, so the verifier never touched it. Cost: wall-clock doubles to 79.6 s/JD. And <code>strip_units</code>, the "cut the lines in code" path, has been unit-tested but <strong>never fired in a real run</strong>.</p>
+    </div>
+
+    <h3>What the baseline actually got wrong</h3>
+    <p class="prose">Three failures, in the order the iterations attack them:</p>
+    <ol class="prose" style="padding-left:1.2rem">
+      <li><strong>It fabricates exactly where the posting asks for something absent from the profile.</strong> Canonical wants Flask and the resume claims Flask; DoorDash wants Swift and it appears as "Swift: currently learning"; Zynga wants C# and Unity and both appear. It also placed PostgreSQL inside the Amazon role — a NextRound tool — and put Hibernate in a bullet when it is a skills-line mention.</li>
+      <li><strong>It cannot see sponsorship.</strong> SpaceX (ITAR) and Mach (export-control) were both labelled <code>less_matched</code> rather than skipped, so effort goes to jobs that cannot hire her.</li>
+      <li><strong>It is too conservative.</strong> Of six author <code>most_matched</code> it agreed on three and downgraded three; it also downgraded two of three <code>skip</code>s.</li>
+    </ol>
+
+    <div class="callout" style="margin-top:16px">
+      <p><strong>The baseline number moved 8.13 → 5.53 → 1.8 → 1.6 before it settled, and nothing about the baseline changed.</strong> Each drop removed a false reject in the verifier: an exact-match date rule was rejecting every employment heading in every document because a resume writes "May 2025 – Aug 2025" where the profile stores <code>2025-05</code>; then <code>Kubernetes (EKS)</code>, <code>MySQL/RDS</code>, plural tool names, and degree-plus-school credentials. The rules-vs-judge disagreement is what surfaced it — 61.8% agreement was the signal, and it is 86.7% now. Fixing stopped at 1.6 rather than chasing zero: <code>GCP</code> and <code>Ubuntu</code> are still counted, and continuing would be fitting the scorer to flatter the result. <strong>The primary metric has a measured false-reject floor, and the README says so.</strong></p>
+    </div>
+  </section>
+
+  <section>
+    <p class="label">Codebase</p>
+    <h2>Every file, and who calls whom</h2>
+    <p class="prose">Read from the actual imports. Arrows point to what a module imports, so nothing above depends on anything below.</p>
+    <figure class="figure" style="margin-bottom:14px">
+      <div class="scroller">
+        <svg viewBox="0 0 940 452" role="img" aria-label="Module dependency graph: __main__ imports cli, which imports ingest.links, ingest.cache and verify; verify imports segment, rules, llm; profile.claims underpins verify.rules; config is the base of everything.">
+          <defs><marker id="ar2" viewBox="0 0 8 8" refX="7" refY="4" markerWidth="7" markerHeight="7" orient="auto"><path d="M0 0 L8 4 L0 8 z" fill="currentColor"/></marker></defs>
+          <g fill="none" stroke="currentColor" stroke-width="1.3" color="var(--muted)">
+            <path d="M470 66 V92" marker-end="url(#ar2)"/>
+            <path d="M470 138 V152 H300 V164" marker-end="url(#ar2)"/>
+            <path d="M470 138 V152 H640 V164" marker-end="url(#ar2)"/>
+            <path d="M255 210 V224 H140 V236" marker-end="url(#ar2)"/>
+            <path d="M300 210 V236" marker-end="url(#ar2)"/>
+            <path d="M640 210 V224 H480 V236" marker-end="url(#ar2)"/>
+            <path d="M640 210 V236" marker-end="url(#ar2)"/>
+            <path d="M700 210 V224 H800 V236" marker-end="url(#ar2)"/>
+            <path d="M140 282 V296 H215 V308" marker-end="url(#ar2)"/>
+            <path d="M265 282 V296 H255 V308" marker-end="url(#ar2)"/>
+            <path d="M610 282 V296 H500 V308" marker-end="url(#ar2)"/>
+            <path d="M480 282 V390" marker-end="url(#ar2)"/>
+            <path d="M500 354 V390" marker-end="url(#ar2)"/>
+            <path d="M240 354 V390" marker-end="url(#ar2)"/>
+            <path d="M800 282 V390" marker-end="url(#ar2)"/>
+          </g>
+          <g stroke-width="1.3">
+            <rect x="390" y="20" width="160" height="46" rx="3" fill="var(--card)" stroke="var(--rule)"/>
+            <rect x="390" y="92" width="160" height="46" rx="3" fill="var(--card)" stroke="var(--ink)"/>
+            <rect x="220" y="164" width="160" height="46" rx="3" fill="var(--card)" stroke="var(--ink)"/>
+            <rect x="560" y="164" width="160" height="46" rx="3" fill="var(--card)" stroke="var(--stamp)" stroke-width="2"/>
+            <rect x="60"  y="236" width="160" height="46" rx="3" fill="var(--card)" stroke="var(--ink)"/>
+            <rect x="240" y="236" width="160" height="46" rx="3" fill="var(--card)" stroke="var(--ink)"/>
+            <rect x="420" y="236" width="160" height="46" rx="3" fill="var(--card)" stroke="var(--stamp)" stroke-width="2"/>
+            <rect x="600" y="236" width="160" height="46" rx="3" fill="var(--card)" stroke="var(--ink)"/>
+            <rect x="720" y="236" width="160" height="46" rx="3" fill="var(--card)" stroke="var(--ink)"/>
+            <rect x="160" y="308" width="160" height="46" rx="3" fill="var(--card)" stroke="var(--ink)"/>
+            <rect x="420" y="308" width="160" height="46" rx="3" fill="var(--card)" stroke="var(--ink)"/>
+            <rect x="140" y="390" width="620" height="46" rx="3" fill="var(--accent-w)" stroke="var(--accent)" stroke-width="1.6"/>
+          </g>
+          <g font-family="JetBrains Mono, monospace" font-size="11" font-weight="700" fill="var(--ink)" text-anchor="middle">
+            <text x="470" y="42">__main__.py</text><text x="470" y="114">cli.py</text>
+            <text x="300" y="186">ingest/links.py</text><text x="640" y="186">verify/__init__.py</text>
+            <text x="140" y="258">ingest/boards.py</text><text x="320" y="258">ingest/cache.py</text>
+            <text x="500" y="258">verify/rules.py</text><text x="680" y="258">verify/segment.py</text>
+            <text x="800" y="258">verify/llm.py</text>
+            <text x="240" y="330">ingest/base.py</text><text x="500" y="330">profile/claims.py</text>
+            <text x="450" y="412" fill="var(--accent)">config.py</text>
+          </g>
+          <g font-family="Archivo, sans-serif" font-size="9.5" fill="var(--muted)" text-anchor="middle">
+            <text x="470" y="57">python -m jobpilot</text><text x="470" y="129">ingest · verify</text>
+            <text x="300" y="201">cache-first orchestration</text><text x="640" y="201">3 passes, 2 verdicts</text>
+            <text x="140" y="273">per-board fetch</text><text x="320" y="273">fixture/cache I/O</text>
+            <text x="500" y="273">the primary metric</text><text x="680" y="273">deterministic units</text>
+            <text x="800" y="273">extract + judge</text>
+            <text x="240" y="345">JD model · url_hash</text><text x="500" y="345">classify_claim</text>
+            <text x="450" y="427" fill="var(--muted)">one model for every stage · REPO_ROOT · load_config · build_model</text>
+          </g>
+        </svg>
+      </div>
+      <div class="legend">
+        <span><i>→</i> imports</span>
+        <span><i style="color:var(--stamp)">▭</i> defines what counts as fabricated</span>
+        <span>profile/schema · requirements · agents omitted (leaves)</span>
+      </div>
+    </figure>
+
+    <div class="tablewrap">
+      <table>
+        <thead><tr><th>File</th><th>Job</th></tr></thead>
+        <tbody>
+          <tr><td><code>config.py</code></td><td>Loads <code>config.yaml</code>, builds the one model every stage shares — what makes a stage comparison attributable</td></tr>
+          <tr><td><code>profile/schema.py</code></td><td>12 Pydantic models of <code>profile.json</code>; unknown keys forbidden everywhere</td></tr>
+          <tr><td><code>profile/claims.py</code></td><td><code>classify_claim</code> — may this tool be claimed <em>here</em>? The definition of fabricated</td></tr>
+          <tr><td><code>profile/loader.py</code> · <code>validate.py</code></td><td>Reads the profile · cross-field checks Pydantic cannot express</td></tr>
+          <tr><td><code>requirements.py</code></td><td>What each JD asks for, extracted once and frozen</td></tr>
+          <tr><td><code>ingest/base.py</code></td><td><code>JD</code> model, <code>Ingester</code> protocol, URL normalization so a posting always hashes alike</td></tr>
+          <tr><td><code>ingest/boards.py</code></td><td>One fetch path per board — and the refusal for every other board</td></tr>
+          <tr><td><code>ingest/cache.py</code> · <code>links.py</code></td><td>Cache I/O, <code>jd_id</code> pinning · cache-first loop, <code>--offline</code> fails loudly</td></tr>
+          <tr><td><code>verify/segment.py</code></td><td>Splits a document into claim units, in code, reproducibly</td></tr>
+          <tr><td><code>verify/rules.py</code></td><td>Deterministic adjudication — the number the changelog quotes</td></tr>
+          <tr><td><code>verify/llm.py</code></td><td>Element extraction, and the §5.8 judge</td></tr>
+          <tr><td><code>agents/instructions/*.md</code></td><td>Every prompt, as a reviewable file rather than a string literal</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <h3>Data</h3>
+    <div class="tablewrap">
+      <table>
+        <thead><tr><th>Path</th><th>Role</th><th>Committed</th></tr></thead>
+        <tbody>
+          <tr><td><code>config.yaml</code></td><td>The one model; settings constant across every stage</td><td>yes</td></tr>
+          <tr><td><code>profile.json</code></td><td>Working profile. Three writers, all requiring confirmation</td><td>yes</td></tr>
+          <tr><td><code>fixture/profile.json</code></td><td>Frozen copy — every score is computed against this</td><td>yes</td></tr>
+          <tr><td><code>fixture/cache/jd_*.md</code></td><td>15 postings; what makes every stage replay offline</td><td>yes</td></tr>
+          <tr><td><code>fixture/labels.json</code> · <code>requirements/</code></td><td>Your ground truth · what each JD asks for</td><td>yes</td></tr>
+          <tr><td><code>fixture/verify_samples/</code></td><td>Clean and fabricated resumes + expected verdicts</td><td>yes</td></tr>
+          <tr><td><code>data/h1b_employers.json</code></td><td>USCIS FY2026 Employer Data Hub — 44,298 employers, rebuilt by <code>scripts/refresh_h1b.py</code></td><td>yes</td></tr>
+          <tr><td><code>fixture/h1b_truth.json</code></td><td>Which USCIS row each company is, and why — the H-1B node's ground truth</td><td>yes</td></tr>
+          <tr><td><code>.env</code></td><td>Your API key</td><td><strong style="color:var(--stamp)">never</strong></td></tr>
+        </tbody>
+      </table>
+    </div>
+    <p class="prose" style="margin-top:14px">Not built yet, each arriving with the step that measures it: the <code>tailor</code> and <code>verify</code> nodes · <code>render/</code> · the onboarding and profile-update agents.</p>
+  </section>
+
+  <section>
+    <p class="label">Progress</p>
+    <h2>Build ledger</h2>
+    <div class="phase-rule">Phase 0 — measurement first · complete</div>
+    <ol class="ledger">
+      <li><span class="num">01</span><span class="step-name">Skeleton, <code>config.yaml</code>, deps, changelog header</span><span class="chip done">done</span></li>
+      <li><span class="num">02</span><span class="step-name">ADK 2.0 smoke test <em>— pause node resumes; the PRD's gate</em></span><span class="chip done">done</span></li>
+      <li><span class="num">03</span><span class="step-name">Profile schema + <code>profile.json</code>, frozen <em>— 61 evidence entries</em></span><span class="chip done">done</span></li>
+      <li><span class="num">04</span><span class="step-name">Ingester + committed JD cache <em>— 15 JDs, replays offline</em></span><span class="chip done">done</span></li>
+      <li><span class="num">05</span><span class="step-name">Your labels + requirement extractor <em>— 6/6/3, 252 requirements</em></span><span class="chip done">done</span></li>
+      <li><span class="num">06</span><span class="step-name">Verifier as scorer <em>— 5/5 planted defects caught, 0 false rejects</em></span><span class="chip done">done</span></li>
+      <li><span class="num">07</span><span class="step-name">Eval harness, stage presets, <code>compare.md</code> <em>— 8 presets, 9 scorers</em></span><span class="chip done">done</span></li>
+      <li><span class="num">08</span><span class="step-name">Baseline → first changelog row <em>— 1.6 fabrications/resume, 60% triage</em></span><span class="chip done">done</span></li>
+    </ol>
+
+    <div class="phase-rule">Iterations — one capability, one measurement</div>
+    <ol class="ledger">
+      <li><span class="num">09</span><span class="step-name">Graph + triage node → <code>iter1</code> <em>— 66.7% agreement, skip 3/3</em></span><span class="chip done">done</span></li>
+      <li><span class="num">10</span><span class="step-name">H-1B node → <code>iter2</code> <em>— 100% employer resolution, 15/15</em></span><span class="chip done">done</span></li>
+      <li><span class="num">11</span><span class="step-name">Tailoring node → <code>iter3</code> <em>— 2.4 → 0.2 fabrications/resume</em></span><span class="chip done">done</span></li>
+      <li><span class="num">11b</span><span class="step-name">Tailor self-verifies → <code>iter3a</code> <em>— 0.20 → 0.20, removed</em></span><span class="chip removed">confirmed dead end</span></li>
+      <li><span class="num">12</span><span class="step-name">Verifier node + revision loop → <code>iter3b</code> <em>— 0 fabrications, content held</em></span><span class="chip done">done</span></li>
+      <li><span class="num">13</span><span class="step-name">Gap questions + profile write-back → <code>iter4</code> <em>— memory</em></span><span class="chip todo">queued</span></li>
+      <li><span class="num">14</span><span class="step-name">Style exemplars → <code>iter5</code> <em>— voice</em></span><span class="chip todo">queued</span></li>
+      <li><span class="num">15</span><span class="step-name">LaTeX render node</span><span class="chip todo">queued</span></li>
+      <li><span class="num">16</span><span class="step-name">Onboarding + profile update agents</span><span class="chip todo">queued</span></li>
+      <li><span class="num">17</span><span class="step-name">Digest, trajectories, <code>--all-stages</code></span><span class="chip todo">queued</span></li>
+      <li><span class="num">18</span><span class="step-name">README, REPRODUCE, hard-case write-ups</span><span class="chip todo">queued</span></li>
+      <li><span class="num">19</span><span class="step-name">Fresh-clone reproduction test, then the video</span><span class="chip todo">queued</span></li>
+    </ol>
+    <p class="prose" style="margin-top:16px"><code>iter3a</code> is built in order to be removed. Letting the tailor check its own work is the obvious fix that does not work, and the changelog needs a real negative result.</p>
+  </section>
+
+  <section class="prose">
+    <p class="label">Open</p>
+    <h2>Still on the table</h2>
+    <ul style="padding-left:1.1rem">
+      <li><strong>16 self-study tool entries</strong> widen what a resume may claim. They are in because your resume names them; the placement rule keeps them honest.</li>
+      <li><strong>One location per tool.</strong> <code>ToolEvidence.where</code> holds a single id, so a tool used twice leans on the role's own <code>tools</code> list.</li>
+      <li><strong>Test fixtures can flatter the scorer.</strong> They were written to the failure modes. The real test is the baseline, on documents nobody wrote to be caught.</li>
+      <li><strong>Cut order if Sunday runs short:</strong> <code>iter5</code> → short answers → profile update agent → the H-1B agent (falling back to exact-match retrieval only, which the <code>iter2</code> row shows is wrong on three of fifteen). Never cut: verifier node, eval harness, stage presets, non-interactive mode, changelog evidence, trajectories, onboarding agent.</li>
+    </ul>
+  </section>
+
+  <footer>JobPilot · micro1 Agentic Workflows Hackathon · updated as steps land</footer>
+
+</div>

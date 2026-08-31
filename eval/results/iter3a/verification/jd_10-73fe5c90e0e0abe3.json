@@ -1,0 +1,88 @@
+{
+  "document": "/Users/qiarara/Desktop/JobPilot/output/iter3a/2026-08-30/packets/jd_10/resume.md",
+  "profile": "fixture/profile.json",
+  "model": "claude-opus-5",
+  "verified_at": "2026-08-30",
+  "units": [
+    {
+      "unit_id": "u01",
+      "text": "I cannot produce this packet. The system instructions describe candidate roles, projects, education, bullets, tool lists, the job posting and its extracted requirements as being supplied — but none of that content is present in this conversation.",
+      "section": "other",
+      "container_id": null,
+      "elements": []
+    },
+    {
+      "unit_id": "u02",
+      "text": "Writing a resume from nothing would mean inventing every employer, title, date, metric and tool, which is exactly the failure these instructions exist to prevent. There is nothing here to select, order or rephrase.",
+      "section": "other",
+      "container_id": null,
+      "elements": []
+    },
+    {
+      "unit_id": "u03",
+      "text": "Please paste the candidate material (roles with dates and bullets, projects, education, the role/project tool lists, and the skills-only tool list) and the job posting with its extracted requirements, and I will produce the resume, cover letter and short answers using only what is in them.",
+      "section": "other",
+      "container_id": null,
+      "elements": []
+    }
+  ],
+  "rules": [
+    {
+      "unit_id": "u01",
+      "status": "softened",
+      "reasons": [
+        "asserts nothing checkable against the profile"
+      ],
+      "evidence_ids": []
+    },
+    {
+      "unit_id": "u02",
+      "status": "softened",
+      "reasons": [
+        "asserts nothing checkable against the profile"
+      ],
+      "evidence_ids": []
+    },
+    {
+      "unit_id": "u03",
+      "status": "softened",
+      "reasons": [
+        "asserts nothing checkable against the profile"
+      ],
+      "evidence_ids": []
+    }
+  ],
+  "judge": [
+    {
+      "unit_id": "u01",
+      "status": "softened",
+      "reasons": [
+        "Meta-commentary about missing inputs; asserts no candidate-specific fact to check against the profile"
+      ],
+      "evidence_ids": []
+    },
+    {
+      "unit_id": "u02",
+      "status": "softened",
+      "reasons": [
+        "General statement about the risk of fabrication; no employer, title, date, metric or tool asserted"
+      ],
+      "evidence_ids": []
+    },
+    {
+      "unit_id": "u03",
+      "status": "softened",
+      "reasons": [
+        "Request for input material; contains no verifiable claim about the candidate"
+      ],
+      "evidence_ids": []
+    }
+  ],
+  "agreement": {
+    "compared": 3,
+    "agreed": 3,
+    "rate": 1.0,
+    "disagreements": []
+  },
+  "writing_preference_violations": []
+}

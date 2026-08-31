@@ -1,0 +1,100 @@
+{
+  "stage": "iter1",
+  "description": "profile.json context + triage rubric",
+  "flags": {
+    "profile_context": true,
+    "triage": true,
+    "tailor": false,
+    "h1b_filter": false,
+    "self_verify": false,
+    "verifier_node": false,
+    "gap_memory": false,
+    "style_exemplars": false
+  },
+  "run_dir": "/Users/qiarara/Desktop/JobPilot/output/iter1/2026-08-30",
+  "run_date": "2026-08-30",
+  "model": "claude-opus-5",
+  "judge_enabled": true,
+  "scores": {
+    "fabricated_claims_per_resume": {
+      "value": null,
+      "unit": "claims/resume",
+      "detail": "",
+      "unavailable": "no resumes were produced by this run"
+    },
+    "softened_claims_per_resume": {
+      "value": null,
+      "unit": "claims/resume",
+      "detail": "",
+      "unavailable": "no resumes were produced by this run"
+    },
+    "rules_vs_judge_agreement": {
+      "value": null,
+      "unit": "%",
+      "detail": "",
+      "unavailable": "the judge path was not run (--no-judge)"
+    },
+    "triage_agreement": {
+      "value": 66.7,
+      "unit": "%",
+      "detail": "10/15 exact matches against fixture/labels.json",
+      "unavailable": null
+    },
+    "jd_keyword_coverage": {
+      "value": null,
+      "unit": "%",
+      "detail": "",
+      "unavailable": "no tool-typed required items among the scored JDs"
+    },
+    "non_sponsors_dropped": {
+      "value": null,
+      "unit": "count",
+      "detail": "0 dropped, 0 of them false",
+      "unavailable": "no posting in the fixture states that the employer will not sponsor, so there are no true positives for this metric to find; the two constrained postings (jd_06, jd_14) are barred at the role level, which employer-level USCIS data cannot see"
+    },
+    "h1b_resolution": {
+      "value": null,
+      "unit": "%",
+      "detail": "",
+      "unavailable": "this stage ran no H-1B node"
+    },
+    "gap_questions_run1_to_run2": {
+      "value": 0.0,
+      "unit": "questions",
+      "detail": "0 asked in this run",
+      "unavailable": "only one run of this stage exists; run twice to see the drop"
+    },
+    "cost_per_jd_usd": {
+      "value": 0.0243,
+      "unit": "USD/JD",
+      "detail": "53424 in / 3922 out over 15 JDs at claude-opus-5",
+      "unavailable": null
+    },
+    "wall_clock_per_jd_s": {
+      "value": 7.03,
+      "unit": "s/JD",
+      "detail": "105.5s over 15 JDs",
+      "unavailable": null
+    },
+    "resumes_scored": 0,
+    "jds_total": 15,
+    "jds_failed": 0,
+    "confusion": {
+      "most_matched": {
+        "most_matched": 4,
+        "less_matched": 2,
+        "skip": 0
+      },
+      "less_matched": {
+        "most_matched": 0,
+        "less_matched": 3,
+        "skip": 3
+      },
+      "skip": {
+        "most_matched": 0,
+        "less_matched": 0,
+        "skip": 3
+      }
+    }
+  }
+}

@@ -1,0 +1,12 @@
+# Capability: verification, naive. Expected: fabrications barely move -> removed.
+name: iter3a
+description: tailor self-verifies inside its own context
+flags:
+  profile_context: true
+  triage: true
+  tailor: true
+  h1b_filter: true
+  self_verify: true
+  verifier_node: false
+  gap_memory: false
+  style_exemplars: false

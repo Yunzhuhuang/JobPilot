@@ -1,0 +1,94 @@
+{
+  "stage": "_synthetic",
+  "description": "a hand-built run that exercises every scorer; not a real stage",
+  "flags": {
+    "profile_context": false,
+    "triage": false,
+    "tailor": false,
+    "h1b_filter": false,
+    "self_verify": false,
+    "verifier_node": false,
+    "gap_memory": false,
+    "style_exemplars": false
+  },
+  "run_dir": "fixture/eval_samples/output/synthetic/2026-08-30",
+  "run_date": "2026-08-30",
+  "model": "claude-opus-5",
+  "judge_enabled": true,
+  "scores": {
+    "fabricated_claims_per_resume": {
+      "value": 2.5,
+      "unit": "claims/resume",
+      "detail": "5 across 2 resumes; worst jd_05 with 5",
+      "unavailable": null
+    },
+    "softened_claims_per_resume": {
+      "value": 1.0,
+      "unit": "claims/resume",
+      "detail": "2 across 2 resumes",
+      "unavailable": null
+    },
+    "rules_vs_judge_agreement": {
+      "value": 95.2,
+      "unit": "%",
+      "detail": "20/21 claim verdicts matched",
+      "unavailable": null
+    },
+    "triage_agreement": {
+      "value": 85.7,
+      "unit": "%",
+      "detail": "12/14 exact matches against fixture/labels.json",
+      "unavailable": null
+    },
+    "jd_keyword_coverage": {
+      "value": 38.5,
+      "unit": "%",
+      "detail": "5/13 required tool-typed items present -- jd_03 5/8, jd_05 0/5",
+      "unavailable": null
+    },
+    "non_sponsors_dropped": {
+      "value": null,
+      "unit": "count",
+      "detail": "",
+      "unavailable": "fixture/h1b_truth.json does not exist until step 10"
+    },
+    "gap_questions_run1_to_run2": {
+      "value": 1.0,
+      "unit": "questions",
+      "detail": "1 asked in this run",
+      "unavailable": "only one run of this stage exists; run twice to see the drop"
+    },
+    "cost_per_jd_usd": {
+      "value": 0.0485,
+      "unit": "USD/JD",
+      "detail": "78000 in / 13500 out over 15 JDs at claude-opus-5",
+      "unavailable": null
+    },
+    "wall_clock_per_jd_s": {
+      "value": 11.4,
+      "unit": "s/JD",
+      "detail": "171.0s over 15 JDs",
+      "unavailable": null
+    },
+    "resumes_scored": 2,
+    "jds_total": 15,
+    "jds_failed": 1,
+    "confusion": {
+      "most_matched": {
+        "most_matched": 5,
+        "less_matched": 0,
+        "skip": 0
+      },
+      "less_matched": {
+        "most_matched": 1,
+        "less_matched": 5,
+        "skip": 0
+      },
+      "skip": {
+        "most_matched": 0,
+        "less_matched": 1,
+        "skip": 2
+      }
+    }
+  }
+}

@@ -1,0 +1,61 @@
+{
+  "node": "gap_write",
+  "stage": "iter4",
+  "source": "output/iter4/2026-08-31-run1/trajectory.json",
+  "step": {
+    "node": "gap_write",
+    "instruction": "(deterministic)",
+    "inputs": {
+      "asked": [
+        "Flask",
+        "LLM agents",
+        "Ruby",
+        "Ubuntu"
+      ]
+    },
+    "output": {
+      "confirmed": [
+        "Ubuntu",
+        "Ruby",
+        "LLM agents"
+      ],
+      "declined": [
+        "Flask"
+      ],
+      "diff": [
+        "  - not_experienced += 'Flask'  (asked for run)",
+        "  + tool_evidence += 'LLM agents' @ proj_2",
+        "  + tool_evidence += 'Ruby' @ self_study",
+        "  + tool_evidence += 'Ubuntu' @ self_study"
+      ]
+    },
+    "tool_calls": [],
+    "retries": 0,
+    "human_checkpoint": {
+      "question": "gap questions",
+      "answer": {
+        "used": [
+          {
+            "tool": "Ubuntu",
+            "where": "self_study",
+            "evidence": "Author confirmed use outside any listed role or project (gap question, 2026-08-31). Skills-line only."
+          },
+          {
+            "tool": "Ruby",
+            "where": "self_study",
+            "evidence": "Author confirmed use outside any listed role or project (gap question, 2026-08-31). Skills-line only."
+          },
+          {
+            "tool": "LLM agents",
+            "where": "proj_2",
+            "evidence": "Author confirmed building LLM agents in the AI Talent Match Agent project: a coordinator agent orchestrating sub-agents over A2A on Google ADK (gap question, 2026-08-31)."
+          }
+        ]
+      }
+    },
+    "error": null,
+    "wall_clock_s": 0.0,
+    "input_tokens": 0,
+    "output_tokens": 0
+  }
+}

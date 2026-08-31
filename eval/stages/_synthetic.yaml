@@ -1,0 +1,12 @@
+# Not a configuration of the graph -- a separate code path (baseline/run_baseline.py).
+name: _synthetic
+description: a hand-built run that exercises every scorer; not a real stage
+flags:
+  profile_context: false
+  triage: false
+  tailor: false
+  h1b_filter: false
+  self_verify: false
+  verifier_node: false
+  gap_memory: false
+  style_exemplars: false

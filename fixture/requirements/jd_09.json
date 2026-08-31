@@ -1,0 +1,152 @@
+{
+  "jd_id": "jd_09",
+  "extracted_at": "2026-08-30",
+  "model": "claude-opus-5",
+  "requirements": [
+    {
+      "name": "Degree in Computer Science or related field, or equivalent experience",
+      "type": "credential",
+      "required": true,
+      "aliases": [
+        "BS in Computer Science",
+        "CS degree"
+      ]
+    },
+    {
+      "name": "Early-career software engineering experience",
+      "type": "experience",
+      "required": true,
+      "aliases": [
+        "Junior software engineer"
+      ]
+    },
+    {
+      "name": "Hands-on generative AI experience",
+      "type": "ai_ml",
+      "required": true,
+      "aliases": [
+        "GenAI",
+        "Generative AI"
+      ]
+    },
+    {
+      "name": "LLM API integration",
+      "type": "ai_ml",
+      "required": true,
+      "aliases": [
+        "Large Language Model APIs",
+        "OpenAI API"
+      ]
+    },
+    {
+      "name": "RAG pipelines",
+      "type": "ai_ml",
+      "required": true,
+      "aliases": [
+        "Retrieval-Augmented Generation",
+        "retrieval pipelines"
+      ]
+    },
+    {
+      "name": "LLM agents",
+      "type": "ai_ml",
+      "required": true,
+      "aliases": [
+        "agentic systems",
+        "AI agents"
+      ]
+    },
+    {
+      "name": "LLM orchestration concepts (prompt chaining, tool use, retrieval)",
+      "type": "concept",
+      "required": true,
+      "aliases": [
+        "prompt chaining",
+        "tool use"
+      ]
+    },
+    {
+      "name": "AI coding tools in daily workflow",
+      "type": "ai_ml",
+      "required": true,
+      "aliases": [
+        "AI tooling",
+        "agentic coding",
+        "AI pair programming"
+      ]
+    },
+    {
+      "name": "Model evaluation",
+      "type": "ai_ml",
+      "required": true,
+      "aliases": [
+        "LLM evaluation",
+        "evals",
+        "failure mode analysis"
+      ]
+    },
+    {
+      "name": "LangChain",
+      "type": "framework",
+      "required": false,
+      "aliases": []
+    },
+    {
+      "name": "LlamaIndex",
+      "type": "framework",
+      "required": false,
+      "aliases": [
+        "GPT Index"
+      ]
+    },
+    {
+      "name": "Prompt engineering",
+      "type": "ai_ml",
+      "required": false,
+      "aliases": [
+        "prompting techniques"
+      ]
+    },
+    {
+      "name": "Backend development",
+      "type": "concept",
+      "required": false,
+      "aliases": [
+        "server-side development"
+      ]
+    },
+    {
+      "name": "Frontend development",
+      "type": "concept",
+      "required": false,
+      "aliases": [
+        "front-end development",
+        "UI development"
+      ]
+    },
+    {
+      "name": "Monitoring and observability",
+      "type": "concept",
+      "required": false,
+      "aliases": [
+        "observability"
+      ]
+    },
+    {
+      "name": "Human-in-the-loop evaluation",
+      "type": "ai_ml",
+      "required": false,
+      "aliases": [
+        "HITL"
+      ]
+    },
+    {
+      "name": "Onsite 5 days a week in San Francisco office",
+      "type": "credential",
+      "required": true,
+      "aliases": [
+        "SF onsite"
+      ]
+    }
+  ]
+}

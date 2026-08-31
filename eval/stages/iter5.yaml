@@ -1,0 +1,12 @@
+# Capability: skill. Expected: author-scored would-I-sign-this on 3 packets.
+name: iter5
+description: style exemplars in the tailor instruction
+flags:
+  profile_context: true
+  triage: true
+  tailor: true
+  h1b_filter: true
+  self_verify: false
+  verifier_node: true
+  gap_memory: true
+  style_exemplars: true

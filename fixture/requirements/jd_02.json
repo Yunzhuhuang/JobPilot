@@ -1,0 +1,129 @@
+{
+  "jd_id": "jd_02",
+  "extracted_at": "2026-08-30",
+  "model": "claude-opus-5",
+  "requirements": [
+    {
+      "name": "Unity",
+      "type": "framework",
+      "required": true,
+      "aliases": [
+        "Unity3D",
+        "Unity Engine"
+      ]
+    },
+    {
+      "name": "C#",
+      "type": "language",
+      "required": true,
+      "aliases": [
+        "CSharp",
+        "C-Sharp"
+      ]
+    },
+    {
+      "name": "PHP",
+      "type": "language",
+      "required": false,
+      "aliases": []
+    },
+    {
+      "name": "Server backend development",
+      "type": "concept",
+      "required": true,
+      "aliases": [
+        "Backend development",
+        "Server-side development"
+      ]
+    },
+    {
+      "name": "Git",
+      "type": "concept",
+      "required": true,
+      "aliases": []
+    },
+    {
+      "name": "Data structures",
+      "type": "concept",
+      "required": true,
+      "aliases": []
+    },
+    {
+      "name": "Algorithms",
+      "type": "concept",
+      "required": true,
+      "aliases": []
+    },
+    {
+      "name": "Software methodologies",
+      "type": "concept",
+      "required": true,
+      "aliases": []
+    },
+    {
+      "name": "B.Sc. in Computer Science",
+      "type": "credential",
+      "required": true,
+      "aliases": [
+        "BS in Computer Science",
+        "Bachelor's in Computer Science",
+        "B.S. Computer Science"
+      ]
+    },
+    {
+      "name": "1-2 years of industry experience as a Software Developer",
+      "type": "experience",
+      "required": true,
+      "aliases": [
+        "3+ years relevant software engineering experience"
+      ]
+    },
+    {
+      "name": "Excellent communication skills",
+      "type": "concept",
+      "required": true,
+      "aliases": []
+    },
+    {
+      "name": "Mobile game development experience",
+      "type": "experience",
+      "required": false,
+      "aliases": []
+    },
+    {
+      "name": "Performance profiling and optimization",
+      "type": "concept",
+      "required": false,
+      "aliases": [
+        "Performance optimization",
+        "Profiling"
+      ]
+    },
+    {
+      "name": "Slot machine development experience",
+      "type": "experience",
+      "required": false,
+      "aliases": [
+        "Slot game development"
+      ]
+    },
+    {
+      "name": "UI/UX development",
+      "type": "concept",
+      "required": false,
+      "aliases": [
+        "UI",
+        "UX"
+      ]
+    },
+    {
+      "name": "Tools development",
+      "type": "concept",
+      "required": true,
+      "aliases": [
+        "Tooling",
+        "Developer tools"
+      ]
+    }
+  ]
+}

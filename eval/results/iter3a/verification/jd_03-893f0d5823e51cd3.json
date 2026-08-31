@@ -1,0 +1,234 @@
+{
+  "document": "/Users/qiarara/Desktop/JobPilot/output/iter3a/2026-08-30/packets/jd_03/resume.md",
+  "profile": "fixture/profile.json",
+  "model": "claude-opus-5",
+  "verified_at": "2026-08-30",
+  "units": [
+    {
+      "unit_id": "u01",
+      "text": "The candidate material (roles, projects, education, bullets, tool lists) and the job posting were not included in this conversation, so there is no prior packet to resend and no evidence base to write from.",
+      "section": "other",
+      "container_id": null,
+      "elements": []
+    },
+    {
+      "unit_id": "u02",
+      "text": "Every line of a resume produced here would have to be invented, which is the one thing this process forbids.",
+      "section": "other",
+      "container_id": null,
+      "elements": []
+    },
+    {
+      "unit_id": "u03",
+      "text": "Please re-send:",
+      "section": "other",
+      "container_id": null,
+      "elements": []
+    },
+    {
+      "unit_id": "u04",
+      "text": "The candidate's name, location, email and LinkedIn",
+      "section": "other",
+      "container_id": null,
+      "elements": [
+        {
+          "kind": "tool",
+          "value": "LinkedIn"
+        }
+      ]
+    },
+    {
+      "unit_id": "u05",
+      "text": "Each role: exact company name, title, start and end dates, bullets, and the tools attached to that role",
+      "section": "other",
+      "container_id": null,
+      "elements": []
+    },
+    {
+      "unit_id": "u06",
+      "text": "Each project: exact project name, bullets, and its attached tools",
+      "section": "other",
+      "container_id": null,
+      "elements": []
+    },
+    {
+      "unit_id": "u07",
+      "text": "Each school: exact name",
+      "section": "other",
+      "container_id": null,
+      "elements": []
+    },
+    {
+      "unit_id": "u08",
+      "text": "The skills-only tool list",
+      "section": "other",
+      "container_id": null,
+      "elements": []
+    },
+    {
+      "unit_id": "u09",
+      "text": "The job posting and its extracted requirements With those in hand I will return resume_md, cover_letter_md and short_answers_md as a single JSON object, using only the supplied claims, numbers and tool-to-role attachments.",
+      "section": "other",
+      "container_id": null,
+      "elements": []
+    }
+  ],
+  "rules": [
+    {
+      "unit_id": "u01",
+      "status": "softened",
+      "reasons": [
+        "asserts nothing checkable against the profile"
+      ],
+      "evidence_ids": []
+    },
+    {
+      "unit_id": "u02",
+      "status": "softened",
+      "reasons": [
+        "asserts nothing checkable against the profile"
+      ],
+      "evidence_ids": []
+    },
+    {
+      "unit_id": "u03",
+      "status": "softened",
+      "reasons": [
+        "asserts nothing checkable against the profile"
+      ],
+      "evidence_ids": []
+    },
+    {
+      "unit_id": "u04",
+      "status": "unsupported",
+      "reasons": [
+        "tool 'LinkedIn' [unsupported] -- no tool_evidence entry"
+      ],
+      "evidence_ids": []
+    },
+    {
+      "unit_id": "u05",
+      "status": "softened",
+      "reasons": [
+        "asserts nothing checkable against the profile"
+      ],
+      "evidence_ids": []
+    },
+    {
+      "unit_id": "u06",
+      "status": "softened",
+      "reasons": [
+        "asserts nothing checkable against the profile"
+      ],
+      "evidence_ids": []
+    },
+    {
+      "unit_id": "u07",
+      "status": "softened",
+      "reasons": [
+        "asserts nothing checkable against the profile"
+      ],
+      "evidence_ids": []
+    },
+    {
+      "unit_id": "u08",
+      "status": "softened",
+      "reasons": [
+        "asserts nothing checkable against the profile"
+      ],
+      "evidence_ids": []
+    },
+    {
+      "unit_id": "u09",
+      "status": "softened",
+      "reasons": [
+        "asserts nothing checkable against the profile"
+      ],
+      "evidence_ids": []
+    }
+  ],
+  "judge": [
+    {
+      "unit_id": "u01",
+      "status": "unsupported",
+      "reasons": [
+        "Asserts no candidate material exists, but the profile contains roles (exp_1, exp_2), projects, education and tool evidence"
+      ],
+      "evidence_ids": []
+    },
+    {
+      "unit_id": "u02",
+      "status": "softened",
+      "reasons": [
+        "Process statement about invention; asserts nothing checkable against the profile"
+      ],
+      "evidence_ids": []
+    },
+    {
+      "unit_id": "u03",
+      "status": "softened",
+      "reasons": [
+        "Request framing, no factual claim about the candidate"
+      ],
+      "evidence_ids": []
+    },
+    {
+      "unit_id": "u04",
+      "status": "softened",
+      "reasons": [
+        "Names identity fields requested; 'LinkedIn' is a field label, not a claimed tool or experience"
+      ],
+      "evidence_ids": []
+    },
+    {
+      "unit_id": "u05",
+      "status": "softened",
+      "reasons": [
+        "Describes information requested, asserts no specific company, title or date"
+      ],
+      "evidence_ids": []
+    },
+    {
+      "unit_id": "u06",
+      "status": "softened",
+      "reasons": [
+        "Describes information requested, asserts no specific project"
+      ],
+      "evidence_ids": []
+    },
+    {
+      "unit_id": "u07",
+      "status": "softened",
+      "reasons": [
+        "Describes information requested, names no school"
+      ],
+      "evidence_ids": []
+    },
+    {
+      "unit_id": "u08",
+      "status": "softened",
+      "reasons": [
+        "Generic request for a skills list, no tool asserted"
+      ],
+      "evidence_ids": []
+    },
+    {
+      "unit_id": "u09",
+      "status": "softened",
+      "reasons": [
+        "Statement of intended output format; nothing specific to verify against the profile"
+      ],
+      "evidence_ids": []
+    }
+  ],
+  "agreement": {
+    "compared": 9,
+    "agreed": 7,
+    "rate": 0.778,
+    "disagreements": [
+      "u01  rules=softened  judge=unsupported\n    text  : The candidate material (roles, projects, education, bullets, tool lists) and the job posting were not included\n    rules : asserts nothing checkable against the profile\n    judge : Asserts no candidate material exists, but the profile contains roles (exp_1, exp_2), projects, education and tool evidence",
+      "u04  rules=unsupported  judge=softened\n    text  : The candidate's name, location, email and LinkedIn\n    rules : tool 'LinkedIn' [unsupported] -- no tool_evidence entry\n    judge : Names identity fields requested; 'LinkedIn' is a field label, not a claimed tool or experience"
+    ]
+  },
+  "writing_preference_violations": []
+}

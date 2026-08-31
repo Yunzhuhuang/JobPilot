@@ -1,0 +1,74 @@
+{
+  "node": "h1b_filter",
+  "stage": "iter2",
+  "source": "trajectory.json",
+  "step": {
+    "node": "h1b_filter",
+    "instruction": "h1b.md",
+    "inputs": {
+      "jd_id": "jd_08",
+      "company": "IMC",
+      "location": "Chicago, United States",
+      "employers_in_index": 44298,
+      "fiscal_year": 2026
+    },
+    "output": {
+      "likelihood": "likely",
+      "matched_entity": "POLAR OPERATIONS LLC D B A IMC MARKETS",
+      "approvals": 21,
+      "confidence": "high",
+      "rationale": "IMC Trading's Chicago operation files under two Illinois entities in the data \u2014 POLAR OPERATIONS LLC D B A IMC MARKETS (13 new, 3 transfer, 5 continuing) and IMC AMERICAS INC (4/2/3) \u2014 both matching the posting's Chicago location and a proprietary trading business; the CA investment firm and PA construction/consulting IMCs are unrelated namesakes.",
+      "searches": [
+        {
+          "tool": "search_employers",
+          "query": "IMC financial markets",
+          "response": "FINANCIAL SOFTWARE AND SERVICES INC | GA | new=0 transfer=0 continuing=0\nM FINANCIAL HOLDINGS INC | OR/TX | new=2 transfer=0 continuing=0\nALPHA FINANCIAL MARKETS CONSULTING INC | NY | new=3 transfer=0 continuing=0\nNW FINANCIAL GROUP LLC | NJ | new=1 transfer=0 continuing=0\nLPL FINANCIAL LLC | SC | new=4 transfer=7 continuing=39\nTHE PNC FINANCIAL SERVICES GROUP INC | PA | new=3 transfer=11 continuing=7\nING FINANCIAL SERVICES LLC | NY | new=8 transfer=3 continuing=0\nUBS FINANCIAL SERVICES INC | TN | new=5 transfer=1 continuing=3"
+        },
+        {
+          "tool": "search_employers",
+          "query": "IMC Chicago",
+          "response": "JO CHICAGO LLC | IL | new=0 transfer=0 continuing=0\nTHE UNIVERSITY OF CHICAGO | IL | new=75 transfer=11 continuing=48\nCHICAGO MERCANTILE EXCHANGE INC | IL | new=16 transfer=6 continuing=22\nUNIVERSITY OF ILLINOIS CHICAGO | IL | new=6 transfer=3 continuing=7\nCHICAGO PUBLIC SCHOOLS | IL | new=11 transfer=0 continuing=4\nUNIVERSITY OF CHICAGO MEDICAL CENTER | IL | new=6 transfer=0 continuing=8\nANN & ROBERT H. LURIE CHILDREN'S HOSPITAL OF CHICAGO | IL | new=4 transfer=4 continuing=3\nLOYOLA UNIVERSITY CHICAGO | IL | new=3 transfer=1 continuing=4"
+        },
+        {
+          "tool": "search_employers",
+          "query": "POLAR OPERATIONS",
+          "response": "POLAR OPERATIONS LLC D B A IMC MARKETS | IL | new=13 transfer=3 continuing=5\nOSA OPERATIONS LLC | GA | new=0 transfer=0 continuing=6\nARES OPERATIONS LLC | CA | new=3 transfer=6 continuing=3\nMPG OPERATIONS LLC | NY | new=29 transfer=38 continuing=8\nBFS OPERATIONS LLC | TX | new=1 transfer=2 continuing=3\nTAH OPERATIONS LLC | CA | new=0 transfer=2 continuing=0\nSGD OPERATIONS INC | CA | new=0 transfer=0 continuing=1\nPSL OPERATION SERVICES AMERICA INC | NY | new=0 transfer=0 continuing=0"
+        },
+        {
+          "tool": "search_employers",
+          "query": "IMC",
+          "response": "POLAR OPERATIONS LLC D B A IMC MARKETS | IL | new=13 transfer=3 continuing=5\nIMC AMERICAS INC | IL | new=4 transfer=2 continuing=3\nIMC CAPITAL INVESTMENT LLC | CA | new=1 transfer=0 continuing=0\nINTERNATIONAL MANAGEMENT CONSULTANTS INC DBA IMC CONSTRUCTION INC | PA | new=1 transfer=0 continuing=0\nIMCS GROUP INC | TX | new=1 transfer=0 continuing=1\nKIMC US INC | VA | new=2 transfer=0 continuing=0\nIMPC USA LLC | MI | new=1 transfer=0 continuing=0\nIM SOLUTIONS INC | NJ | new=3 transfer=1 continuing=0"
+        }
+      ],
+      "entity_verified": true
+    },
+    "tool_calls": [
+      {
+        "tool": "search_employers",
+        "query": "IMC financial markets",
+        "response": "FINANCIAL SOFTWARE AND SERVICES INC | GA | new=0 transfer=0 continuing=0\nM FINANCIAL HOLDINGS INC | OR/TX | new=2 transfer=0 continuing=0\nALPHA FINANCIAL MARKETS CONSULTING INC | NY | new=3 transfer=0 continuing=0\nNW FINANCIAL GROUP LLC | NJ | new=1 transfer=0 continuing=0\nLPL FINANCIAL LLC | SC | new=4 transfer=7 continuing=39\nTHE PNC FINANCIAL SERVICES GROUP INC | PA | new=3 transfer=11 continuing=7\nING FINANCIAL SERVICES LLC | NY | new=8 transfer=3 continuing=0\nUBS FINANCIAL SERVICES INC | TN | new=5 transfer=1 continuing=3"
+      },
+      {
+        "tool": "search_employers",
+        "query": "IMC Chicago",
+        "response": "JO CHICAGO LLC | IL | new=0 transfer=0 continuing=0\nTHE UNIVERSITY OF CHICAGO | IL | new=75 transfer=11 continuing=48\nCHICAGO MERCANTILE EXCHANGE INC | IL | new=16 transfer=6 continuing=22\nUNIVERSITY OF ILLINOIS CHICAGO | IL | new=6 transfer=3 continuing=7\nCHICAGO PUBLIC SCHOOLS | IL | new=11 transfer=0 continuing=4\nUNIVERSITY OF CHICAGO MEDICAL CENTER | IL | new=6 transfer=0 continuing=8\nANN & ROBERT H. LURIE CHILDREN'S HOSPITAL OF CHICAGO | IL | new=4 transfer=4 continuing=3\nLOYOLA UNIVERSITY CHICAGO | IL | new=3 transfer=1 continuing=4"
+      },
+      {
+        "tool": "search_employers",
+        "query": "POLAR OPERATIONS",
+        "response": "POLAR OPERATIONS LLC D B A IMC MARKETS | IL | new=13 transfer=3 continuing=5\nOSA OPERATIONS LLC | GA | new=0 transfer=0 continuing=6\nARES OPERATIONS LLC | CA | new=3 transfer=6 continuing=3\nMPG OPERATIONS LLC | NY | new=29 transfer=38 continuing=8\nBFS OPERATIONS LLC | TX | new=1 transfer=2 continuing=3\nTAH OPERATIONS LLC | CA | new=0 transfer=2 continuing=0\nSGD OPERATIONS INC | CA | new=0 transfer=0 continuing=1\nPSL OPERATION SERVICES AMERICA INC | NY | new=0 transfer=0 continuing=0"
+      },
+      {
+        "tool": "search_employers",
+        "query": "IMC",
+        "response": "POLAR OPERATIONS LLC D B A IMC MARKETS | IL | new=13 transfer=3 continuing=5\nIMC AMERICAS INC | IL | new=4 transfer=2 continuing=3\nIMC CAPITAL INVESTMENT LLC | CA | new=1 transfer=0 continuing=0\nINTERNATIONAL MANAGEMENT CONSULTANTS INC DBA IMC CONSTRUCTION INC | PA | new=1 transfer=0 continuing=0\nIMCS GROUP INC | TX | new=1 transfer=0 continuing=1\nKIMC US INC | VA | new=2 transfer=0 continuing=0\nIMPC USA LLC | MI | new=1 transfer=0 continuing=0\nIM SOLUTIONS INC | NJ | new=3 transfer=1 continuing=0"
+      }
+    ],
+    "retries": 0,
+    "human_checkpoint": null,
+    "error": null,
+    "wall_clock_s": 21.141,
+    "input_tokens": 9090,
+    "output_tokens": 424
+  }
+}

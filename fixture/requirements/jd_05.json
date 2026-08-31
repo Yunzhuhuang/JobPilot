@@ -1,0 +1,127 @@
+{
+  "jd_id": "jd_05",
+  "extracted_at": "2026-08-30",
+  "model": "claude-opus-5",
+  "requirements": [
+    {
+      "name": "3+ years of software development experience",
+      "type": "experience",
+      "required": true,
+      "aliases": []
+    },
+    {
+      "name": "Ruby",
+      "type": "language",
+      "required": true,
+      "aliases": []
+    },
+    {
+      "name": "JavaScript",
+      "type": "language",
+      "required": true,
+      "aliases": [
+        "JS"
+      ]
+    },
+    {
+      "name": "SQL databases",
+      "type": "data",
+      "required": true,
+      "aliases": [
+        "SQL",
+        "relational databases"
+      ]
+    },
+    {
+      "name": "NoSQL databases",
+      "type": "data",
+      "required": true,
+      "aliases": [
+        "NoSQL"
+      ]
+    },
+    {
+      "name": "Message queues",
+      "type": "concept",
+      "required": true,
+      "aliases": [
+        "message brokers",
+        "asynchronous messaging"
+      ]
+    },
+    {
+      "name": "Test frameworks and automation",
+      "type": "testing",
+      "required": true,
+      "aliases": [
+        "automated testing",
+        "test automation"
+      ]
+    },
+    {
+      "name": "Cypress",
+      "type": "testing",
+      "required": false,
+      "aliases": []
+    },
+    {
+      "name": "Extreme Programming practices",
+      "type": "concept",
+      "required": true,
+      "aliases": [
+        "XP",
+        "XP practices"
+      ]
+    },
+    {
+      "name": "Domain Driven Design",
+      "type": "concept",
+      "required": true,
+      "aliases": [
+        "DDD"
+      ]
+    },
+    {
+      "name": "Continuous Delivery",
+      "type": "concept",
+      "required": true,
+      "aliases": [
+        "CD"
+      ]
+    },
+    {
+      "name": "RESTful API development",
+      "type": "concept",
+      "required": true,
+      "aliases": [
+        "REST APIs",
+        "REST API design"
+      ]
+    },
+    {
+      "name": "In-house component-based design systems",
+      "type": "concept",
+      "required": false,
+      "aliases": [
+        "design systems",
+        "component libraries"
+      ]
+    },
+    {
+      "name": "Documentation skills",
+      "type": "concept",
+      "required": true,
+      "aliases": [
+        "technical writing"
+      ]
+    },
+    {
+      "name": "End-to-end web application development",
+      "type": "concept",
+      "required": true,
+      "aliases": [
+        "full-stack web development"
+      ]
+    }
+  ]
+}

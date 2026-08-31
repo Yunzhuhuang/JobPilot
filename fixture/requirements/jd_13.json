@@ -1,0 +1,86 @@
+{
+  "jd_id": "jd_13",
+  "extracted_at": "2026-08-30",
+  "model": "claude-opus-5",
+  "requirements": [
+    {
+      "name": "JavaScript",
+      "type": "language",
+      "required": true,
+      "aliases": [
+        "JS",
+        "ECMAScript"
+      ]
+    },
+    {
+      "name": "React",
+      "type": "framework",
+      "required": true,
+      "aliases": [
+        "React.js",
+        "ReactJS"
+      ]
+    },
+    {
+      "name": "TypeScript",
+      "type": "language",
+      "required": false,
+      "aliases": [
+        "TS"
+      ]
+    },
+    {
+      "name": "Vite",
+      "type": "framework",
+      "required": false,
+      "aliases": []
+    },
+    {
+      "name": "Design systems",
+      "type": "concept",
+      "required": false,
+      "aliases": [
+        "Ryu"
+      ]
+    },
+    {
+      "name": "Web performance",
+      "type": "concept",
+      "required": false,
+      "aliases": [
+        "frontend performance"
+      ]
+    },
+    {
+      "name": "UI/UX design",
+      "type": "concept",
+      "required": true,
+      "aliases": [
+        "user experience",
+        "UX",
+        "interface design"
+      ]
+    },
+    {
+      "name": "2+ years frontend engineering experience",
+      "type": "experience",
+      "required": false,
+      "aliases": []
+    },
+    {
+      "name": "Track record of shipping high-quality products at scale",
+      "type": "experience",
+      "required": true,
+      "aliases": []
+    },
+    {
+      "name": "Mentoring engineers",
+      "type": "experience",
+      "required": false,
+      "aliases": [
+        "mentorship",
+        "coaching junior engineers"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,130 @@
+{
+  "jd_id": "jd_11",
+  "extracted_at": "2026-08-30",
+  "model": "claude-opus-5",
+  "requirements": [
+    {
+      "name": "Backend engineering fundamentals",
+      "type": "concept",
+      "required": true,
+      "aliases": [
+        "Backend development"
+      ]
+    },
+    {
+      "name": "Python",
+      "type": "language",
+      "required": true,
+      "aliases": []
+    },
+    {
+      "name": "Go",
+      "type": "language",
+      "required": false,
+      "aliases": [
+        "Golang"
+      ]
+    },
+    {
+      "name": "Rust",
+      "type": "language",
+      "required": false,
+      "aliases": []
+    },
+    {
+      "name": "Model training and inference",
+      "type": "ai_ml",
+      "required": true,
+      "aliases": [
+        "ML training",
+        "model inference"
+      ]
+    },
+    {
+      "name": "Statistical analysis",
+      "type": "concept",
+      "required": true,
+      "aliases": [
+        "Statistics"
+      ]
+    },
+    {
+      "name": "Experimental design",
+      "type": "concept",
+      "required": true,
+      "aliases": [
+        "A/B testing",
+        "design of experiments"
+      ]
+    },
+    {
+      "name": "LLM evaluation methods",
+      "type": "ai_ml",
+      "required": true,
+      "aliases": [
+        "large language model evaluation",
+        "model evals",
+        "LLM evals"
+      ]
+    },
+    {
+      "name": "Data pipelines",
+      "type": "data",
+      "required": true,
+      "aliases": [
+        "ETL pipelines",
+        "data engineering"
+      ]
+    },
+    {
+      "name": "Synthetic data generation",
+      "type": "ai_ml",
+      "required": true,
+      "aliases": []
+    },
+    {
+      "name": "Post-training workflows",
+      "type": "ai_ml",
+      "required": true,
+      "aliases": [
+        "post-training",
+        "fine-tuning"
+      ]
+    },
+    {
+      "name": "Benchmark and evaluation framework design",
+      "type": "ai_ml",
+      "required": true,
+      "aliases": [
+        "benchmarking"
+      ]
+    },
+    {
+      "name": "Scalable production systems",
+      "type": "concept",
+      "required": true,
+      "aliases": [
+        "scalability",
+        "production systems"
+      ]
+    },
+    {
+      "name": "Customer-facing technical communication",
+      "type": "concept",
+      "required": true,
+      "aliases": [
+        "stakeholder communication",
+        "client-facing"
+      ]
+    },
+    {
+      "name": "In-person work in San Francisco, NYC, or London five days a week",
+      "type": "credential",
+      "required": true,
+      "aliases": [
+        "onsite",
+        "relocation"
+      ]
+    }
+  ]
+}

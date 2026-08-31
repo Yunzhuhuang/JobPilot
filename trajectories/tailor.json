@@ -1,0 +1,28 @@
+{
+  "node": "tailor",
+  "stage": "final",
+  "source": "output/final/2026-08-31/packets/jd_01/trajectory.json",
+  "step": {
+    "node": "tailor",
+    "instruction": "tailor.md",
+    "inputs": {
+      "jd_id": "jd_01",
+      "company": "Canonical",
+      "context_chars": 6638,
+      "requirements": 20,
+      "self_verify": false
+    },
+    "output": {
+      "resume_chars": 4158,
+      "cover_letter_chars": 1420,
+      "short_answers_chars": 2289
+    },
+    "tool_calls": [],
+    "retries": 0,
+    "human_checkpoint": null,
+    "error": null,
+    "wall_clock_s": 46.657,
+    "input_tokens": 6068,
+    "output_tokens": 3113
+  }
+}

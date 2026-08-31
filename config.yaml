@@ -1,0 +1,16 @@
+# JobPilot runtime configuration.
+#
+# One model backs the baseline and every stage (PRD 7.2). Changing `id` after the
+# first eval run invalidates every number already in CHANGELOG.md, so treat it as
+# frozen from that point on.
+#
+# Per-stage feature flags live in eval/stages/*.yaml, not here.
+
+model:
+  # A bare model string would resolve through ADK's registry to the Vertex-served
+  # `Claude` class, which requires GOOGLE_CLOUD_PROJECT/LOCATION. `provider`
+  # selects google.adk.models.anthropic_llm.AnthropicLlm, which talks to the
+  # Anthropic API directly using ANTHROPIC_API_KEY.
+  provider: anthropic
+  id: claude-opus-5
+  max_tokens: 16000

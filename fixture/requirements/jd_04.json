@@ -1,0 +1,170 @@
+{
+  "jd_id": "jd_04",
+  "extracted_at": "2026-08-30",
+  "model": "claude-opus-5",
+  "requirements": [
+    {
+      "name": "4+ years building infrastructure components and services at scale in a cloud environment",
+      "type": "experience",
+      "required": true,
+      "aliases": []
+    },
+    {
+      "name": "TypeScript",
+      "type": "language",
+      "required": true,
+      "aliases": [
+        "TS"
+      ]
+    },
+    {
+      "name": "Go",
+      "type": "language",
+      "required": true,
+      "aliases": [
+        "Golang"
+      ]
+    },
+    {
+      "name": "Distributed systems",
+      "type": "concept",
+      "required": true,
+      "aliases": []
+    },
+    {
+      "name": "Traffic systems at scale",
+      "type": "concept",
+      "required": true,
+      "aliases": [
+        "Network traffic systems"
+      ]
+    },
+    {
+      "name": "AWS",
+      "type": "cloud_infra",
+      "required": true,
+      "aliases": [
+        "Amazon Web Services"
+      ]
+    },
+    {
+      "name": "Service mesh",
+      "type": "concept",
+      "required": true,
+      "aliases": []
+    },
+    {
+      "name": "DDoS detection and mitigation",
+      "type": "concept",
+      "required": true,
+      "aliases": [
+        "DDoS protection"
+      ]
+    },
+    {
+      "name": "Auto-scaling",
+      "type": "concept",
+      "required": true,
+      "aliases": [
+        "Autoscaling"
+      ]
+    },
+    {
+      "name": "Production debugging and incident resolution",
+      "type": "concept",
+      "required": true,
+      "aliases": [
+        "On-call",
+        "Incident response"
+      ]
+    },
+    {
+      "name": "Individual contributor and/or Team Lead experience",
+      "type": "experience",
+      "required": true,
+      "aliases": [
+        "Tech Lead"
+      ]
+    },
+    {
+      "name": "Cross-functional communication",
+      "type": "concept",
+      "required": true,
+      "aliases": []
+    },
+    {
+      "name": "Network infrastructure security",
+      "type": "concept",
+      "required": false,
+      "aliases": [
+        "Network security"
+      ]
+    },
+    {
+      "name": "VPC Flow Logs",
+      "type": "cloud_infra",
+      "required": false,
+      "aliases": []
+    },
+    {
+      "name": "AWS Lambda",
+      "type": "cloud_infra",
+      "required": false,
+      "aliases": [
+        "Lambda"
+      ]
+    },
+    {
+      "name": "Traffic analytics",
+      "type": "concept",
+      "required": false,
+      "aliases": []
+    },
+    {
+      "name": "TCP",
+      "type": "concept",
+      "required": false,
+      "aliases": []
+    },
+    {
+      "name": "HTTP",
+      "type": "concept",
+      "required": false,
+      "aliases": []
+    },
+    {
+      "name": "DNS",
+      "type": "concept",
+      "required": false,
+      "aliases": []
+    },
+    {
+      "name": "SSL",
+      "type": "concept",
+      "required": false,
+      "aliases": [
+        "TLS"
+      ]
+    },
+    {
+      "name": "Envoy",
+      "type": "framework",
+      "required": false,
+      "aliases": [
+        "Envoy Proxy"
+      ]
+    },
+    {
+      "name": "HAProxy",
+      "type": "framework",
+      "required": false,
+      "aliases": []
+    },
+    {
+      "name": "Located in a US hub or remote in the United States",
+      "type": "credential",
+      "required": true,
+      "aliases": []
+    }
+  ]
+}

@@ -1,0 +1,498 @@
+{
+  "document": "fixture/eval_samples/output/synthetic/2026-08-30/packets/jd_03/resume.md",
+  "profile": "fixture/profile.json",
+  "model": "claude-opus-5",
+  "verified_at": "2026-08-30",
+  "units": [
+    {
+      "unit_id": "u01",
+      "text": "Amazon.com Services LLC — Software Development Engineer",
+      "section": "experience",
+      "container_id": "exp_2",
+      "elements": [
+        {
+          "kind": "company",
+          "value": "Amazon.com Services LLC"
+        },
+        {
+          "kind": "title",
+          "value": "Software Development Engineer"
+        }
+      ]
+    },
+    {
+      "unit_id": "u02",
+      "text": "Designed and launched a Spring Boot backend end to end, consolidating Alexa-owned, third-party, and user-generated recipes, serving 10K+ daily active users within one week of launch.",
+      "section": "experience",
+      "container_id": "exp_2",
+      "elements": [
+        {
+          "kind": "tool",
+          "value": "Spring Boot"
+        },
+        {
+          "kind": "tool",
+          "value": "Alexa"
+        },
+        {
+          "kind": "metric",
+          "value": "10K+ daily active users"
+        },
+        {
+          "kind": "metric",
+          "value": "within one week of launch"
+        },
+        {
+          "kind": "other",
+          "value": "Consolidated Alexa-owned, third-party, and user-generated recipes"
+        }
+      ]
+    },
+    {
+      "unit_id": "u03",
+      "text": "Configured SQS ingestion pipelines with dead-letter queues and exponential backoff, processing 500K daily events at 99.9% delivery reliability.",
+      "section": "experience",
+      "container_id": "exp_2",
+      "elements": [
+        {
+          "kind": "tool",
+          "value": "SQS"
+        },
+        {
+          "kind": "metric",
+          "value": "500K daily events"
+        },
+        {
+          "kind": "metric",
+          "value": "99.9% delivery reliability"
+        },
+        {
+          "kind": "other",
+          "value": "Configured dead-letter queues and exponential backoff"
+        }
+      ]
+    },
+    {
+      "unit_id": "u04",
+      "text": "Deployed distributed caching with Redis Cluster for preference graphs and recipe embeddings, cutting backend read load by 45%.",
+      "section": "experience",
+      "container_id": "exp_2",
+      "elements": [
+        {
+          "kind": "tool",
+          "value": "Redis Cluster"
+        },
+        {
+          "kind": "metric",
+          "value": "45% reduction in backend read load"
+        }
+      ]
+    },
+    {
+      "unit_id": "u05",
+      "text": "Modeled recipe metadata in DynamoDB with GSI-based query acceleration, sustaining sub-100ms queries at peak load.",
+      "section": "experience",
+      "container_id": "exp_2",
+      "elements": [
+        {
+          "kind": "tool",
+          "value": "DynamoDB"
+        },
+        {
+          "kind": "metric",
+          "value": "sub-100ms queries at peak load"
+        },
+        {
+          "kind": "other",
+          "value": "Used GSI-based query acceleration"
+        }
+      ]
+    },
+    {
+      "unit_id": "u06",
+      "text": "AIPetique LLC — Software Development Engineer Intern",
+      "section": "experience",
+      "container_id": "exp_1",
+      "elements": [
+        {
+          "kind": "company",
+          "value": "AIPetique LLC"
+        },
+        {
+          "kind": "title",
+          "value": "Software Development Engineer Intern"
+        }
+      ]
+    },
+    {
+      "unit_id": "u07",
+      "text": "Designed a RAG pipeline with Qdrant vector storage and hybrid semantic + keyword retrieval, improving answer relevance by 30% across a 10K-prompt evaluation set.",
+      "section": "experience",
+      "container_id": "exp_1",
+      "elements": [
+        {
+          "kind": "tool",
+          "value": "Qdrant"
+        },
+        {
+          "kind": "other",
+          "value": "Designed a RAG pipeline with hybrid semantic + keyword retrieval"
+        },
+        {
+          "kind": "metric",
+          "value": "30% improvement in answer relevance"
+        },
+        {
+          "kind": "metric",
+          "value": "10K-prompt evaluation set"
+        }
+      ]
+    },
+    {
+      "unit_id": "u08",
+      "text": "Containerized backend services with Docker and deployed on AWS EC2 behind Nginx load balancing for production traffic.",
+      "section": "experience",
+      "container_id": "exp_1",
+      "elements": [
+        {
+          "kind": "tool",
+          "value": "Docker"
+        },
+        {
+          "kind": "tool",
+          "value": "AWS EC2"
+        },
+        {
+          "kind": "tool",
+          "value": "Nginx"
+        }
+      ]
+    },
+    {
+      "unit_id": "u09",
+      "text": "NextRound",
+      "section": "projects",
+      "container_id": "proj_1",
+      "elements": [
+        {
+          "kind": "other",
+          "value": "Project named NextRound"
+        }
+      ]
+    },
+    {
+      "unit_id": "u10",
+      "text": "Developed a responsive React/TypeScript frontend and a containerized FastAPI backend with PostgreSQL managing attempt histories and review plans.",
+      "section": "projects",
+      "container_id": "proj_1",
+      "elements": [
+        {
+          "kind": "tool",
+          "value": "React"
+        },
+        {
+          "kind": "tool",
+          "value": "TypeScript"
+        },
+        {
+          "kind": "tool",
+          "value": "FastAPI"
+        },
+        {
+          "kind": "tool",
+          "value": "PostgreSQL"
+        }
+      ]
+    },
+    {
+      "unit_id": "u11",
+      "text": "Automated CI/CD with GitHub Actions deploying to Google Cloud Run.",
+      "section": "projects",
+      "container_id": "proj_1",
+      "elements": [
+        {
+          "kind": "tool",
+          "value": "GitHub Actions"
+        },
+        {
+          "kind": "tool",
+          "value": "Google Cloud Run"
+        }
+      ]
+    },
+    {
+      "unit_id": "u12",
+      "text": "Java, Python, TypeScript, Go, Kafka, MongoDB, Kubernetes, Redis, PostgreSQL",
+      "section": "skills",
+      "container_id": null,
+      "elements": [
+        {
+          "kind": "tool",
+          "value": "Java"
+        },
+        {
+          "kind": "tool",
+          "value": "Python"
+        },
+        {
+          "kind": "tool",
+          "value": "TypeScript"
+        },
+        {
+          "kind": "tool",
+          "value": "Go"
+        },
+        {
+          "kind": "tool",
+          "value": "Kafka"
+        },
+        {
+          "kind": "tool",
+          "value": "MongoDB"
+        },
+        {
+          "kind": "tool",
+          "value": "Kubernetes"
+        },
+        {
+          "kind": "tool",
+          "value": "Redis"
+        },
+        {
+          "kind": "tool",
+          "value": "PostgreSQL"
+        }
+      ]
+    }
+  ],
+  "rules": [
+    {
+      "unit_id": "u01",
+      "status": "supported",
+      "reasons": [],
+      "evidence_ids": []
+    },
+    {
+      "unit_id": "u02",
+      "status": "supported",
+      "reasons": [],
+      "evidence_ids": [
+        "exp_2",
+        "exp_2_b1"
+      ]
+    },
+    {
+      "unit_id": "u03",
+      "status": "supported",
+      "reasons": [],
+      "evidence_ids": [
+        "exp_2"
+      ]
+    },
+    {
+      "unit_id": "u04",
+      "status": "supported",
+      "reasons": [],
+      "evidence_ids": [
+        "exp_2"
+      ]
+    },
+    {
+      "unit_id": "u05",
+      "status": "supported",
+      "reasons": [],
+      "evidence_ids": [
+        "exp_2"
+      ]
+    },
+    {
+      "unit_id": "u06",
+      "status": "supported",
+      "reasons": [],
+      "evidence_ids": []
+    },
+    {
+      "unit_id": "u07",
+      "status": "supported",
+      "reasons": [],
+      "evidence_ids": [
+        "exp_1"
+      ]
+    },
+    {
+      "unit_id": "u08",
+      "status": "supported",
+      "reasons": [],
+      "evidence_ids": [
+        "exp_1"
+      ]
+    },
+    {
+      "unit_id": "u09",
+      "status": "supported",
+      "reasons": [],
+      "evidence_ids": [
+        "proj_1"
+      ]
+    },
+    {
+      "unit_id": "u10",
+      "status": "supported",
+      "reasons": [],
+      "evidence_ids": [
+        "proj_1"
+      ]
+    },
+    {
+      "unit_id": "u11",
+      "status": "supported",
+      "reasons": [],
+      "evidence_ids": [
+        "proj_1"
+      ]
+    },
+    {
+      "unit_id": "u12",
+      "status": "supported",
+      "reasons": [],
+      "evidence_ids": []
+    }
+  ],
+  "judge": [
+    {
+      "unit_id": "u01",
+      "status": "supported",
+      "reasons": [
+        "Company and title match exp_2 (title 'Software Development Engineer - Alexa Kitchen')"
+      ],
+      "evidence_ids": [
+        "exp_2"
+      ]
+    },
+    {
+      "unit_id": "u02",
+      "status": "supported",
+      "reasons": [
+        "Matches exp_2_b1 verbatim including Spring Boot, 10K+ DAU, one week"
+      ],
+      "evidence_ids": [
+        "exp_2_b1"
+      ]
+    },
+    {
+      "unit_id": "u03",
+      "status": "supported",
+      "reasons": [
+        "Matches exp_2_b4 including SQS, 500K daily events, 99.9% reliability"
+      ],
+      "evidence_ids": [
+        "exp_2_b4"
+      ]
+    },
+    {
+      "unit_id": "u04",
+      "status": "supported",
+      "reasons": [
+        "Redis Cluster caching and 45% read-load reduction appear in exp_2_b8"
+      ],
+      "evidence_ids": [
+        "exp_2_b8"
+      ]
+    },
+    {
+      "unit_id": "u05",
+      "status": "supported",
+      "reasons": [
+        "DynamoDB with GSI and sub-100ms queries appear in exp_2_b2"
+      ],
+      "evidence_ids": [
+        "exp_2_b2"
+      ]
+    },
+    {
+      "unit_id": "u06",
+      "status": "supported",
+      "reasons": [
+        "Company and title match exp_1"
+      ],
+      "evidence_ids": [
+        "exp_1"
+      ]
+    },
+    {
+      "unit_id": "u07",
+      "status": "supported",
+      "reasons": [
+        "RAG pipeline, Qdrant, 30% relevance gain, 10K-prompt set all in exp_1_b2"
+      ],
+      "evidence_ids": [
+        "exp_1_b2"
+      ]
+    },
+    {
+      "unit_id": "u08",
+      "status": "supported",
+      "reasons": [
+        "Docker, AWS EC2, Nginx at AIPetique match exp_1_b4"
+      ],
+      "evidence_ids": [
+        "exp_1_b4"
+      ]
+    },
+    {
+      "unit_id": "u09",
+      "status": "supported",
+      "reasons": [
+        "Project name matches proj_1"
+      ],
+      "evidence_ids": [
+        "proj_1"
+      ]
+    },
+    {
+      "unit_id": "u10",
+      "status": "supported",
+      "reasons": [
+        "React/TypeScript frontend, FastAPI backend, PostgreSQL all in proj_1_b2"
+      ],
+      "evidence_ids": [
+        "proj_1_b2"
+      ]
+    },
+    {
+      "unit_id": "u11",
+      "status": "supported",
+      "reasons": [
+        "GitHub Actions CI/CD deploying to Google Cloud Run in proj_1_b2"
+      ],
+      "evidence_ids": [
+        "proj_1_b2"
+      ]
+    },
+    {
+      "unit_id": "u12",
+      "status": "supported",
+      "reasons": [
+        "All listed tools appear in the skills section; Kafka, MongoDB, Go are self_study but this is a skills line with no employer attached"
+      ],
+      "evidence_ids": [
+        "Java",
+        "Python",
+        "TypeScript",
+        "Go",
+        "Kafka",
+        "MongoDB",
+        "Kubernetes",
+        "Redis",
+        "PostgreSQL"
+      ]
+    }
+  ],
+  "agreement": {
+    "compared": 12,
+    "agreed": 12,
+    "rate": 1.0,
+    "disagreements": []
+  },
+  "writing_preference_violations": []
+}

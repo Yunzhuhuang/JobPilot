@@ -1,0 +1,141 @@
+{
+  "jd_id": "jd_15",
+  "extracted_at": "2026-08-30",
+  "model": "claude-opus-5",
+  "requirements": [
+    {
+      "name": "4+ years experience in data storage infrastructure",
+      "type": "experience",
+      "required": true,
+      "aliases": []
+    },
+    {
+      "name": "Python",
+      "type": "language",
+      "required": true,
+      "aliases": []
+    },
+    {
+      "name": "Kubernetes",
+      "type": "cloud_infra",
+      "required": true,
+      "aliases": [
+        "K8s"
+      ]
+    },
+    {
+      "name": "Kubernetes Persistent Volumes",
+      "type": "cloud_infra",
+      "required": true,
+      "aliases": [
+        "PV",
+        "PVC"
+      ]
+    },
+    {
+      "name": "CSI drivers",
+      "type": "cloud_infra",
+      "required": true,
+      "aliases": [
+        "Container Storage Interface"
+      ]
+    },
+    {
+      "name": "Amazon S3",
+      "type": "cloud_infra",
+      "required": true,
+      "aliases": [
+        "S3"
+      ]
+    },
+    {
+      "name": "Google Cloud Storage",
+      "type": "cloud_infra",
+      "required": true,
+      "aliases": [
+        "GCS"
+      ]
+    },
+    {
+      "name": "POSIX filesystems",
+      "type": "concept",
+      "required": true,
+      "aliases": [
+        "POSIX"
+      ]
+    },
+    {
+      "name": "Transforming unstructured data into performant datasets",
+      "type": "data",
+      "required": true,
+      "aliases": []
+    },
+    {
+      "name": "Distributed data processing frameworks",
+      "type": "concept",
+      "required": true,
+      "aliases": []
+    },
+    {
+      "name": "Apache Beam",
+      "type": "data",
+      "required": true,
+      "aliases": [
+        "Beam"
+      ]
+    },
+    {
+      "name": "Apache Spark",
+      "type": "data",
+      "required": true,
+      "aliases": [
+        "Spark",
+        "PySpark"
+      ]
+    },
+    {
+      "name": "Apache Flink",
+      "type": "data",
+      "required": true,
+      "aliases": [
+        "Flink"
+      ]
+    },
+    {
+      "name": "BigQuery",
+      "type": "data",
+      "required": false,
+      "aliases": [
+        "Google BigQuery"
+      ]
+    },
+    {
+      "name": "Apache Airflow",
+      "type": "data",
+      "required": false,
+      "aliases": [
+        "Airflow"
+      ]
+    },
+    {
+      "name": "dbt",
+      "type": "data",
+      "required": false,
+      "aliases": [
+        "data build tool"
+      ]
+    },
+    {
+      "name": "Petabyte-scale storage infrastructure",
+      "type": "concept",
+      "required": true,
+      "aliases": []
+    },
+    {
+      "name": "Interest in AI research",
+      "type": "ai_ml",
+      "required": true,
+      "aliases": []
+    }
+  ]
+}

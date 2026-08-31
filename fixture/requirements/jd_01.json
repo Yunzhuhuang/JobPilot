@@ -1,0 +1,155 @@
+{
+  "jd_id": "jd_01",
+  "extracted_at": "2026-08-30",
+  "model": "claude-opus-5",
+  "requirements": [
+    {
+      "name": "Python",
+      "type": "language",
+      "required": true,
+      "aliases": []
+    },
+    {
+      "name": "Flask",
+      "type": "framework",
+      "required": true,
+      "aliases": []
+    },
+    {
+      "name": "Django",
+      "type": "framework",
+      "required": true,
+      "aliases": []
+    },
+    {
+      "name": "Databases",
+      "type": "data",
+      "required": true,
+      "aliases": [
+        "RDBMS"
+      ]
+    },
+    {
+      "name": "ORM",
+      "type": "concept",
+      "required": true,
+      "aliases": [
+        "Object-Relational Mapping"
+      ]
+    },
+    {
+      "name": "PostgreSQL",
+      "type": "data",
+      "required": false,
+      "aliases": [
+        "Postgres"
+      ]
+    },
+    {
+      "name": "Ubuntu",
+      "type": "cloud_infra",
+      "required": true,
+      "aliases": []
+    },
+    {
+      "name": "Linux",
+      "type": "cloud_infra",
+      "required": true,
+      "aliases": []
+    },
+    {
+      "name": "Open source software",
+      "type": "concept",
+      "required": true,
+      "aliases": [
+        "OSS"
+      ]
+    },
+    {
+      "name": "Public-facing API development",
+      "type": "concept",
+      "required": true,
+      "aliases": [
+        "REST API design",
+        "Web API development"
+      ]
+    },
+    {
+      "name": "Web application development",
+      "type": "concept",
+      "required": true,
+      "aliases": [
+        "Web services"
+      ]
+    },
+    {
+      "name": "Automated testing",
+      "type": "testing",
+      "required": true,
+      "aliases": [
+        "Test automation"
+      ]
+    },
+    {
+      "name": "Code and architectural reviews",
+      "type": "concept",
+      "required": true,
+      "aliases": [
+        "Code review"
+      ]
+    },
+    {
+      "name": "Release management",
+      "type": "concept",
+      "required": true,
+      "aliases": []
+    },
+    {
+      "name": "DevOps collaboration",
+      "type": "concept",
+      "required": true,
+      "aliases": [
+        "DevOps"
+      ]
+    },
+    {
+      "name": "SaaS",
+      "type": "concept",
+      "required": true,
+      "aliases": [
+        "Software as a Service"
+      ]
+    },
+    {
+      "name": "Distributed/remote team collaboration",
+      "type": "concept",
+      "required": true,
+      "aliases": [
+        "Remote work"
+      ]
+    },
+    {
+      "name": "BS in Computer Science or STEM",
+      "type": "credential",
+      "required": true,
+      "aliases": [
+        "Bachelor's degree in Computer Science",
+        "Bachelor's degree in STEM"
+      ]
+    },
+    {
+      "name": "Based in the Americas region",
+      "type": "credential",
+      "required": true,
+      "aliases": []
+    },
+    {
+      "name": "Willingness to travel 2 to 4 weeks per year",
+      "type": "credential",
+      "required": true,
+      "aliases": [
+        "Global travel"
+      ]
+    }
+  ]
+}

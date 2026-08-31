@@ -1,0 +1,38 @@
+{
+  "node": "triage",
+  "stage": "final",
+  "source": "output/final/2026-08-31/packets/jd_01/trajectory.json",
+  "step": {
+    "node": "triage",
+    "instruction": "triage.md",
+    "inputs": {
+      "jd_id": "jd_01",
+      "company": "Canonical",
+      "title": "Software Developer (Backend SaaS)",
+      "profile_summary_chars": 1550,
+      "h1b_evidence": "likely",
+      "claimable_tools": 123
+    },
+    "output": {
+      "label": "most_matched",
+      "score": 76,
+      "reasons": [
+        "Core ask \u2014 Python web APIs, Django, PostgreSQL/ORMs, Ubuntu/Linux \u2014 is directly evidenced in the profile",
+        "Level fits: bachelor's/equivalent required, ~2 years at Amazon plus an M.S. finishing 2026, no senior-years bar",
+        "Remote 'Americas' allows a US base, satisfying the no-outside-US constraint; no clearance, citizenship or export-control language anywhere in the posting",
+        "Employer has filed H-1B petitions as Canonical USA Inc., a weak positive on sponsorship"
+      ],
+      "missing_requirements": [
+        "Flask (candidate explicitly has not used it; Django experience partially covers)",
+        "Experience with fleet/estate management or observability tooling (Landscape domain)"
+      ]
+    },
+    "tool_calls": [],
+    "retries": 0,
+    "human_checkpoint": null,
+    "error": null,
+    "wall_clock_s": 10.326,
+    "input_tokens": 3859,
+    "output_tokens": 283
+  }
+}

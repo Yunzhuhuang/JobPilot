@@ -1,0 +1,261 @@
+{
+  "jd_id": "jd_14",
+  "extracted_at": "2026-08-30",
+  "model": "claude-opus-5",
+  "requirements": [
+    {
+      "name": "Full-stack development",
+      "type": "concept",
+      "required": true,
+      "aliases": [
+        "Full stack"
+      ]
+    },
+    {
+      "name": "Bachelor's degree in Computer Science, Software Engineering, or related technical field",
+      "type": "credential",
+      "required": true,
+      "aliases": [
+        "BS in Computer Science",
+        "BS in Software Engineering"
+      ]
+    },
+    {
+      "name": "3+ years developing and maintaining full-stack applications in production",
+      "type": "experience",
+      "required": true,
+      "aliases": []
+    },
+    {
+      "name": "TypeScript",
+      "type": "language",
+      "required": true,
+      "aliases": [
+        "TS"
+      ]
+    },
+    {
+      "name": "React",
+      "type": "framework",
+      "required": true,
+      "aliases": [
+        "React.js",
+        "ReactJS"
+      ]
+    },
+    {
+      "name": "Next.js",
+      "type": "framework",
+      "required": true,
+      "aliases": [
+        "NextJS"
+      ]
+    },
+    {
+      "name": "Vue",
+      "type": "framework",
+      "required": true,
+      "aliases": [
+        "Vue.js",
+        "VueJS"
+      ]
+    },
+    {
+      "name": "CSS",
+      "type": "language",
+      "required": true,
+      "aliases": []
+    },
+    {
+      "name": "SASS",
+      "type": "language",
+      "required": true,
+      "aliases": [
+        "SCSS"
+      ]
+    },
+    {
+      "name": "Python",
+      "type": "language",
+      "required": true,
+      "aliases": []
+    },
+    {
+      "name": "Node.js",
+      "type": "framework",
+      "required": true,
+      "aliases": [
+        "NodeJS",
+        "Node"
+      ]
+    },
+    {
+      "name": "Go",
+      "type": "language",
+      "required": true,
+      "aliases": [
+        "Golang"
+      ]
+    },
+    {
+      "name": "Relational databases",
+      "type": "data",
+      "required": true,
+      "aliases": [
+        "RDBMS"
+      ]
+    },
+    {
+      "name": "PostgreSQL",
+      "type": "data",
+      "required": true,
+      "aliases": [
+        "Postgres"
+      ]
+    },
+    {
+      "name": "MySQL",
+      "type": "data",
+      "required": true,
+      "aliases": []
+    },
+    {
+      "name": "RESTful API design",
+      "type": "concept",
+      "required": true,
+      "aliases": [
+        "REST API design",
+        "REST"
+      ]
+    },
+    {
+      "name": "CI/CD",
+      "type": "concept",
+      "required": true,
+      "aliases": [
+        "Continuous Integration",
+        "Continuous Deployment"
+      ]
+    },
+    {
+      "name": "Docker",
+      "type": "cloud_infra",
+      "required": true,
+      "aliases": []
+    },
+    {
+      "name": "Container orchestration",
+      "type": "cloud_infra",
+      "required": true,
+      "aliases": [
+        "Kubernetes",
+        "K8s"
+      ]
+    },
+    {
+      "name": "Version control systems",
+      "type": "concept",
+      "required": true,
+      "aliases": [
+        "Git"
+      ]
+    },
+    {
+      "name": "AWS",
+      "type": "cloud_infra",
+      "required": true,
+      "aliases": [
+        "Amazon Web Services"
+      ]
+    },
+    {
+      "name": "AWS GovCloud",
+      "type": "cloud_infra",
+      "required": true,
+      "aliases": [
+        "GovCloud"
+      ]
+    },
+    {
+      "name": "Authentication and authorization",
+      "type": "concept",
+      "required": true,
+      "aliases": [
+        "AuthN/AuthZ"
+      ]
+    },
+    {
+      "name": "Data security best practices",
+      "type": "concept",
+      "required": true,
+      "aliases": []
+    },
+    {
+      "name": "Robotics, manufacturing, or mission-critical systems application development",
+      "type": "experience",
+      "required": false,
+      "aliases": []
+    },
+    {
+      "name": "Multi-platform application development",
+      "type": "experience",
+      "required": false,
+      "aliases": [
+        "Cross-platform development",
+        "Mobile development"
+      ]
+    },
+    {
+      "name": "ATAK",
+      "type": "framework",
+      "required": false,
+      "aliases": [
+        "Android Team Awareness Kit",
+        "TAK"
+      ]
+    },
+    {
+      "name": "Software deployment in secure or air-gapped environments",
+      "type": "experience",
+      "required": false,
+      "aliases": []
+    },
+    {
+      "name": "Telemetry",
+      "type": "concept",
+      "required": false,
+      "aliases": []
+    },
+    {
+      "name": "Data visualization",
+      "type": "concept",
+      "required": false,
+      "aliases": []
+    },
+    {
+      "name": "Control interfaces for autonomous systems",
+      "type": "concept",
+      "required": false,
+      "aliases": []
+    },
+    {
+      "name": "ITAR/EAR export control eligibility",
+      "type": "credential",
+      "required": true,
+      "aliases": [
+        "ITAR",
+        "EAR",
+        "US person status"
+      ]
+    },
+    {
+      "name": "US work authorization",
+      "type": "credential",
+      "required": true,
+      "aliases": [
+        "Authorized to work in the U.S.",
+        "E-Verify"
+      ]
+    }
+  ]
+}

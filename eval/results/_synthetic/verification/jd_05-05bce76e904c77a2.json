@@ -1,0 +1,327 @@
+{
+  "document": "fixture/eval_samples/output/synthetic/2026-08-30/packets/jd_05/resume.md",
+  "profile": "fixture/profile.json",
+  "model": "claude-opus-5",
+  "verified_at": "2026-08-30",
+  "units": [
+    {
+      "unit_id": "u01",
+      "text": "Seasoned engineer with a strong background in modern software development.",
+      "section": "summary",
+      "container_id": null,
+      "elements": []
+    },
+    {
+      "unit_id": "u02",
+      "text": "Amazon.com Services LLC — Software Development Engineer",
+      "section": "experience",
+      "container_id": "exp_2",
+      "elements": [
+        {
+          "kind": "company",
+          "value": "Amazon.com Services LLC"
+        },
+        {
+          "kind": "title",
+          "value": "Software Development Engineer"
+        }
+      ]
+    },
+    {
+      "unit_id": "u03",
+      "text": "Configured Kafka ingestion pipelines with dead-letter queues, processing 500K daily events at 99.9% delivery reliability.",
+      "section": "experience",
+      "container_id": "exp_2",
+      "elements": [
+        {
+          "kind": "tool",
+          "value": "Kafka"
+        },
+        {
+          "kind": "metric",
+          "value": "500K daily events"
+        },
+        {
+          "kind": "metric",
+          "value": "99.9% delivery reliability"
+        }
+      ]
+    },
+    {
+      "unit_id": "u04",
+      "text": "Developed event-driven Lambda functions behind API Gateway, maintaining 99.999% availability across Alexa Kitchen APIs.",
+      "section": "experience",
+      "container_id": "exp_2",
+      "elements": [
+        {
+          "kind": "tool",
+          "value": "Lambda"
+        },
+        {
+          "kind": "tool",
+          "value": "API Gateway"
+        },
+        {
+          "kind": "metric",
+          "value": "99.999% availability"
+        },
+        {
+          "kind": "other",
+          "value": "worked on Alexa Kitchen APIs"
+        }
+      ]
+    },
+    {
+      "unit_id": "u05",
+      "text": "Built a Qdrant vector store for recipe embeddings, improving recommendation relevance by 30%.",
+      "section": "experience",
+      "container_id": "exp_2",
+      "elements": [
+        {
+          "kind": "tool",
+          "value": "Qdrant"
+        },
+        {
+          "kind": "metric",
+          "value": "30% improvement in recommendation relevance"
+        },
+        {
+          "kind": "other",
+          "value": "built a vector store for recipe embeddings"
+        }
+      ]
+    },
+    {
+      "unit_id": "u06",
+      "text": "Stripe — Senior Software Engineer",
+      "section": "experience",
+      "container_id": null,
+      "elements": [
+        {
+          "kind": "company",
+          "value": "Stripe"
+        },
+        {
+          "kind": "title",
+          "value": "Senior Software Engineer"
+        }
+      ]
+    },
+    {
+      "unit_id": "u07",
+      "text": "Led payments infrastructure work across a distributed billing platform.",
+      "section": "experience",
+      "container_id": null,
+      "elements": [
+        {
+          "kind": "other",
+          "value": "led payments infrastructure work on a distributed billing platform"
+        }
+      ]
+    },
+    {
+      "unit_id": "u08",
+      "text": "AIPetique LLC — Software Development Engineer Intern",
+      "section": "experience",
+      "container_id": "exp_1",
+      "elements": [
+        {
+          "kind": "company",
+          "value": "AIPetique LLC"
+        },
+        {
+          "kind": "title",
+          "value": "Software Development Engineer Intern"
+        }
+      ]
+    },
+    {
+      "unit_id": "u09",
+      "text": "Trained and served retrieval models on a Kubeflow pipeline running on AWS EC2, cutting inference latency by 45%.",
+      "section": "experience",
+      "container_id": "exp_1",
+      "elements": [
+        {
+          "kind": "tool",
+          "value": "Kubeflow"
+        },
+        {
+          "kind": "tool",
+          "value": "AWS EC2"
+        },
+        {
+          "kind": "metric",
+          "value": "45% inference latency reduction"
+        },
+        {
+          "kind": "other",
+          "value": "trained and served retrieval models"
+        }
+      ]
+    }
+  ],
+  "rules": [
+    {
+      "unit_id": "u01",
+      "status": "softened",
+      "reasons": [
+        "asserts nothing checkable against the profile"
+      ],
+      "evidence_ids": []
+    },
+    {
+      "unit_id": "u02",
+      "status": "supported",
+      "reasons": [],
+      "evidence_ids": []
+    },
+    {
+      "unit_id": "u03",
+      "status": "unsupported",
+      "reasons": [
+        "tool 'Kafka' [unplaced] -- evidence is a skills-line mention with no role or project behind it; a gap answer must supply one before it can sit in a bullet"
+      ],
+      "evidence_ids": []
+    },
+    {
+      "unit_id": "u04",
+      "status": "unsupported",
+      "reasons": [
+        "metric '99.999% availability': 99.999 is not in the profile"
+      ],
+      "evidence_ids": [
+        "exp_2"
+      ]
+    },
+    {
+      "unit_id": "u05",
+      "status": "unsupported",
+      "reasons": [
+        "tool 'Qdrant' [misplaced] -- evidence points at exp_1, not exp_2"
+      ],
+      "evidence_ids": []
+    },
+    {
+      "unit_id": "u06",
+      "status": "unsupported",
+      "reasons": [
+        "company 'Stripe' matches no profile entry",
+        "title 'Senior Software Engineer' matches no profile entry"
+      ],
+      "evidence_ids": []
+    },
+    {
+      "unit_id": "u07",
+      "status": "softened",
+      "reasons": [
+        "asserts nothing checkable against the profile"
+      ],
+      "evidence_ids": []
+    },
+    {
+      "unit_id": "u08",
+      "status": "supported",
+      "reasons": [],
+      "evidence_ids": []
+    },
+    {
+      "unit_id": "u09",
+      "status": "unsupported",
+      "reasons": [
+        "tool 'Kubeflow' [unsupported] -- no tool_evidence entry"
+      ],
+      "evidence_ids": [
+        "exp_1"
+      ]
+    }
+  ],
+  "judge": [
+    {
+      "unit_id": "u01",
+      "status": "softened",
+      "reasons": [
+        "Generic claim with no checkable specifics"
+      ],
+      "evidence_ids": []
+    },
+    {
+      "unit_id": "u02",
+      "status": "supported",
+      "reasons": [
+        "Company and title match exp_2 (Software Development Engineer - Alexa Kitchen)"
+      ],
+      "evidence_ids": [
+        "exp_2"
+      ]
+    },
+    {
+      "unit_id": "u03",
+      "status": "unsupported",
+      "reasons": [
+        "Kafka evidence is where: self_study; the Amazon ingestion pipelines used SQS (exp_2_b4)"
+      ],
+      "evidence_ids": []
+    },
+    {
+      "unit_id": "u04",
+      "status": "unsupported",
+      "reasons": [
+        "Profile states 99.99% availability in exp_2_b5; 99.999% is a different number"
+      ],
+      "evidence_ids": []
+    },
+    {
+      "unit_id": "u05",
+      "status": "unsupported",
+      "reasons": [
+        "Qdrant evidence is at exp_1 (AIPetique RAG pipeline), not Amazon",
+        "30% relevance gain belongs to the AIPetique RAG evaluation set, not recipe recommendations"
+      ],
+      "evidence_ids": []
+    },
+    {
+      "unit_id": "u06",
+      "status": "unsupported",
+      "reasons": [
+        "No Stripe employer or Senior Software Engineer title in experience"
+      ],
+      "evidence_ids": []
+    },
+    {
+      "unit_id": "u07",
+      "status": "unsupported",
+      "reasons": [
+        "No payments or billing platform work anywhere in the profile"
+      ],
+      "evidence_ids": []
+    },
+    {
+      "unit_id": "u08",
+      "status": "supported",
+      "reasons": [
+        "Company and title match exp_1 exactly"
+      ],
+      "evidence_ids": [
+        "exp_1"
+      ]
+    },
+    {
+      "unit_id": "u09",
+      "status": "unsupported",
+      "reasons": [
+        "Kubeflow does not appear in the profile",
+        "No model training/serving work at AIPetique; the 45% figure is query latency from Redis caching (exp_1_b3), not inference latency"
+      ],
+      "evidence_ids": []
+    }
+  ],
+  "agreement": {
+    "compared": 9,
+    "agreed": 8,
+    "rate": 0.889,
+    "disagreements": [
+      "u07  rules=softened  judge=unsupported\n    text  : Led payments infrastructure work across a distributed billing platform.\n    rules : asserts nothing checkable against the profile\n    judge : No payments or billing platform work anywhere in the profile"
+    ]
+  },
+  "writing_preference_violations": []
+}

@@ -1,0 +1,95 @@
+{
+  "jd_id": "jd_12",
+  "extracted_at": "2026-08-30",
+  "model": "claude-opus-5",
+  "requirements": [
+    {
+      "name": "1+ years engineering experience",
+      "type": "experience",
+      "required": true,
+      "aliases": [
+        "At least 1 year of engineering experience"
+      ]
+    },
+    {
+      "name": "Backend language proficiency",
+      "type": "concept",
+      "required": true,
+      "aliases": [
+        "Proficiency in at least one backend language"
+      ]
+    },
+    {
+      "name": "Node.js",
+      "type": "framework",
+      "required": false,
+      "aliases": [
+        "Node"
+      ]
+    },
+    {
+      "name": "TypeScript",
+      "type": "language",
+      "required": false,
+      "aliases": [
+        "TS"
+      ]
+    },
+    {
+      "name": "SQL",
+      "type": "language",
+      "required": true,
+      "aliases": []
+    },
+    {
+      "name": "REST APIs",
+      "type": "concept",
+      "required": true,
+      "aliases": [
+        "RESTful APIs",
+        "REST API design"
+      ]
+    },
+    {
+      "name": "Written communication skills",
+      "type": "concept",
+      "required": true,
+      "aliases": []
+    },
+    {
+      "name": "AI",
+      "type": "ai_ml",
+      "required": true,
+      "aliases": [
+        "Artificial Intelligence"
+      ]
+    },
+    {
+      "name": "Payment systems",
+      "type": "concept",
+      "required": false,
+      "aliases": [
+        "card processing",
+        "ACH"
+      ]
+    },
+    {
+      "name": "AWS",
+      "type": "cloud_infra",
+      "required": false,
+      "aliases": [
+        "Amazon Web Services"
+      ]
+    },
+    {
+      "name": "Shell scripting",
+      "type": "concept",
+      "required": false,
+      "aliases": [
+        "bash",
+        "zsh",
+        "Bash scripting"
+      ]
+    }
+  ]
+}

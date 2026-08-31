@@ -1,0 +1,16 @@
+line-length = 88
+target-version = "py311"
+
+exclude = [".venv", "output"]
+
+[lint]
+# E/F pyflakes+pycodestyle, I import order, UP pyupgrade, B bugbear,
+# SIM simplify, ANN missing annotations (the project requires type hints
+# everywhere), RUF ruff-specific.
+select = ["E", "F", "I", "UP", "B", "SIM", "ANN", "RUF"]
+
+[lint.per-file-ignores]
+# Workflow node functions are wired into a graph by ADK, which inspects their
+# signatures; annotating every generator's full yield type adds noise without
+# adding safety.
+"scripts/*" = ["ANN201", "ANN202"]

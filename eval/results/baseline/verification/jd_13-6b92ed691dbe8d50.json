@@ -1,0 +1,1149 @@
+{
+  "document": "/Users/qiarara/Desktop/JobPilot/output/baseline/2026-08-30/packets/jd_13/resume.md",
+  "profile": "fixture/profile.json",
+  "model": "claude-opus-5",
+  "verified_at": "2026-08-30",
+  "units": [
+    {
+      "unit_id": "u01",
+      "text": "Full-stack engineer who ships product end to end. Built and launched a production React + TypeScript web app and Chrome extension solo in two months, and shipped a customer-facing React chat interface for an e-commerce storefront. Backed by 2 years at Amazon (Alexa) building high-availability, low-latency services — so the APIs behind the UI are never the bottleneck. Strong bias toward performance, clean interfaces, and owning problems from product idea to production.",
+      "section": "summary",
+      "container_id": null,
+      "elements": [
+        {
+          "kind": "tool",
+          "value": "React"
+        },
+        {
+          "kind": "tool",
+          "value": "TypeScript"
+        },
+        {
+          "kind": "tool",
+          "value": "Chrome extension"
+        },
+        {
+          "kind": "metric",
+          "value": "two months to build and launch solo"
+        },
+        {
+          "kind": "company",
+          "value": "Amazon"
+        },
+        {
+          "kind": "metric",
+          "value": "2 years at Amazon"
+        },
+        {
+          "kind": "other",
+          "value": "Worked on Alexa at Amazon"
+        },
+        {
+          "kind": "other",
+          "value": "Shipped a customer-facing React chat interface for an e-commerce storefront"
+        }
+      ]
+    },
+    {
+      "unit_id": "u02",
+      "text": "NextRound | Creator & Sole Full-Stack Engineer — React, TypeScript, Vite-style SPA, Chrome Extension, FastAPI, PostgreSQL | Feb 2026 – Present",
+      "section": "projects",
+      "container_id": "proj_1",
+      "elements": [
+        {
+          "kind": "company",
+          "value": "NextRound"
+        },
+        {
+          "kind": "title",
+          "value": "Creator & Sole Full-Stack Engineer"
+        },
+        {
+          "kind": "tool",
+          "value": "React"
+        },
+        {
+          "kind": "tool",
+          "value": "TypeScript"
+        },
+        {
+          "kind": "tool",
+          "value": "Vite"
+        },
+        {
+          "kind": "tool",
+          "value": "Chrome Extension"
+        },
+        {
+          "kind": "tool",
+          "value": "FastAPI"
+        },
+        {
+          "kind": "tool",
+          "value": "PostgreSQL"
+        },
+        {
+          "kind": "date",
+          "value": "Feb 2026 – Present"
+        }
+      ]
+    },
+    {
+      "unit_id": "u03",
+      "text": "Designed and built a responsive React/TypeScript interface for an interview-prep platform: dashboards, attempt histories, and spaced-repetition review schedules, with attention to layout, typography, and interaction detail.",
+      "section": "projects",
+      "container_id": "proj_1",
+      "elements": [
+        {
+          "kind": "tool",
+          "value": "React"
+        },
+        {
+          "kind": "tool",
+          "value": "TypeScript"
+        },
+        {
+          "kind": "other",
+          "value": "Designed and built a responsive interface for an interview-prep platform with dashboards, attempt histories, and spaced-repetition review schedules"
+        }
+      ]
+    },
+    {
+      "unit_id": "u04",
+      "text": "Built a companion Chrome extension in TypeScript that captures LeetCode submissions in real time and syncs them to the app without user friction.",
+      "section": "projects",
+      "container_id": "proj_1",
+      "elements": [
+        {
+          "kind": "tool",
+          "value": "Chrome extension"
+        },
+        {
+          "kind": "tool",
+          "value": "TypeScript"
+        },
+        {
+          "kind": "tool",
+          "value": "LeetCode"
+        },
+        {
+          "kind": "other",
+          "value": "Built a companion extension that captures LeetCode submissions in real time and syncs them to the app"
+        }
+      ]
+    },
+    {
+      "unit_id": "u05",
+      "text": "Owned the full product surface — turned a raw product idea into a shipped, zero-to-production app in two months as a solo engineer, with automated test suites and CI gates on every change.",
+      "section": "projects",
+      "container_id": "proj_1",
+      "elements": [
+        {
+          "kind": "metric",
+          "value": "zero-to-production app in two months"
+        },
+        {
+          "kind": "other",
+          "value": "Worked as solo engineer owning full product surface"
+        },
+        {
+          "kind": "other",
+          "value": "Automated test suites and CI gates on every change"
+        }
+      ]
+    },
+    {
+      "unit_id": "u06",
+      "text": "Automated CI/CD with GitHub Actions deploying the frontend to Cloudflare Pages and the API to Google Cloud Run / Cloud SQL.",
+      "section": "projects",
+      "container_id": "proj_1",
+      "elements": [
+        {
+          "kind": "tool",
+          "value": "GitHub Actions"
+        },
+        {
+          "kind": "tool",
+          "value": "Cloudflare Pages"
+        },
+        {
+          "kind": "tool",
+          "value": "Google Cloud Run"
+        },
+        {
+          "kind": "tool",
+          "value": "Cloud SQL"
+        },
+        {
+          "kind": "other",
+          "value": "Automated CI/CD deploying frontend and API"
+        }
+      ]
+    },
+    {
+      "unit_id": "u07",
+      "text": "AI Talent Match Agent | Google Cloud ADK Hackathon — Python, Gemini, FastAPI | May 2025 – Jun 2025",
+      "section": "projects",
+      "container_id": "proj_2",
+      "elements": [
+        {
+          "kind": "other",
+          "value": "AI Talent Match Agent project for Google Cloud ADK Hackathon"
+        },
+        {
+          "kind": "tool",
+          "value": "Python"
+        },
+        {
+          "kind": "tool",
+          "value": "Gemini"
+        },
+        {
+          "kind": "tool",
+          "value": "FastAPI"
+        },
+        {
+          "kind": "date",
+          "value": "May 2025 – Jun 2025"
+        }
+      ]
+    },
+    {
+      "unit_id": "u08",
+      "text": "Built a multi-agent resume-screening system with a coordinator agent orchestrating specialized sub-agents; deployed to Google Cloud Agent Engine with OpenTelemetry observability.",
+      "section": "projects",
+      "container_id": "proj_2",
+      "elements": [
+        {
+          "kind": "tool",
+          "value": "Google Cloud Agent Engine"
+        },
+        {
+          "kind": "tool",
+          "value": "OpenTelemetry"
+        },
+        {
+          "kind": "other",
+          "value": "Built a multi-agent resume-screening system with a coordinator agent orchestrating specialized sub-agents"
+        }
+      ]
+    },
+    {
+      "unit_id": "u09",
+      "text": "AIPetique LLC | Software Development Engineer Intern | May 2025 – Aug 2025",
+      "section": "experience",
+      "container_id": "exp_1",
+      "elements": [
+        {
+          "kind": "company",
+          "value": "AIPetique LLC"
+        },
+        {
+          "kind": "title",
+          "value": "Software Development Engineer Intern"
+        },
+        {
+          "kind": "date",
+          "value": "May 2025 – Aug 2025"
+        }
+      ]
+    },
+    {
+      "unit_id": "u10",
+      "text": "Built the customer-facing React chat interface for a Shopify Hydrogen pet e-commerce storefront, covering pet-care Q&A, order tracking, store policy, and account management flows.",
+      "section": "experience",
+      "container_id": "exp_1",
+      "elements": [
+        {
+          "kind": "tool",
+          "value": "React"
+        },
+        {
+          "kind": "tool",
+          "value": "Shopify Hydrogen"
+        },
+        {
+          "kind": "other",
+          "value": "Built customer-facing chat interface for a pet e-commerce storefront covering pet-care Q&A, order tracking, store policy, and account management flows"
+        }
+      ]
+    },
+    {
+      "unit_id": "u11",
+      "text": "Optimized perceived and actual responsiveness: cached embeddings in Redis and reworked asynchronous request handling, cutting end-to-end query latency 45% under concurrent load.",
+      "section": "experience",
+      "container_id": "exp_1",
+      "elements": [
+        {
+          "kind": "tool",
+          "value": "Redis"
+        },
+        {
+          "kind": "metric",
+          "value": "45% end-to-end query latency reduction under concurrent load"
+        },
+        {
+          "kind": "other",
+          "value": "Cached embeddings and reworked asynchronous request handling"
+        }
+      ]
+    },
+    {
+      "unit_id": "u12",
+      "text": "Designed the retrieval backend (FastAPI, LangChain, Qdrant, hybrid semantic + keyword search), improving answer relevance 30% across a 10K-prompt evaluation set.",
+      "section": "experience",
+      "container_id": "exp_1",
+      "elements": [
+        {
+          "kind": "tool",
+          "value": "FastAPI"
+        },
+        {
+          "kind": "tool",
+          "value": "LangChain"
+        },
+        {
+          "kind": "tool",
+          "value": "Qdrant"
+        },
+        {
+          "kind": "metric",
+          "value": "30% improvement in answer relevance"
+        },
+        {
+          "kind": "metric",
+          "value": "10K-prompt evaluation set"
+        },
+        {
+          "kind": "other",
+          "value": "Designed retrieval backend with hybrid semantic + keyword search"
+        }
+      ]
+    },
+    {
+      "unit_id": "u13",
+      "text": "Containerized services with Docker and deployed on AWS EC2 behind Nginx for production traffic.",
+      "section": "experience",
+      "container_id": "exp_1",
+      "elements": [
+        {
+          "kind": "tool",
+          "value": "Docker"
+        },
+        {
+          "kind": "tool",
+          "value": "AWS EC2"
+        },
+        {
+          "kind": "tool",
+          "value": "Nginx"
+        },
+        {
+          "kind": "other",
+          "value": "Containerized services and deployed for production traffic"
+        }
+      ]
+    },
+    {
+      "unit_id": "u14",
+      "text": "Amazon.com Services LLC | Software Development Engineer – Alexa Kitchen | Jul 2022 – Apr 2024",
+      "section": "experience",
+      "container_id": "exp_2",
+      "elements": [
+        {
+          "kind": "company",
+          "value": "Amazon.com Services LLC"
+        },
+        {
+          "kind": "title",
+          "value": "Software Development Engineer – Alexa Kitchen"
+        },
+        {
+          "kind": "date",
+          "value": "Jul 2022 – Apr 2024"
+        }
+      ]
+    },
+    {
+      "unit_id": "u15",
+      "text": "Launched a Spring Boot backend end to end consolidating first-party, third-party, and user-generated recipes, serving 10K+ daily active users within one week of launch.",
+      "section": "experience",
+      "container_id": "exp_2",
+      "elements": [
+        {
+          "kind": "tool",
+          "value": "Spring Boot"
+        },
+        {
+          "kind": "metric",
+          "value": "10K+ daily active users"
+        },
+        {
+          "kind": "metric",
+          "value": "within one week of launch"
+        },
+        {
+          "kind": "other",
+          "value": "Launched a backend end to end consolidating first-party, third-party, and user-generated recipes"
+        }
+      ]
+    },
+    {
+      "unit_id": "u16",
+      "text": "Cut p99 latency 30% via idempotent REST endpoint design and pagination that shrank response payloads and connection overhead — directly improving client-side render times.",
+      "section": "experience",
+      "container_id": "exp_2",
+      "elements": [
+        {
+          "kind": "metric",
+          "value": "30% p99 latency reduction"
+        },
+        {
+          "kind": "other",
+          "value": "Idempotent REST endpoint design and pagination shrinking response payloads and connection overhead"
+        }
+      ]
+    },
+    {
+      "unit_id": "u17",
+      "text": "Built GraphQL APIs with DataLoader batching for personalized recommendations, achieving sub-50ms preference-sync latency; modeled data in DynamoDB (GSIs) and MySQL/RDS with read replicas for sub-100ms queries at peak.",
+      "section": "experience",
+      "container_id": "exp_2",
+      "elements": [
+        {
+          "kind": "tool",
+          "value": "GraphQL"
+        },
+        {
+          "kind": "tool",
+          "value": "DataLoader"
+        },
+        {
+          "kind": "tool",
+          "value": "DynamoDB"
+        },
+        {
+          "kind": "tool",
+          "value": "MySQL/RDS"
+        },
+        {
+          "kind": "metric",
+          "value": "sub-50ms preference-sync latency"
+        },
+        {
+          "kind": "metric",
+          "value": "sub-100ms queries at peak"
+        },
+        {
+          "kind": "other",
+          "value": "Modeled data using DynamoDB GSIs and read replicas"
+        }
+      ]
+    },
+    {
+      "unit_id": "u18",
+      "text": "Deployed Redis Cluster caching with Bloom-filter pre-checks, cutting backend read load 45%; maintained 99.99% API availability behind API Gateway with rate limiting and circuit breakers.",
+      "section": "experience",
+      "container_id": "exp_2",
+      "elements": [
+        {
+          "kind": "tool",
+          "value": "Redis Cluster"
+        },
+        {
+          "kind": "tool",
+          "value": "API Gateway"
+        },
+        {
+          "kind": "metric",
+          "value": "45% backend read load reduction"
+        },
+        {
+          "kind": "metric",
+          "value": "99.99% API availability"
+        },
+        {
+          "kind": "other",
+          "value": "Bloom-filter pre-checks, rate limiting, and circuit breakers"
+        }
+      ]
+    },
+    {
+      "unit_id": "u19",
+      "text": "Automated blue-green deployments with Docker, AWS EKS, and GitHub Actions for zero-downtime rollouts; migrated operational alarms to CloudWatch + CDK, cutting false positives 40%.",
+      "section": "experience",
+      "container_id": "exp_2",
+      "elements": [
+        {
+          "kind": "tool",
+          "value": "Docker"
+        },
+        {
+          "kind": "tool",
+          "value": "AWS EKS"
+        },
+        {
+          "kind": "tool",
+          "value": "GitHub Actions"
+        },
+        {
+          "kind": "tool",
+          "value": "CloudWatch"
+        },
+        {
+          "kind": "tool",
+          "value": "CDK"
+        },
+        {
+          "kind": "metric",
+          "value": "40% reduction in false positive alarms"
+        },
+        {
+          "kind": "other",
+          "value": "Automated blue-green deployments for zero-downtime rollouts"
+        }
+      ]
+    },
+    {
+      "unit_id": "u20",
+      "text": "**Frontend:** TypeScript, JavaScript, React, Redux, Angular, HTML/CSS, Chrome Extensions, responsive UI, component design systems **Languages:** TypeScript, JavaScript, Java, Python, Go, C/C++, SQL **Backend:** FastAPI, Node.js, Express.js, Spring Boot, Django, GraphQL, REST **Cloud & Data:** AWS (Lambda, API Gateway, DynamoDB, SQS, EC2), GCP (Cloud Run, Cloud SQL), Cloudflare Pages, PostgreSQL, MySQL, Redis, Kafka **AI & Agents:** LangChain, LangGraph, RAG, Qdrant, Google ADK, Gemini/LLM integration; AI-assisted development (Cursor, Claude Code) **Tools:** Docker, Kubernetes, GitHub Actions, CI/CD, Git, Linux",
+      "section": "skills",
+      "container_id": null,
+      "elements": [
+        {
+          "kind": "tool",
+          "value": "TypeScript"
+        },
+        {
+          "kind": "tool",
+          "value": "JavaScript"
+        },
+        {
+          "kind": "tool",
+          "value": "React"
+        },
+        {
+          "kind": "tool",
+          "value": "Redux"
+        },
+        {
+          "kind": "tool",
+          "value": "Angular"
+        },
+        {
+          "kind": "tool",
+          "value": "HTML/CSS"
+        },
+        {
+          "kind": "tool",
+          "value": "Chrome Extensions"
+        },
+        {
+          "kind": "tool",
+          "value": "Java"
+        },
+        {
+          "kind": "tool",
+          "value": "Python"
+        },
+        {
+          "kind": "tool",
+          "value": "Go"
+        },
+        {
+          "kind": "tool",
+          "value": "C/C++"
+        },
+        {
+          "kind": "tool",
+          "value": "SQL"
+        },
+        {
+          "kind": "tool",
+          "value": "FastAPI"
+        },
+        {
+          "kind": "tool",
+          "value": "Node.js"
+        },
+        {
+          "kind": "tool",
+          "value": "Express.js"
+        },
+        {
+          "kind": "tool",
+          "value": "Spring Boot"
+        },
+        {
+          "kind": "tool",
+          "value": "Django"
+        },
+        {
+          "kind": "tool",
+          "value": "GraphQL"
+        },
+        {
+          "kind": "tool",
+          "value": "REST"
+        },
+        {
+          "kind": "tool",
+          "value": "AWS Lambda"
+        },
+        {
+          "kind": "tool",
+          "value": "API Gateway"
+        },
+        {
+          "kind": "tool",
+          "value": "DynamoDB"
+        },
+        {
+          "kind": "tool",
+          "value": "SQS"
+        },
+        {
+          "kind": "tool",
+          "value": "EC2"
+        },
+        {
+          "kind": "tool",
+          "value": "GCP Cloud Run"
+        },
+        {
+          "kind": "tool",
+          "value": "Cloud SQL"
+        },
+        {
+          "kind": "tool",
+          "value": "Cloudflare Pages"
+        },
+        {
+          "kind": "tool",
+          "value": "PostgreSQL"
+        },
+        {
+          "kind": "tool",
+          "value": "MySQL"
+        },
+        {
+          "kind": "tool",
+          "value": "Redis"
+        },
+        {
+          "kind": "tool",
+          "value": "Kafka"
+        },
+        {
+          "kind": "tool",
+          "value": "LangChain"
+        },
+        {
+          "kind": "tool",
+          "value": "LangGraph"
+        },
+        {
+          "kind": "tool",
+          "value": "RAG"
+        },
+        {
+          "kind": "tool",
+          "value": "Qdrant"
+        },
+        {
+          "kind": "tool",
+          "value": "Google ADK"
+        },
+        {
+          "kind": "tool",
+          "value": "Gemini"
+        },
+        {
+          "kind": "tool",
+          "value": "Cursor"
+        },
+        {
+          "kind": "tool",
+          "value": "Claude Code"
+        },
+        {
+          "kind": "tool",
+          "value": "Docker"
+        },
+        {
+          "kind": "tool",
+          "value": "Kubernetes"
+        },
+        {
+          "kind": "tool",
+          "value": "GitHub Actions"
+        },
+        {
+          "kind": "tool",
+          "value": "CI/CD"
+        },
+        {
+          "kind": "tool",
+          "value": "Git"
+        },
+        {
+          "kind": "tool",
+          "value": "Linux"
+        }
+      ]
+    },
+    {
+      "unit_id": "u21",
+      "text": "**Northeastern University** — M.S. in Computer Science | Sept 2024 – May 2026 **University of Minnesota–Twin Cities** — B.A. in Computer Science | Aug 2019 – May 2022",
+      "section": "education",
+      "container_id": null,
+      "elements": [
+        {
+          "kind": "company",
+          "value": "Northeastern University"
+        },
+        {
+          "kind": "credential",
+          "value": "M.S. in Computer Science"
+        },
+        {
+          "kind": "date",
+          "value": "Sept 2024 – May 2026"
+        },
+        {
+          "kind": "company",
+          "value": "University of Minnesota–Twin Cities"
+        },
+        {
+          "kind": "credential",
+          "value": "B.A. in Computer Science"
+        },
+        {
+          "kind": "date",
+          "value": "Aug 2019 – May 2022"
+        }
+      ]
+    }
+  ],
+  "rules": [
+    {
+      "unit_id": "u01",
+      "status": "supported",
+      "reasons": [],
+      "evidence_ids": []
+    },
+    {
+      "unit_id": "u02",
+      "status": "unsupported",
+      "reasons": [
+        "tool 'Vite' [unsupported] -- no tool_evidence entry"
+      ],
+      "evidence_ids": [
+        "proj_1"
+      ]
+    },
+    {
+      "unit_id": "u03",
+      "status": "supported",
+      "reasons": [],
+      "evidence_ids": [
+        "proj_1"
+      ]
+    },
+    {
+      "unit_id": "u04",
+      "status": "supported",
+      "reasons": [],
+      "evidence_ids": [
+        "proj_1",
+        "proj_1_b1"
+      ]
+    },
+    {
+      "unit_id": "u05",
+      "status": "supported",
+      "reasons": [],
+      "evidence_ids": []
+    },
+    {
+      "unit_id": "u06",
+      "status": "supported",
+      "reasons": [],
+      "evidence_ids": [
+        "proj_1"
+      ]
+    },
+    {
+      "unit_id": "u07",
+      "status": "supported",
+      "reasons": [],
+      "evidence_ids": [
+        "proj_2"
+      ]
+    },
+    {
+      "unit_id": "u08",
+      "status": "supported",
+      "reasons": [],
+      "evidence_ids": [
+        "proj_2"
+      ]
+    },
+    {
+      "unit_id": "u09",
+      "status": "supported",
+      "reasons": [],
+      "evidence_ids": []
+    },
+    {
+      "unit_id": "u10",
+      "status": "supported",
+      "reasons": [],
+      "evidence_ids": [
+        "exp_1"
+      ]
+    },
+    {
+      "unit_id": "u11",
+      "status": "supported",
+      "reasons": [],
+      "evidence_ids": [
+        "exp_1"
+      ]
+    },
+    {
+      "unit_id": "u12",
+      "status": "supported",
+      "reasons": [],
+      "evidence_ids": [
+        "exp_1"
+      ]
+    },
+    {
+      "unit_id": "u13",
+      "status": "supported",
+      "reasons": [],
+      "evidence_ids": [
+        "exp_1"
+      ]
+    },
+    {
+      "unit_id": "u14",
+      "status": "supported",
+      "reasons": [],
+      "evidence_ids": []
+    },
+    {
+      "unit_id": "u15",
+      "status": "supported",
+      "reasons": [],
+      "evidence_ids": [
+        "exp_2"
+      ]
+    },
+    {
+      "unit_id": "u16",
+      "status": "supported",
+      "reasons": [],
+      "evidence_ids": []
+    },
+    {
+      "unit_id": "u17",
+      "status": "supported",
+      "reasons": [],
+      "evidence_ids": [
+        "exp_2"
+      ]
+    },
+    {
+      "unit_id": "u18",
+      "status": "supported",
+      "reasons": [],
+      "evidence_ids": [
+        "exp_2"
+      ]
+    },
+    {
+      "unit_id": "u19",
+      "status": "supported",
+      "reasons": [],
+      "evidence_ids": [
+        "exp_2"
+      ]
+    },
+    {
+      "unit_id": "u20",
+      "status": "unsupported",
+      "reasons": [
+        "tool 'HTML/CSS' [unsupported] -- no tool_evidence entry",
+        "tool 'Chrome Extensions' [unsupported] -- no tool_evidence entry"
+      ],
+      "evidence_ids": []
+    },
+    {
+      "unit_id": "u21",
+      "status": "supported",
+      "reasons": [],
+      "evidence_ids": []
+    }
+  ],
+  "judge": [
+    {
+      "unit_id": "u01",
+      "status": "supported",
+      "reasons": [
+        "React/TypeScript app plus Chrome extension shipped solo in two months matches proj_1_b1/b2/b3",
+        "React chat interface for a Shopify Hydrogen pet e-commerce storefront matches exp_1_b1",
+        "Amazon Alexa Kitchen tenure Jul 2022–Apr 2024 supports '2 years at Amazon (Alexa)'; high-availability/low-latency work in exp_2_b3/b5",
+        "Remaining phrasing is generic and asserts nothing further"
+      ],
+      "evidence_ids": [
+        "proj_1_b1",
+        "proj_1_b2",
+        "proj_1_b3",
+        "exp_1_b1",
+        "exp_2",
+        "exp_2_b3",
+        "exp_2_b5"
+      ]
+    },
+    {
+      "unit_id": "u02",
+      "status": "unsupported",
+      "reasons": [
+        "'Vite-style SPA' names Vite, which appears nowhere in the profile's tools or evidence",
+        "Project name, role, dates, React, TypeScript, Chrome Extension, FastAPI and PostgreSQL all match proj_1, but the Vite reference is a new fact"
+      ],
+      "evidence_ids": []
+    },
+    {
+      "unit_id": "u03",
+      "status": "unsupported",
+      "reasons": [
+        "'dashboards' is a UI feature not present in proj_1; the profile lists attempt histories and review plans/schedules only",
+        "'attention to layout, typography, and interaction detail' has no backing in any bullet"
+      ],
+      "evidence_ids": []
+    },
+    {
+      "unit_id": "u04",
+      "status": "supported",
+      "reasons": [
+        "Companion Chrome extension capturing LeetCode submissions in real time matches proj_1_b1",
+        "TypeScript is evidenced at proj_1 (NextRound frontend/tools)"
+      ],
+      "evidence_ids": [
+        "proj_1_b1",
+        "proj_1_b2",
+        "TypeScript"
+      ]
+    },
+    {
+      "unit_id": "u05",
+      "status": "supported",
+      "reasons": [
+        "Zero-to-production in two months as a solo engineer with automated test suites and CI gates matches proj_1_b3",
+        "Sole-engineer ownership matches proj_1 one_liner"
+      ],
+      "evidence_ids": [
+        "proj_1_b3",
+        "proj_1"
+      ]
+    },
+    {
+      "unit_id": "u06",
+      "status": "supported",
+      "reasons": [
+        "GitHub Actions CI/CD to Cloud Run, Cloud SQL and Cloudflare Pages is in proj_1_b2",
+        "Frontend-to-Cloudflare-Pages and backend-to-Cloud-Run split matches tool_evidence"
+      ],
+      "evidence_ids": [
+        "proj_1_b2",
+        "Cloudflare Pages",
+        "Google Cloud Run",
+        "Google Cloud SQL"
+      ]
+    },
+    {
+      "unit_id": "u07",
+      "status": "supported",
+      "reasons": [
+        "Project name, ADK Hackathon framing and May–Jun 2025 dates match proj_2",
+        "Python, Gemini and FastAPI are all listed in proj_2 tools"
+      ],
+      "evidence_ids": [
+        "proj_2",
+        "proj_2_b1",
+        "Python",
+        "Gemini",
+        "FastAPI"
+      ]
+    },
+    {
+      "unit_id": "u08",
+      "status": "supported",
+      "reasons": [
+        "Multi-agent resume screening with coordinator and sub-agents matches proj_2_b1/b2",
+        "Agent Engine deployment with OpenTelemetry matches proj_2_b3"
+      ],
+      "evidence_ids": [
+        "proj_2_b1",
+        "proj_2_b2",
+        "proj_2_b3"
+      ]
+    },
+    {
+      "unit_id": "u09",
+      "status": "supported",
+      "reasons": [
+        "Company, title and May 2025–Aug 2025 dates match exp_1"
+      ],
+      "evidence_ids": [
+        "exp_1"
+      ]
+    },
+    {
+      "unit_id": "u10",
+      "status": "supported",
+      "reasons": [
+        "React chat interface on a Shopify Hydrogen pet e-commerce platform with the four listed flows matches exp_1_b1"
+      ],
+      "evidence_ids": [
+        "exp_1_b1"
+      ]
+    },
+    {
+      "unit_id": "u11",
+      "status": "supported",
+      "reasons": [
+        "Redis embedding cache, async request handling and 45% latency reduction under concurrent load match exp_1_b3"
+      ],
+      "evidence_ids": [
+        "exp_1_b3"
+      ]
+    },
+    {
+      "unit_id": "u12",
+      "status": "supported",
+      "reasons": [
+        "Qdrant, hybrid semantic + keyword retrieval, 30% relevance gain and 10K-prompt set match exp_1_b2",
+        "FastAPI and LangChain are evidenced at exp_1"
+      ],
+      "evidence_ids": [
+        "exp_1_b1",
+        "exp_1_b2",
+        "FastAPI",
+        "LangChain"
+      ]
+    },
+    {
+      "unit_id": "u13",
+      "status": "supported",
+      "reasons": [
+        "Docker containerization, AWS EC2 deployment and Nginx match exp_1_b4"
+      ],
+      "evidence_ids": [
+        "exp_1_b4"
+      ]
+    },
+    {
+      "unit_id": "u14",
+      "status": "supported",
+      "reasons": [
+        "Company, title and Jul 2022–Apr 2024 dates match exp_2"
+      ],
+      "evidence_ids": [
+        "exp_2"
+      ]
+    },
+    {
+      "unit_id": "u15",
+      "status": "supported",
+      "reasons": [
+        "Spring Boot backend launched end to end, recipe consolidation, 10K+ DAU within one week match exp_2_b1 ('first-party' restates 'Alexa-owned')"
+      ],
+      "evidence_ids": [
+        "exp_2_b1"
+      ]
+    },
+    {
+      "unit_id": "u16",
+      "status": "unsupported",
+      "reasons": [
+        "30% p99 improvement, idempotent REST endpoints and pagination match exp_2_b3",
+        "'directly improving client-side render times' asserts a client-side outcome that appears nowhere in the profile"
+      ],
+      "evidence_ids": []
+    },
+    {
+      "unit_id": "u17",
+      "status": "supported",
+      "reasons": [
+        "GraphQL with DataLoader batching and sub-50ms preference sync match exp_2_b6",
+        "DynamoDB GSIs and MySQL/RDS read replicas with sub-100ms peak queries match exp_2_b2"
+      ],
+      "evidence_ids": [
+        "exp_2_b6",
+        "exp_2_b2"
+      ]
+    },
+    {
+      "unit_id": "u18",
+      "status": "supported",
+      "reasons": [
+        "Redis Cluster with Bloom-filter pre-checks cutting read load 45% matches exp_2_b8",
+        "99.99% availability behind API Gateway with rate limiting and circuit breakers matches exp_2_b5"
+      ],
+      "evidence_ids": [
+        "exp_2_b8",
+        "exp_2_b5"
+      ]
+    },
+    {
+      "unit_id": "u19",
+      "status": "supported",
+      "reasons": [
+        "Docker, EKS and GitHub Actions blue-green zero-downtime rollouts match exp_2_b9",
+        "CloudWatch + CDK alarm migration with 40% false-positive reduction matches exp_2_b10"
+      ],
+      "evidence_ids": [
+        "exp_2_b9",
+        "exp_2_b10"
+      ]
+    },
+    {
+      "unit_id": "u20",
+      "status": "unsupported",
+      "reasons": [
+        "'HTML/CSS' does not appear anywhere in the profile's skills or tool_evidence",
+        "'component design systems' is an asserted competency with no profile backing",
+        "All other listed tools do appear in skills/tool_evidence and are acceptable as skills-line mentions"
+      ],
+      "evidence_ids": []
+    },
+    {
+      "unit_id": "u21",
+      "status": "supported",
+      "reasons": [
+        "Northeastern M.S. CS Sept 2024–May 2026 matches edu_1",
+        "Minnesota–Twin Cities B.A. CS Aug 2019–May 2022 matches edu_2"
+      ],
+      "evidence_ids": [
+        "edu_1",
+        "edu_2"
+      ]
+    }
+  ],
+  "agreement": {
+    "compared": 21,
+    "agreed": 19,
+    "rate": 0.905,
+    "disagreements": [
+      "u03  rules=supported  judge=unsupported\n    text  : Designed and built a responsive React/TypeScript interface for an interview-prep platform: dashboards, attempt\n    rules : -\n    judge : 'dashboards' is a UI feature not present in proj_1; the profile lists attempt histories and review plans/schedules only; 'attention to layout, typography, and interaction detail' has no backing in any bullet",
+      "u16  rules=supported  judge=unsupported\n    text  : Cut p99 latency 30% via idempotent REST endpoint design and pagination that shrank response payloads and conne\n    rules : -\n    judge : 30% p99 improvement, idempotent REST endpoints and pagination match exp_2_b3; 'directly improving client-side render times' asserts a client-side outcome that appears nowhere in the profile"
+    ]
+  },
+  "writing_preference_violations": [
+    "document is 4367 chars; resume_max_pages=1 allows roughly 4000"
+  ]
+}

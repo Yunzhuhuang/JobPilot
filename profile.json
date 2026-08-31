@@ -1,0 +1,1004 @@
+{
+  "schema_version": 1,
+  "identity": {
+    "name": "Clara Huang",
+    "email": "clarahuang11111@gmail.com",
+    "location": "Seattle, WA",
+    "linkedin": "linkedin.com/in/yunzhu-huang",
+    "github": null,
+    "open_to_relocation": true
+  },
+  "constraints": {
+    "needs_sponsorship": true,
+    "target_roles": [
+      "Software Engineer",
+      "Full-Stack Engineer",
+      "AI Engineer"
+    ],
+    "excluded_locations": [
+      "outside the United States"
+    ],
+    "earliest_start": "2026-09"
+  },
+  "education": [
+    {
+      "id": "edu_1",
+      "school": "Northeastern University",
+      "degree": "M.S.",
+      "field": "Computer Science",
+      "start": "2024-09",
+      "end": "2026-05",
+      "gpa": 3.8,
+      "coursework": [
+        "Machine Learning",
+        "Natural Language Processing",
+        "Reinforcement Learning"
+      ]
+    },
+    {
+      "id": "edu_2",
+      "school": "University of Minnesota-Twin Cities",
+      "degree": "B.A.",
+      "field": "Computer Science",
+      "start": "2019-08",
+      "end": "2022-05",
+      "gpa": 3.9,
+      "coursework": []
+    }
+  ],
+  "experience": [
+    {
+      "id": "exp_1",
+      "company": "AIPetique LLC",
+      "title": "Software Development Engineer Intern",
+      "start": "2025-05",
+      "end": "2025-08",
+      "bullets": [
+        {
+          "id": "exp_1_b1",
+          "text": "Built and deployed an AI customer-service chatbot for a Shopify Hydrogen pet e-commerce platform using FastAPI, LangChain, and React, covering pet care Q&A, order tracking, store policy, and account management.",
+          "tools": [
+            "FastAPI",
+            "LangChain",
+            "React",
+            "Shopify Hydrogen"
+          ]
+        },
+        {
+          "id": "exp_1_b2",
+          "text": "Designed a RAG pipeline with GTE-Qwen2-7B-instruct embeddings, Qdrant vector storage, and hybrid semantic + keyword retrieval, improving answer relevance by 30% across a 10K-prompt evaluation set.",
+          "tools": [
+            "RAG",
+            "GTE-Qwen2-7B-instruct",
+            "Qdrant"
+          ]
+        },
+        {
+          "id": "exp_1_b3",
+          "text": "Cached embeddings in Redis and optimized asynchronous request handling, reducing end-to-end query latency by 45% under concurrent load.",
+          "tools": [
+            "Redis"
+          ]
+        },
+        {
+          "id": "exp_1_b4",
+          "text": "Containerized backend services with Docker and deployed on AWS EC2 behind Nginx load balancing for production traffic.",
+          "tools": [
+            "Docker",
+            "AWS EC2",
+            "Nginx"
+          ]
+        }
+      ],
+      "tools": [
+        "FastAPI",
+        "LangChain",
+        "React",
+        "Shopify Hydrogen",
+        "RAG",
+        "GTE-Qwen2-7B-instruct",
+        "Qdrant",
+        "Redis",
+        "Docker",
+        "AWS EC2",
+        "Nginx",
+        "Python"
+      ]
+    },
+    {
+      "id": "exp_2",
+      "company": "Amazon.com Services LLC",
+      "title": "Software Development Engineer - Alexa Kitchen",
+      "start": "2022-07",
+      "end": "2024-04",
+      "bullets": [
+        {
+          "id": "exp_2_b1",
+          "text": "Designed and launched a Spring Boot backend end to end, consolidating Alexa-owned, third-party, and user-generated recipes, serving 10K+ daily active users within one week of launch.",
+          "tools": [
+            "Spring Boot"
+          ]
+        },
+        {
+          "id": "exp_2_b2",
+          "text": "Modeled recipe metadata in DynamoDB with GSI-based query acceleration and relational preference mappings in MySQL (RDS) with read replicas, sustaining sub-100ms queries at peak load.",
+          "tools": [
+            "DynamoDB",
+            "MySQL",
+            "Amazon RDS"
+          ]
+        },
+        {
+          "id": "exp_2_b3",
+          "text": "Implemented RESTful APIs with idempotent endpoint design and pagination, cutting response payloads and connection overhead and improving p99 latency by 30%.",
+          "tools": [
+            "REST"
+          ]
+        },
+        {
+          "id": "exp_2_b4",
+          "text": "Configured SQS ingestion pipelines with dead-letter queues and exponential backoff, processing 500K daily events at 99.9% delivery reliability.",
+          "tools": [
+            "Amazon SQS"
+          ]
+        },
+        {
+          "id": "exp_2_b5",
+          "text": "Developed event-driven Lambda functions behind API Gateway with rate limiting and circuit-breaker middleware, maintaining 99.99% availability across Alexa Kitchen APIs.",
+          "tools": [
+            "AWS Lambda",
+            "Amazon API Gateway"
+          ]
+        },
+        {
+          "id": "exp_2_b6",
+          "text": "Integrated Meepo, a centralized preference repository, to deliver personalized recipe recommendations; built GraphQL APIs with DataLoader batching, achieving sub-50ms preference-sync latency.",
+          "tools": [
+            "GraphQL"
+          ]
+        },
+        {
+          "id": "exp_2_b7",
+          "text": "Implemented JWT authentication and AWS Cognito-based identity federation with role-based access control to secure preference APIs and synchronize user sessions across services.",
+          "tools": [
+            "JWT",
+            "AWS Cognito"
+          ]
+        },
+        {
+          "id": "exp_2_b8",
+          "text": "Deployed distributed caching with Redis Cluster for preference graphs and recipe embeddings, using Bloom-filter pre-checks to block queries for nonexistent keys and prevent cache penetration, cutting backend read load by 45%.",
+          "tools": [
+            "Redis"
+          ]
+        },
+        {
+          "id": "exp_2_b9",
+          "text": "Automated CI/CD pipelines with Docker, AWS EKS, and GitHub Actions for blue-green deployments, ensuring zero-downtime rollouts and environment parity across staging and production.",
+          "tools": [
+            "Docker",
+            "Amazon EKS",
+            "GitHub Actions",
+            "CI/CD"
+          ]
+        },
+        {
+          "id": "exp_2_b10",
+          "text": "Migrated manual operational alarms to infrastructure-as-code with CloudWatch and CDK, reducing false-positive alerts by 40%.",
+          "tools": [
+            "Amazon CloudWatch",
+            "AWS CDK"
+          ]
+        }
+      ],
+      "tools": [
+        "Spring Boot",
+        "Java",
+        "DynamoDB",
+        "MySQL",
+        "Amazon RDS",
+        "REST",
+        "Amazon SQS",
+        "AWS Lambda",
+        "Amazon API Gateway",
+        "GraphQL",
+        "JWT",
+        "AWS Cognito",
+        "Redis",
+        "Docker",
+        "Amazon EKS",
+        "GitHub Actions",
+        "CI/CD",
+        "Amazon CloudWatch",
+        "AWS CDK",
+        "SQL"
+      ]
+    }
+  ],
+  "projects": [
+    {
+      "id": "proj_1",
+      "name": "NextRound",
+      "one_liner": "Creator and sole full-stack engineer of an interview-prep platform, Feb 2026 to present.",
+      "bullets": [
+        {
+          "id": "proj_1_b1",
+          "text": "Building an end-to-end interview-prep platform with a companion Chrome extension that captures LeetCode submissions in real time and generates personalized spaced-repetition review schedules.",
+          "tools": [
+            "Chrome Extension"
+          ]
+        },
+        {
+          "id": "proj_1_b2",
+          "text": "Developed a responsive React/TypeScript frontend and a containerized FastAPI backend with PostgreSQL managing attempt histories and review plans; automated CI/CD with GitHub Actions deploying to Google Cloud Run, Cloud SQL, and Cloudflare Pages.",
+          "tools": [
+            "React",
+            "TypeScript",
+            "FastAPI",
+            "PostgreSQL",
+            "GitHub Actions",
+            "CI/CD",
+            "Google Cloud Run",
+            "Google Cloud SQL",
+            "Cloudflare Pages"
+          ]
+        },
+        {
+          "id": "proj_1_b3",
+          "text": "Shipped from zero to production in two months as a solo engineer using an AI-assisted development workflow (Cursor and Claude Code), with automated test suites and CI gates enforcing quality on every AI-generated change.",
+          "tools": [
+            "Cursor",
+            "Claude Code"
+          ]
+        }
+      ],
+      "tools": [
+        "React",
+        "TypeScript",
+        "FastAPI",
+        "PostgreSQL",
+        "GitHub Actions",
+        "CI/CD",
+        "Google Cloud Run",
+        "Google Cloud SQL",
+        "Cloudflare Pages",
+        "Chrome Extension",
+        "Cursor",
+        "Claude Code",
+        "Python"
+      ],
+      "link": null
+    },
+    {
+      "id": "proj_2",
+      "name": "AI Talent Match Agent",
+      "one_liner": "Google Cloud ADK Hackathon entry, May 2025 to Jun 2025: an automated resume-screening multi-agent system.",
+      "bullets": [
+        {
+          "id": "proj_2_b1",
+          "text": "Built an automated resume-screening system with Google Agent Development Kit and Gemini 1.5 Flash for semantic scoring and entity extraction from PDF resumes.",
+          "tools": [
+            "Google ADK",
+            "Gemini"
+          ]
+        },
+        {
+          "id": "proj_2_b2",
+          "text": "Engineered a multi-agent architecture with a coordinator agent orchestrating specialized sub-agents over A2A protocols and shared tool-context state.",
+          "tools": [
+            "A2A"
+          ]
+        },
+        {
+          "id": "proj_2_b3",
+          "text": "Deployed to Google Cloud Agent Engine with OpenTelemetry observability, and evaluated agent performance against benchmark thresholds within the ADK framework.",
+          "tools": [
+            "Google Cloud Agent Engine",
+            "OpenTelemetry"
+          ]
+        }
+      ],
+      "tools": [
+        "Google ADK",
+        "Gemini",
+        "A2A",
+        "Google Cloud Agent Engine",
+        "OpenTelemetry",
+        "Python",
+        "FastAPI"
+      ],
+      "link": null
+    }
+  ],
+  "skills": {
+    "languages": [
+      "Java",
+      "Python",
+      "C",
+      "C++",
+      "TypeScript",
+      "JavaScript",
+      "Go",
+      "SQL"
+    ],
+    "frameworks": [
+      "Spring Boot",
+      "FastAPI",
+      "Django",
+      "Node.js",
+      "React",
+      "Redux",
+      "Angular",
+      "MyBatis",
+      "Hibernate",
+      "Express.js"
+    ],
+    "cloud_infra": [
+      "AWS Lambda",
+      "Amazon SQS",
+      "AWS EC2",
+      "Amazon API Gateway",
+      "Amazon EKS",
+      "AWS Cognito",
+      "Amazon CloudWatch",
+      "AWS CDK",
+      "Google Cloud Run",
+      "Google Cloud SQL",
+      "Cloudflare Pages",
+      "Docker",
+      "Kubernetes",
+      "Nginx",
+      "GitHub Actions",
+      "Jenkins",
+      "Git",
+      "Linux"
+    ],
+    "data": [
+      "DynamoDB",
+      "MySQL",
+      "PostgreSQL",
+      "MongoDB",
+      "Redis",
+      "Kafka",
+      "Qdrant",
+      "Amazon RDS"
+    ],
+    "ai_ml": [
+      "LangChain",
+      "LangGraph",
+      "RAG",
+      "Qdrant",
+      "Google ADK",
+      "Gemini",
+      "GTE-Qwen2-7B-instruct"
+    ],
+    "testing": [],
+    "other": [
+      "GraphQL",
+      "JWT",
+      "REST",
+      "CI/CD",
+      "Shopify Hydrogen",
+      "A2A",
+      "OpenTelemetry",
+      "Chrome Extension",
+      "Cursor",
+      "Claude Code",
+      "Google Cloud Agent Engine"
+    ]
+  },
+  "tool_evidence": [
+    {
+      "tool": "FastAPI",
+      "aliases": [
+        "fast api"
+      ],
+      "where": "exp_1",
+      "evidence": "Built the AIPetique customer-service chatbot backend with FastAPI, and used it again for the NextRound backend.",
+      "source": "onboarding",
+      "added_at": "2026-08-30"
+    },
+    {
+      "tool": "LangChain",
+      "aliases": [],
+      "where": "exp_1",
+      "evidence": "Used LangChain to build the AIPetique chatbot covering pet care Q&A, order tracking, store policy, and account management.",
+      "source": "onboarding",
+      "added_at": "2026-08-30"
+    },
+    {
+      "tool": "React",
+      "aliases": [
+        "React.js",
+        "ReactJS"
+      ],
+      "where": "exp_1",
+      "evidence": "Built the AIPetique chatbot front end in React, and the NextRound frontend in React/TypeScript.",
+      "source": "onboarding",
+      "added_at": "2026-08-30"
+    },
+    {
+      "tool": "Shopify Hydrogen",
+      "aliases": [
+        "Hydrogen",
+        "Shopify"
+      ],
+      "where": "exp_1",
+      "evidence": "The AIPetique pet e-commerce platform the chatbot was built for ran on Shopify Hydrogen.",
+      "source": "onboarding",
+      "added_at": "2026-08-30"
+    },
+    {
+      "tool": "RAG",
+      "aliases": [
+        "retrieval-augmented generation",
+        "retrieval augmented generation"
+      ],
+      "where": "exp_1",
+      "evidence": "Designed the AIPetique RAG pipeline with hybrid semantic and keyword retrieval, improving answer relevance by 30% on a 10K-prompt evaluation set.",
+      "source": "onboarding",
+      "added_at": "2026-08-30"
+    },
+    {
+      "tool": "GTE-Qwen2-7B-instruct",
+      "aliases": [
+        "GTE-Qwen2",
+        "Qwen embeddings"
+      ],
+      "where": "exp_1",
+      "evidence": "Used GTE-Qwen2-7B-instruct embeddings in the AIPetique RAG pipeline.",
+      "source": "onboarding",
+      "added_at": "2026-08-30"
+    },
+    {
+      "tool": "Qdrant",
+      "aliases": [],
+      "where": "exp_1",
+      "evidence": "Used Qdrant for vector storage in the AIPetique RAG pipeline.",
+      "source": "onboarding",
+      "added_at": "2026-08-30"
+    },
+    {
+      "tool": "Redis",
+      "aliases": [
+        "Redis Cluster",
+        "ElastiCache"
+      ],
+      "where": "exp_2",
+      "evidence": "Deployed Redis Cluster for preference graphs and recipe embeddings at Amazon with Bloom-filter pre-checks, and cached embeddings in Redis at AIPetique.",
+      "source": "onboarding",
+      "added_at": "2026-08-30"
+    },
+    {
+      "tool": "Docker",
+      "aliases": [
+        "containerization"
+      ],
+      "where": "exp_2",
+      "evidence": "Automated blue-green CI/CD with Docker at Amazon, and containerized the AIPetique backend services with it.",
+      "source": "onboarding",
+      "added_at": "2026-08-30"
+    },
+    {
+      "tool": "AWS EC2",
+      "aliases": [
+        "EC2",
+        "Amazon EC2"
+      ],
+      "where": "exp_1",
+      "evidence": "Deployed the AIPetique backend services on AWS EC2 for production traffic.",
+      "source": "onboarding",
+      "added_at": "2026-08-30"
+    },
+    {
+      "tool": "Nginx",
+      "aliases": [],
+      "where": "exp_1",
+      "evidence": "Put the AIPetique backend behind Nginx load balancing.",
+      "source": "onboarding",
+      "added_at": "2026-08-30"
+    },
+    {
+      "tool": "Spring Boot",
+      "aliases": [
+        "SpringBoot",
+        "Spring"
+      ],
+      "where": "exp_2",
+      "evidence": "Designed and launched the Alexa Kitchen Spring Boot backend end to end, serving 10K+ daily active users within a week of launch.",
+      "source": "onboarding",
+      "added_at": "2026-08-30"
+    },
+    {
+      "tool": "Java",
+      "aliases": [],
+      "where": "exp_2",
+      "evidence": "Listed first under Languages on the resume; the Alexa Kitchen backend was a Spring Boot service.",
+      "source": "onboarding",
+      "added_at": "2026-08-30"
+    },
+    {
+      "tool": "DynamoDB",
+      "aliases": [
+        "Amazon DynamoDB"
+      ],
+      "where": "exp_2",
+      "evidence": "Modeled Alexa Kitchen recipe metadata in DynamoDB with GSI-based query acceleration, sustaining sub-100ms queries at peak.",
+      "source": "onboarding",
+      "added_at": "2026-08-30"
+    },
+    {
+      "tool": "MySQL",
+      "aliases": [],
+      "where": "exp_2",
+      "evidence": "Held relational preference mappings for Alexa Kitchen in MySQL with read replicas.",
+      "source": "onboarding",
+      "added_at": "2026-08-30"
+    },
+    {
+      "tool": "Amazon RDS",
+      "aliases": [
+        "RDS"
+      ],
+      "where": "exp_2",
+      "evidence": "Ran the Alexa Kitchen MySQL preference store on RDS with read replicas.",
+      "source": "onboarding",
+      "added_at": "2026-08-30"
+    },
+    {
+      "tool": "REST",
+      "aliases": [
+        "REST API",
+        "RESTful API",
+        "RESTful APIs"
+      ],
+      "where": "exp_2",
+      "evidence": "Implemented RESTful APIs with idempotent endpoint design and pagination, improving p99 latency by 30%.",
+      "source": "onboarding",
+      "added_at": "2026-08-30"
+    },
+    {
+      "tool": "Amazon SQS",
+      "aliases": [
+        "SQS"
+      ],
+      "where": "exp_2",
+      "evidence": "Configured SQS ingestion pipelines with dead-letter queues and exponential backoff, processing 500K daily events at 99.9% delivery reliability.",
+      "source": "onboarding",
+      "added_at": "2026-08-30"
+    },
+    {
+      "tool": "AWS Lambda",
+      "aliases": [
+        "Lambda"
+      ],
+      "where": "exp_2",
+      "evidence": "Developed event-driven Lambda functions for Alexa Kitchen, maintaining 99.99% API availability.",
+      "source": "onboarding",
+      "added_at": "2026-08-30"
+    },
+    {
+      "tool": "Amazon API Gateway",
+      "aliases": [
+        "API Gateway"
+      ],
+      "where": "exp_2",
+      "evidence": "Fronted the Alexa Kitchen Lambda functions with API Gateway, adding rate limiting and circuit-breaker middleware.",
+      "source": "onboarding",
+      "added_at": "2026-08-30"
+    },
+    {
+      "tool": "GraphQL",
+      "aliases": [
+        "DataLoader"
+      ],
+      "where": "exp_2",
+      "evidence": "Built GraphQL APIs with DataLoader batching for Alexa Kitchen preferences, achieving sub-50ms preference-sync latency.",
+      "source": "onboarding",
+      "added_at": "2026-08-30"
+    },
+    {
+      "tool": "JWT",
+      "aliases": [
+        "JSON Web Token"
+      ],
+      "where": "exp_2",
+      "evidence": "Implemented JWT authentication to secure the Alexa Kitchen preference APIs.",
+      "source": "onboarding",
+      "added_at": "2026-08-30"
+    },
+    {
+      "tool": "AWS Cognito",
+      "aliases": [
+        "Cognito",
+        "Amazon Cognito"
+      ],
+      "where": "exp_2",
+      "evidence": "Set up AWS Cognito identity federation with role-based access control to synchronize user sessions across Alexa Kitchen services.",
+      "source": "onboarding",
+      "added_at": "2026-08-30"
+    },
+    {
+      "tool": "Amazon EKS",
+      "aliases": [
+        "EKS"
+      ],
+      "where": "exp_2",
+      "evidence": "Ran blue-green deployments for Alexa Kitchen on AWS EKS.",
+      "source": "onboarding",
+      "added_at": "2026-08-30"
+    },
+    {
+      "tool": "GitHub Actions",
+      "aliases": [],
+      "where": "exp_2",
+      "evidence": "Automated CI/CD with GitHub Actions at Amazon for zero-downtime rollouts, and again for NextRound deployments.",
+      "source": "onboarding",
+      "added_at": "2026-08-30"
+    },
+    {
+      "tool": "CI/CD",
+      "aliases": [
+        "continuous integration",
+        "continuous delivery"
+      ],
+      "where": "exp_2",
+      "evidence": "Automated CI/CD pipelines for blue-green deployments at Amazon and for NextRound's Cloud Run releases.",
+      "source": "onboarding",
+      "added_at": "2026-08-30"
+    },
+    {
+      "tool": "Amazon CloudWatch",
+      "aliases": [
+        "CloudWatch"
+      ],
+      "where": "exp_2",
+      "evidence": "Migrated manual Alexa Kitchen operational alarms to CloudWatch, cutting false-positive alerts by 40%.",
+      "source": "onboarding",
+      "added_at": "2026-08-30"
+    },
+    {
+      "tool": "AWS CDK",
+      "aliases": [
+        "CDK",
+        "Cloud Development Kit",
+        "infrastructure-as-code"
+      ],
+      "where": "exp_2",
+      "evidence": "Moved Alexa Kitchen alarms to infrastructure-as-code with AWS CDK.",
+      "source": "onboarding",
+      "added_at": "2026-08-30"
+    },
+    {
+      "tool": "TypeScript",
+      "aliases": [
+        "TS"
+      ],
+      "where": "proj_1",
+      "evidence": "Wrote the NextRound frontend in React/TypeScript.",
+      "source": "onboarding",
+      "added_at": "2026-08-30"
+    },
+    {
+      "tool": "PostgreSQL",
+      "aliases": [
+        "Postgres"
+      ],
+      "where": "proj_1",
+      "evidence": "Used PostgreSQL in NextRound to manage attempt histories and review plans.",
+      "source": "onboarding",
+      "added_at": "2026-08-30"
+    },
+    {
+      "tool": "Google Cloud Run",
+      "aliases": [
+        "Cloud Run"
+      ],
+      "where": "proj_1",
+      "evidence": "Deployed the NextRound backend to Google Cloud Run via GitHub Actions.",
+      "source": "onboarding",
+      "added_at": "2026-08-30"
+    },
+    {
+      "tool": "Google Cloud SQL",
+      "aliases": [
+        "Cloud SQL"
+      ],
+      "where": "proj_1",
+      "evidence": "Ran the NextRound PostgreSQL database on Google Cloud SQL.",
+      "source": "onboarding",
+      "added_at": "2026-08-30"
+    },
+    {
+      "tool": "Cloudflare Pages",
+      "aliases": [
+        "Cloudflare"
+      ],
+      "where": "proj_1",
+      "evidence": "Deployed the NextRound frontend to Cloudflare Pages.",
+      "source": "onboarding",
+      "added_at": "2026-08-30"
+    },
+    {
+      "tool": "Chrome Extension",
+      "aliases": [
+        "browser extension"
+      ],
+      "where": "proj_1",
+      "evidence": "Built the NextRound companion Chrome extension that captures LeetCode submissions in real time.",
+      "source": "onboarding",
+      "added_at": "2026-08-30"
+    },
+    {
+      "tool": "Cursor",
+      "aliases": [],
+      "where": "proj_1",
+      "evidence": "Shipped NextRound solo using an AI-assisted development workflow built on Cursor.",
+      "source": "onboarding",
+      "added_at": "2026-08-30"
+    },
+    {
+      "tool": "Claude Code",
+      "aliases": [],
+      "where": "proj_1",
+      "evidence": "Shipped NextRound solo using an AI-assisted development workflow built on Claude Code, with CI gates on every AI-generated change.",
+      "source": "onboarding",
+      "added_at": "2026-08-30"
+    },
+    {
+      "tool": "Google ADK",
+      "aliases": [
+        "ADK",
+        "Agent Development Kit",
+        "Google Agent Development Kit"
+      ],
+      "where": "proj_2",
+      "evidence": "Built the AI Talent Match Agent resume-screening system on the Google Agent Development Kit for the Google Cloud ADK Hackathon.",
+      "source": "onboarding",
+      "added_at": "2026-08-30"
+    },
+    {
+      "tool": "Gemini",
+      "aliases": [
+        "Gemini 1.5 Flash",
+        "Google Gemini"
+      ],
+      "where": "proj_2",
+      "evidence": "Used Gemini 1.5 Flash for semantic scoring and entity extraction from PDF resumes.",
+      "source": "onboarding",
+      "added_at": "2026-08-30"
+    },
+    {
+      "tool": "A2A",
+      "aliases": [
+        "agent-to-agent protocol"
+      ],
+      "where": "proj_2",
+      "evidence": "Orchestrated specialized sub-agents over A2A protocols with shared tool-context state.",
+      "source": "onboarding",
+      "added_at": "2026-08-30"
+    },
+    {
+      "tool": "Google Cloud Agent Engine",
+      "aliases": [
+        "Agent Engine",
+        "Vertex AI Agent Engine"
+      ],
+      "where": "proj_2",
+      "evidence": "Deployed the AI Talent Match Agent to Google Cloud Agent Engine.",
+      "source": "onboarding",
+      "added_at": "2026-08-30"
+    },
+    {
+      "tool": "OpenTelemetry",
+      "aliases": [
+        "OTel"
+      ],
+      "where": "proj_2",
+      "evidence": "Instrumented the deployed AI Talent Match Agent with OpenTelemetry observability.",
+      "source": "onboarding",
+      "added_at": "2026-08-30"
+    },
+    {
+      "tool": "Python",
+      "aliases": [],
+      "where": "exp_1",
+      "evidence": "Listed under Languages on the resume; the AIPetique and NextRound FastAPI backends and the AI Talent Match Agent are Python.",
+      "source": "onboarding",
+      "added_at": "2026-08-30"
+    },
+    {
+      "tool": "SQL",
+      "aliases": [],
+      "where": "exp_2",
+      "evidence": "Listed under Languages on the resume; used against MySQL at Amazon and PostgreSQL in NextRound.",
+      "source": "onboarding",
+      "added_at": "2026-08-30"
+    },
+    {
+      "tool": "JavaScript",
+      "aliases": [
+        "JS"
+      ],
+      "where": "exp_1",
+      "evidence": "Listed under Languages on the resume; used for the React front ends at AIPetique and in NextRound.",
+      "source": "onboarding",
+      "added_at": "2026-08-30"
+    },
+    {
+      "tool": "C",
+      "aliases": [],
+      "where": "self_study",
+      "evidence": "Listed under Languages on the resume; no role or project on the resume details its use.",
+      "source": "onboarding",
+      "added_at": "2026-08-30"
+    },
+    {
+      "tool": "C++",
+      "aliases": [
+        "CPP"
+      ],
+      "where": "self_study",
+      "evidence": "Listed under Languages on the resume; no role or project on the resume details its use.",
+      "source": "onboarding",
+      "added_at": "2026-08-30"
+    },
+    {
+      "tool": "Go",
+      "aliases": [
+        "Golang"
+      ],
+      "where": "self_study",
+      "evidence": "Listed under Languages on the resume; no role or project on the resume details its use.",
+      "source": "onboarding",
+      "added_at": "2026-08-30"
+    },
+    {
+      "tool": "Django",
+      "aliases": [],
+      "where": "self_study",
+      "evidence": "Listed under Backend & Frontend on the resume; no role or project on the resume details its use.",
+      "source": "onboarding",
+      "added_at": "2026-08-30"
+    },
+    {
+      "tool": "Node.js",
+      "aliases": [
+        "Node",
+        "NodeJS"
+      ],
+      "where": "self_study",
+      "evidence": "Listed under Backend & Frontend on the resume; no role or project on the resume details its use.",
+      "source": "onboarding",
+      "added_at": "2026-08-30"
+    },
+    {
+      "tool": "Redux",
+      "aliases": [],
+      "where": "self_study",
+      "evidence": "Listed under Backend & Frontend on the resume; no role or project on the resume details its use.",
+      "source": "onboarding",
+      "added_at": "2026-08-30"
+    },
+    {
+      "tool": "Angular",
+      "aliases": [],
+      "where": "self_study",
+      "evidence": "Listed under Backend & Frontend on the resume; no role or project on the resume details its use.",
+      "source": "onboarding",
+      "added_at": "2026-08-30"
+    },
+    {
+      "tool": "MyBatis",
+      "aliases": [],
+      "where": "self_study",
+      "evidence": "Listed under Backend & Frontend on the resume; no role or project on the resume details its use.",
+      "source": "onboarding",
+      "added_at": "2026-08-30"
+    },
+    {
+      "tool": "Hibernate",
+      "aliases": [],
+      "where": "self_study",
+      "evidence": "Listed under Backend & Frontend on the resume; no role or project on the resume details its use.",
+      "source": "onboarding",
+      "added_at": "2026-08-30"
+    },
+    {
+      "tool": "Express.js",
+      "aliases": [
+        "Express"
+      ],
+      "where": "self_study",
+      "evidence": "Listed under Backend & Frontend on the resume; no role or project on the resume details its use.",
+      "source": "onboarding",
+      "added_at": "2026-08-30"
+    },
+    {
+      "tool": "LangGraph",
+      "aliases": [],
+      "where": "self_study",
+      "evidence": "Listed under AI & Agents on the resume; the resume's LangChain work is at AIPetique, but no bullet names LangGraph.",
+      "source": "onboarding",
+      "added_at": "2026-08-30"
+    },
+    {
+      "tool": "MongoDB",
+      "aliases": [
+        "Mongo"
+      ],
+      "where": "self_study",
+      "evidence": "Listed under Cloud & Data on the resume; no role or project on the resume details its use.",
+      "source": "onboarding",
+      "added_at": "2026-08-30"
+    },
+    {
+      "tool": "Kafka",
+      "aliases": [
+        "Apache Kafka"
+      ],
+      "where": "self_study",
+      "evidence": "Listed under Cloud & Data on the resume; the resume's streaming work at Amazon used SQS, not Kafka.",
+      "source": "onboarding",
+      "added_at": "2026-08-30"
+    },
+    {
+      "tool": "Kubernetes",
+      "aliases": [
+        "K8s"
+      ],
+      "where": "exp_2",
+      "evidence": "Listed under Tools on the resume; the Alexa Kitchen blue-green deployments ran on AWS EKS, which is managed Kubernetes.",
+      "source": "onboarding",
+      "added_at": "2026-08-30"
+    },
+    {
+      "tool": "Jenkins",
+      "aliases": [],
+      "where": "self_study",
+      "evidence": "Listed under Tools on the resume; the CI/CD work described in the bullets used GitHub Actions.",
+      "source": "onboarding",
+      "added_at": "2026-08-30"
+    },
+    {
+      "tool": "Git",
+      "aliases": [],
+      "where": "self_study",
+      "evidence": "Listed under Tools on the resume; used across every role and project.",
+      "source": "onboarding",
+      "added_at": "2026-08-30"
+    },
+    {
+      "tool": "Linux",
+      "aliases": [],
+      "where": "self_study",
+      "evidence": "Listed under Tools on the resume; no role or project on the resume details its use.",
+      "source": "onboarding",
+      "added_at": "2026-08-30"
+    }
+  ],
+  "not_experienced": [],
+  "style_exemplars": [
+    {
+      "kind": "resume_bullet",
+      "text": "Configured SQS ingestion pipelines with dead-letter queues and exponential backoff, processing 500K daily events at 99.9% delivery reliability.",
+      "provenance": "pre-hackathon"
+    },
+    {
+      "kind": "resume_bullet",
+      "text": "Designed a RAG pipeline with GTE-Qwen2-7B-instruct embeddings, Qdrant vector storage, and hybrid semantic + keyword retrieval, improving answer relevance by 30% across a 10K-prompt evaluation set.",
+      "provenance": "pre-hackathon"
+    },
+    {
+      "kind": "resume_bullet",
+      "text": "Shipped from zero to production in two months as a solo engineer using an AI-assisted development workflow (Cursor and Claude Code), with automated test suites and CI gates enforcing quality on every AI-generated change.",
+      "provenance": "pre-hackathon"
+    }
+  ],
+  "writing_preferences": {
+    "resume_max_pages": 1,
+    "no_single_bullet_projects": true,
+    "voice": "first person, concrete, numbers-backed, no generic adjectives",
+    "flag_gaps_instead_of_fabricating": true
+  }
+}

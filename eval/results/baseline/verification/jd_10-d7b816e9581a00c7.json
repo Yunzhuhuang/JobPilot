@@ -1,0 +1,1248 @@
+{
+  "document": "/Users/qiarara/Desktop/JobPilot/output/baseline/2026-08-30/packets/jd_10/resume.md",
+  "profile": "fixture/profile.json",
+  "model": "claude-opus-5",
+  "verified_at": "2026-08-30",
+  "units": [
+    {
+      "unit_id": "u01",
+      "text": "Generalist backend engineer with 2 years building foundational, high-availability platform systems at Amazon (Alexa): 99.99%-availability APIs, JWT/Cognito identity federation with role-based access control, and event-driven pipelines processing 500K events/day at 99.9% delivery reliability. Comfortable owning services end to end — schema to API to deploy — under ambiguous requirements, and shipping fast (solo zero-to-production product in two months). M.S. in Computer Science, plus applied AI engineering experience.",
+      "section": "summary",
+      "container_id": null,
+      "elements": [
+        {
+          "kind": "metric",
+          "value": "2 years experience"
+        },
+        {
+          "kind": "company",
+          "value": "Amazon"
+        },
+        {
+          "kind": "other",
+          "value": "worked on Alexa"
+        },
+        {
+          "kind": "metric",
+          "value": "99.99% availability APIs"
+        },
+        {
+          "kind": "tool",
+          "value": "JWT"
+        },
+        {
+          "kind": "tool",
+          "value": "Cognito"
+        },
+        {
+          "kind": "other",
+          "value": "role-based access control"
+        },
+        {
+          "kind": "metric",
+          "value": "500K events/day"
+        },
+        {
+          "kind": "metric",
+          "value": "99.9% delivery reliability"
+        },
+        {
+          "kind": "other",
+          "value": "solo zero-to-production product in two months"
+        },
+        {
+          "kind": "credential",
+          "value": "M.S. in Computer Science"
+        },
+        {
+          "kind": "other",
+          "value": "applied AI engineering experience"
+        }
+      ]
+    },
+    {
+      "unit_id": "u02",
+      "text": "Amazon.com Services LLC | Software Development Engineer – Alexa Kitchen | Jul 2022 – Apr 2024 **Identity & Access**",
+      "section": "experience",
+      "container_id": "exp_2",
+      "elements": [
+        {
+          "kind": "company",
+          "value": "Amazon.com Services LLC"
+        },
+        {
+          "kind": "title",
+          "value": "Software Development Engineer – Alexa Kitchen"
+        },
+        {
+          "kind": "date",
+          "value": "Jul 2022 – Apr 2024"
+        }
+      ]
+    },
+    {
+      "unit_id": "u03",
+      "text": "Implemented JWT authentication and AWS Cognito identity federation with role-based access control to secure user-preference APIs and synchronize sessions across services.",
+      "section": "experience",
+      "container_id": "exp_2",
+      "elements": [
+        {
+          "kind": "tool",
+          "value": "JWT"
+        },
+        {
+          "kind": "tool",
+          "value": "AWS Cognito"
+        },
+        {
+          "kind": "other",
+          "value": "implemented role-based access control securing user-preference APIs and session synchronization across services"
+        }
+      ]
+    },
+    {
+      "unit_id": "u04",
+      "text": "Built GraphQL APIs with DataLoader batching against a centralized preference repository, achieving sub-50ms cross-service preference-sync latency.",
+      "section": "experience",
+      "container_id": "exp_2",
+      "elements": [
+        {
+          "kind": "tool",
+          "value": "GraphQL"
+        },
+        {
+          "kind": "tool",
+          "value": "DataLoader"
+        },
+        {
+          "kind": "metric",
+          "value": "sub-50ms cross-service preference-sync latency"
+        }
+      ]
+    },
+    {
+      "unit_id": "u05",
+      "text": "**Core Platform Reliability & Scale**",
+      "section": "experience",
+      "container_id": "exp_2",
+      "elements": []
+    },
+    {
+      "unit_id": "u06",
+      "text": "Developed event-driven Lambda services behind API Gateway with rate limiting and circuit-breaker middleware, sustaining 99.99% availability across Alexa Kitchen APIs.",
+      "section": "experience",
+      "container_id": "exp_2",
+      "elements": [
+        {
+          "kind": "tool",
+          "value": "Lambda"
+        },
+        {
+          "kind": "tool",
+          "value": "API Gateway"
+        },
+        {
+          "kind": "other",
+          "value": "built rate limiting and circuit-breaker middleware"
+        },
+        {
+          "kind": "metric",
+          "value": "99.99% availability"
+        }
+      ]
+    },
+    {
+      "unit_id": "u07",
+      "text": "Configured SQS ingestion pipelines with dead-letter queues and exponential backoff, processing 500K daily events at 99.9% delivery reliability — the pattern behind durable, retry-safe workflow processing.",
+      "section": "experience",
+      "container_id": "exp_2",
+      "elements": [
+        {
+          "kind": "tool",
+          "value": "SQS"
+        },
+        {
+          "kind": "other",
+          "value": "configured dead-letter queues and exponential backoff"
+        },
+        {
+          "kind": "metric",
+          "value": "500K daily events"
+        },
+        {
+          "kind": "metric",
+          "value": "99.9% delivery reliability"
+        }
+      ]
+    },
+    {
+      "unit_id": "u08",
+      "text": "Designed idempotent, paginated REST endpoints, cutting payload and connection overhead and improving p99 latency by 30%.",
+      "section": "experience",
+      "container_id": "exp_2",
+      "elements": [
+        {
+          "kind": "other",
+          "value": "designed idempotent, paginated REST endpoints"
+        },
+        {
+          "kind": "metric",
+          "value": "30% p99 latency improvement"
+        }
+      ]
+    },
+    {
+      "unit_id": "u09",
+      "text": "**Ownership End to End**",
+      "section": "experience",
+      "container_id": "exp_2",
+      "elements": []
+    },
+    {
+      "unit_id": "u10",
+      "text": "Designed and launched a Spring Boot backend from scratch, consolidating first-party, third-party, and user-generated content; reached 10K+ daily active users within one week of launch.",
+      "section": "experience",
+      "container_id": "exp_2",
+      "elements": [
+        {
+          "kind": "tool",
+          "value": "Spring Boot"
+        },
+        {
+          "kind": "other",
+          "value": "launched backend from scratch consolidating first-party, third-party, and user-generated content"
+        },
+        {
+          "kind": "metric",
+          "value": "10K+ daily active users within one week of launch"
+        }
+      ]
+    },
+    {
+      "unit_id": "u11",
+      "text": "Modeled data in DynamoDB with GSI query acceleration and MySQL (RDS) with read replicas, holding sub-100ms queries at peak load; added Redis Cluster caching with Bloom-filter pre-checks to prevent cache penetration, cutting backend read load 45%.",
+      "section": "experience",
+      "container_id": "exp_2",
+      "elements": [
+        {
+          "kind": "tool",
+          "value": "DynamoDB"
+        },
+        {
+          "kind": "tool",
+          "value": "GSI"
+        },
+        {
+          "kind": "tool",
+          "value": "MySQL (RDS)"
+        },
+        {
+          "kind": "other",
+          "value": "used read replicas"
+        },
+        {
+          "kind": "metric",
+          "value": "sub-100ms queries at peak load"
+        },
+        {
+          "kind": "tool",
+          "value": "Redis Cluster"
+        },
+        {
+          "kind": "other",
+          "value": "Bloom-filter pre-checks to prevent cache penetration"
+        },
+        {
+          "kind": "metric",
+          "value": "45% reduction in backend read load"
+        }
+      ]
+    },
+    {
+      "unit_id": "u12",
+      "text": "Automated CI/CD with Docker, AWS EKS, and GitHub Actions for blue-green, zero-downtime rollouts; migrated operational alarms to infrastructure-as-code (CloudWatch + CDK), reducing false-positive alerts 40%.",
+      "section": "experience",
+      "container_id": "exp_2",
+      "elements": [
+        {
+          "kind": "tool",
+          "value": "Docker"
+        },
+        {
+          "kind": "tool",
+          "value": "AWS EKS"
+        },
+        {
+          "kind": "tool",
+          "value": "GitHub Actions"
+        },
+        {
+          "kind": "other",
+          "value": "blue-green, zero-downtime rollouts"
+        },
+        {
+          "kind": "tool",
+          "value": "CloudWatch"
+        },
+        {
+          "kind": "tool",
+          "value": "CDK"
+        },
+        {
+          "kind": "metric",
+          "value": "40% reduction in false-positive alerts"
+        }
+      ]
+    },
+    {
+      "unit_id": "u13",
+      "text": "AIPetique LLC | Software Development Engineer Intern | May 2025 – Aug 2025",
+      "section": "experience",
+      "container_id": "exp_1",
+      "elements": [
+        {
+          "kind": "company",
+          "value": "AIPetique LLC"
+        },
+        {
+          "kind": "title",
+          "value": "Software Development Engineer Intern"
+        },
+        {
+          "kind": "date",
+          "value": "May 2025 – Aug 2025"
+        }
+      ]
+    },
+    {
+      "unit_id": "u14",
+      "text": "Built and deployed a production FastAPI + LangChain backend powering customer-facing Q&A, order tracking, and account management for an e-commerce platform.",
+      "section": "experience",
+      "container_id": "exp_1",
+      "elements": [
+        {
+          "kind": "tool",
+          "value": "FastAPI"
+        },
+        {
+          "kind": "tool",
+          "value": "LangChain"
+        },
+        {
+          "kind": "other",
+          "value": "built and deployed production backend for customer-facing Q&A, order tracking, and account management on an e-commerce platform"
+        }
+      ]
+    },
+    {
+      "unit_id": "u15",
+      "text": "Designed a retrieval pipeline (embeddings, Qdrant, hybrid semantic + keyword search), improving answer relevance 30% on a 10K-prompt evaluation set.",
+      "section": "experience",
+      "container_id": "exp_1",
+      "elements": [
+        {
+          "kind": "tool",
+          "value": "Qdrant"
+        },
+        {
+          "kind": "other",
+          "value": "designed retrieval pipeline with embeddings and hybrid semantic + keyword search"
+        },
+        {
+          "kind": "metric",
+          "value": "30% improvement in answer relevance"
+        },
+        {
+          "kind": "metric",
+          "value": "10K-prompt evaluation set"
+        }
+      ]
+    },
+    {
+      "unit_id": "u16",
+      "text": "Cached embeddings in Redis and tuned async request handling, cutting end-to-end latency 45% under concurrent load; containerized with Docker on EC2 behind Nginx.",
+      "section": "experience",
+      "container_id": "exp_1",
+      "elements": [
+        {
+          "kind": "tool",
+          "value": "Redis"
+        },
+        {
+          "kind": "other",
+          "value": "tuned async request handling"
+        },
+        {
+          "kind": "metric",
+          "value": "45% end-to-end latency reduction"
+        },
+        {
+          "kind": "tool",
+          "value": "Docker"
+        },
+        {
+          "kind": "tool",
+          "value": "EC2"
+        },
+        {
+          "kind": "tool",
+          "value": "Nginx"
+        }
+      ]
+    },
+    {
+      "unit_id": "u17",
+      "text": "NextRound | Creator & Sole Full-Stack Engineer — React, TypeScript, FastAPI, PostgreSQL | Feb 2026 – Present",
+      "section": "projects",
+      "container_id": "proj_1",
+      "elements": [
+        {
+          "kind": "company",
+          "value": "NextRound"
+        },
+        {
+          "kind": "title",
+          "value": "Creator & Sole Full-Stack Engineer"
+        },
+        {
+          "kind": "tool",
+          "value": "React"
+        },
+        {
+          "kind": "tool",
+          "value": "TypeScript"
+        },
+        {
+          "kind": "tool",
+          "value": "FastAPI"
+        },
+        {
+          "kind": "tool",
+          "value": "PostgreSQL"
+        },
+        {
+          "kind": "date",
+          "value": "Feb 2026 – Present"
+        }
+      ]
+    },
+    {
+      "unit_id": "u18",
+      "text": "Shipped an interview-prep platform and Chrome extension from zero to production in two months as a solo engineer: FastAPI service, PostgreSQL data model for attempt histories and scheduling, GitHub Actions CI/CD to Cloud Run, Cloud SQL, and Cloudflare Pages, with automated test suites gating every change.",
+      "section": "projects",
+      "container_id": "proj_1",
+      "elements": [
+        {
+          "kind": "other",
+          "value": "shipped interview-prep platform and Chrome extension zero to production in two months as solo engineer"
+        },
+        {
+          "kind": "tool",
+          "value": "Chrome extension"
+        },
+        {
+          "kind": "tool",
+          "value": "FastAPI"
+        },
+        {
+          "kind": "tool",
+          "value": "PostgreSQL"
+        },
+        {
+          "kind": "tool",
+          "value": "GitHub Actions"
+        },
+        {
+          "kind": "tool",
+          "value": "Cloud Run"
+        },
+        {
+          "kind": "tool",
+          "value": "Cloud SQL"
+        },
+        {
+          "kind": "tool",
+          "value": "Cloudflare Pages"
+        },
+        {
+          "kind": "other",
+          "value": "automated test suites gating every change"
+        }
+      ]
+    },
+    {
+      "unit_id": "u19",
+      "text": "AI Talent Match Agent | Google Cloud ADK Hackathon — Python, Gemini, FastAPI | May 2025 – Jun 2025",
+      "section": "projects",
+      "container_id": "proj_2",
+      "elements": [
+        {
+          "kind": "other",
+          "value": "AI Talent Match Agent project for Google Cloud ADK Hackathon"
+        },
+        {
+          "kind": "tool",
+          "value": "Python"
+        },
+        {
+          "kind": "tool",
+          "value": "Gemini"
+        },
+        {
+          "kind": "tool",
+          "value": "FastAPI"
+        },
+        {
+          "kind": "date",
+          "value": "May 2025 – Jun 2025"
+        }
+      ]
+    },
+    {
+      "unit_id": "u20",
+      "text": "Built a multi-agent resume-screening system (coordinator + specialized sub-agents over A2A protocols), deployed to Google Cloud Agent Engine with OpenTelemetry observability and benchmark-based evaluation.",
+      "section": "projects",
+      "container_id": "proj_2",
+      "elements": [
+        {
+          "kind": "other",
+          "value": "built multi-agent resume-screening system with coordinator and specialized sub-agents"
+        },
+        {
+          "kind": "tool",
+          "value": "A2A protocols"
+        },
+        {
+          "kind": "tool",
+          "value": "Google Cloud Agent Engine"
+        },
+        {
+          "kind": "tool",
+          "value": "OpenTelemetry"
+        },
+        {
+          "kind": "other",
+          "value": "benchmark-based evaluation"
+        }
+      ]
+    },
+    {
+      "unit_id": "u21",
+      "text": "**Languages:** Java, Python, Golang, TypeScript, JavaScript, C/C++, SQL **Backend:** Spring Boot, FastAPI, Django, Node.js/Express, REST, GraphQL, gRPC-style service design, MyBatis, Hibernate **Identity & Security:** JWT, OAuth/OIDC via AWS Cognito, role-based access control, API rate limiting, idempotency **Cloud & Data:** AWS (Lambda, API Gateway, DynamoDB, SQS, RDS/MySQL, EC2, EKS, Cognito, CloudWatch, CDK), GCP (Cloud Run, Cloud SQL), PostgreSQL, MongoDB, Redis, Kafka **Infra & Tooling:** Docker, Kubernetes, GitHub Actions, Jenkins, CI/CD, Linux, Git **AI:** LangChain, LangGraph, RAG, Qdrant, Google ADK, LLM integration",
+      "section": "skills",
+      "container_id": null,
+      "elements": [
+        {
+          "kind": "tool",
+          "value": "Java"
+        },
+        {
+          "kind": "tool",
+          "value": "Python"
+        },
+        {
+          "kind": "tool",
+          "value": "Golang"
+        },
+        {
+          "kind": "tool",
+          "value": "TypeScript"
+        },
+        {
+          "kind": "tool",
+          "value": "JavaScript"
+        },
+        {
+          "kind": "tool",
+          "value": "C/C++"
+        },
+        {
+          "kind": "tool",
+          "value": "SQL"
+        },
+        {
+          "kind": "tool",
+          "value": "Spring Boot"
+        },
+        {
+          "kind": "tool",
+          "value": "FastAPI"
+        },
+        {
+          "kind": "tool",
+          "value": "Django"
+        },
+        {
+          "kind": "tool",
+          "value": "Node.js/Express"
+        },
+        {
+          "kind": "tool",
+          "value": "REST"
+        },
+        {
+          "kind": "tool",
+          "value": "GraphQL"
+        },
+        {
+          "kind": "tool",
+          "value": "gRPC-style service design"
+        },
+        {
+          "kind": "tool",
+          "value": "MyBatis"
+        },
+        {
+          "kind": "tool",
+          "value": "Hibernate"
+        },
+        {
+          "kind": "tool",
+          "value": "JWT"
+        },
+        {
+          "kind": "tool",
+          "value": "OAuth/OIDC"
+        },
+        {
+          "kind": "tool",
+          "value": "AWS Cognito"
+        },
+        {
+          "kind": "other",
+          "value": "role-based access control"
+        },
+        {
+          "kind": "other",
+          "value": "API rate limiting"
+        },
+        {
+          "kind": "other",
+          "value": "idempotency"
+        },
+        {
+          "kind": "tool",
+          "value": "AWS Lambda"
+        },
+        {
+          "kind": "tool",
+          "value": "API Gateway"
+        },
+        {
+          "kind": "tool",
+          "value": "DynamoDB"
+        },
+        {
+          "kind": "tool",
+          "value": "SQS"
+        },
+        {
+          "kind": "tool",
+          "value": "RDS/MySQL"
+        },
+        {
+          "kind": "tool",
+          "value": "EC2"
+        },
+        {
+          "kind": "tool",
+          "value": "EKS"
+        },
+        {
+          "kind": "tool",
+          "value": "CloudWatch"
+        },
+        {
+          "kind": "tool",
+          "value": "CDK"
+        },
+        {
+          "kind": "tool",
+          "value": "GCP Cloud Run"
+        },
+        {
+          "kind": "tool",
+          "value": "Cloud SQL"
+        },
+        {
+          "kind": "tool",
+          "value": "PostgreSQL"
+        },
+        {
+          "kind": "tool",
+          "value": "MongoDB"
+        },
+        {
+          "kind": "tool",
+          "value": "Redis"
+        },
+        {
+          "kind": "tool",
+          "value": "Kafka"
+        },
+        {
+          "kind": "tool",
+          "value": "Docker"
+        },
+        {
+          "kind": "tool",
+          "value": "Kubernetes"
+        },
+        {
+          "kind": "tool",
+          "value": "GitHub Actions"
+        },
+        {
+          "kind": "tool",
+          "value": "Jenkins"
+        },
+        {
+          "kind": "tool",
+          "value": "CI/CD"
+        },
+        {
+          "kind": "tool",
+          "value": "Linux"
+        },
+        {
+          "kind": "tool",
+          "value": "Git"
+        },
+        {
+          "kind": "tool",
+          "value": "LangChain"
+        },
+        {
+          "kind": "tool",
+          "value": "LangGraph"
+        },
+        {
+          "kind": "tool",
+          "value": "RAG"
+        },
+        {
+          "kind": "tool",
+          "value": "Qdrant"
+        },
+        {
+          "kind": "tool",
+          "value": "Google ADK"
+        },
+        {
+          "kind": "other",
+          "value": "LLM integration"
+        }
+      ]
+    },
+    {
+      "unit_id": "u22",
+      "text": "**Northeastern University** — M.S. in Computer Science | Sept 2024 – May 2026 **University of Minnesota–Twin Cities** — B.A. in Computer Science | Aug 2019 – May 2022",
+      "section": "education",
+      "container_id": null,
+      "elements": [
+        {
+          "kind": "company",
+          "value": "Northeastern University"
+        },
+        {
+          "kind": "credential",
+          "value": "M.S. in Computer Science"
+        },
+        {
+          "kind": "date",
+          "value": "Sept 2024 – May 2026"
+        },
+        {
+          "kind": "company",
+          "value": "University of Minnesota–Twin Cities"
+        },
+        {
+          "kind": "credential",
+          "value": "B.A. in Computer Science"
+        },
+        {
+          "kind": "date",
+          "value": "Aug 2019 – May 2022"
+        }
+      ]
+    }
+  ],
+  "rules": [
+    {
+      "unit_id": "u01",
+      "status": "unsupported",
+      "reasons": [
+        "credential 'M.S. in Computer Science' matches no profile entry"
+      ],
+      "evidence_ids": []
+    },
+    {
+      "unit_id": "u02",
+      "status": "unsupported",
+      "reasons": [
+        "date 'Jul 2022 – Apr 2024' matches no profile entry"
+      ],
+      "evidence_ids": []
+    },
+    {
+      "unit_id": "u03",
+      "status": "supported",
+      "reasons": [],
+      "evidence_ids": [
+        "exp_2"
+      ]
+    },
+    {
+      "unit_id": "u04",
+      "status": "supported",
+      "reasons": [],
+      "evidence_ids": [
+        "exp_2"
+      ]
+    },
+    {
+      "unit_id": "u05",
+      "status": "supported",
+      "reasons": [],
+      "evidence_ids": [
+        "exp_2"
+      ]
+    },
+    {
+      "unit_id": "u06",
+      "status": "supported",
+      "reasons": [],
+      "evidence_ids": [
+        "exp_2"
+      ]
+    },
+    {
+      "unit_id": "u07",
+      "status": "supported",
+      "reasons": [],
+      "evidence_ids": [
+        "exp_2"
+      ]
+    },
+    {
+      "unit_id": "u08",
+      "status": "supported",
+      "reasons": [],
+      "evidence_ids": []
+    },
+    {
+      "unit_id": "u09",
+      "status": "supported",
+      "reasons": [],
+      "evidence_ids": [
+        "exp_2"
+      ]
+    },
+    {
+      "unit_id": "u10",
+      "status": "supported",
+      "reasons": [],
+      "evidence_ids": [
+        "exp_2"
+      ]
+    },
+    {
+      "unit_id": "u11",
+      "status": "unsupported",
+      "reasons": [
+        "tool 'MySQL (RDS)' [unsupported] -- no tool_evidence entry"
+      ],
+      "evidence_ids": [
+        "exp_2",
+        "exp_2_b2"
+      ]
+    },
+    {
+      "unit_id": "u12",
+      "status": "supported",
+      "reasons": [],
+      "evidence_ids": [
+        "exp_2"
+      ]
+    },
+    {
+      "unit_id": "u13",
+      "status": "unsupported",
+      "reasons": [
+        "date 'May 2025 – Aug 2025' matches no profile entry"
+      ],
+      "evidence_ids": []
+    },
+    {
+      "unit_id": "u14",
+      "status": "supported",
+      "reasons": [],
+      "evidence_ids": [
+        "exp_1"
+      ]
+    },
+    {
+      "unit_id": "u15",
+      "status": "supported",
+      "reasons": [],
+      "evidence_ids": [
+        "exp_1"
+      ]
+    },
+    {
+      "unit_id": "u16",
+      "status": "supported",
+      "reasons": [],
+      "evidence_ids": [
+        "exp_1"
+      ]
+    },
+    {
+      "unit_id": "u17",
+      "status": "unsupported",
+      "reasons": [
+        "title 'Creator & Sole Full-Stack Engineer' matches no profile entry",
+        "date 'Feb 2026 – Present' matches no profile entry"
+      ],
+      "evidence_ids": [
+        "proj_1"
+      ]
+    },
+    {
+      "unit_id": "u18",
+      "status": "supported",
+      "reasons": [],
+      "evidence_ids": [
+        "proj_1"
+      ]
+    },
+    {
+      "unit_id": "u19",
+      "status": "unsupported",
+      "reasons": [
+        "date 'May 2025 – Jun 2025' matches no profile entry"
+      ],
+      "evidence_ids": [
+        "proj_2"
+      ]
+    },
+    {
+      "unit_id": "u20",
+      "status": "supported",
+      "reasons": [],
+      "evidence_ids": [
+        "proj_2",
+        "proj_2_b2"
+      ]
+    },
+    {
+      "unit_id": "u21",
+      "status": "unsupported",
+      "reasons": [
+        "tool 'C/C++' [unsupported] -- no tool_evidence entry",
+        "tool 'Node.js/Express' [unsupported] -- no tool_evidence entry",
+        "tool 'gRPC-style service design' [unsupported] -- no tool_evidence entry",
+        "tool 'OAuth/OIDC' [unsupported] -- no tool_evidence entry",
+        "tool 'RDS/MySQL' [unsupported] -- no tool_evidence entry"
+      ],
+      "evidence_ids": []
+    },
+    {
+      "unit_id": "u22",
+      "status": "unsupported",
+      "reasons": [
+        "credential 'M.S. in Computer Science' matches no profile entry",
+        "date 'Sept 2024 – May 2026' matches no profile entry",
+        "credential 'B.A. in Computer Science' matches no profile entry",
+        "date 'Aug 2019 – May 2022' matches no profile entry"
+      ],
+      "evidence_ids": []
+    }
+  ],
+  "judge": [
+    {
+      "unit_id": "u01",
+      "status": "supported",
+      "reasons": [
+        "Amazon / Alexa Kitchen role, 99.99% availability, JWT+Cognito RBAC, 500K daily events at 99.9% all appear in exp_2 bullets",
+        "Solo zero-to-production in two months matches proj_1_b3; M.S. CS matches edu_1",
+        "'2 years' is a rounding of Jul 2022–Apr 2024 (21 months)"
+      ],
+      "evidence_ids": [
+        "exp_2",
+        "exp_2_b4",
+        "exp_2_b5",
+        "exp_2_b7",
+        "proj_1_b3",
+        "edu_1"
+      ]
+    },
+    {
+      "unit_id": "u02",
+      "status": "supported",
+      "reasons": [
+        "Company, title and dates match exp_2 exactly"
+      ],
+      "evidence_ids": [
+        "exp_2"
+      ]
+    },
+    {
+      "unit_id": "u03",
+      "status": "supported",
+      "reasons": [
+        "JWT, AWS Cognito federation, RBAC and session sync across services are exp_2_b7"
+      ],
+      "evidence_ids": [
+        "exp_2_b7",
+        "JWT",
+        "AWS Cognito"
+      ]
+    },
+    {
+      "unit_id": "u04",
+      "status": "supported",
+      "reasons": [
+        "GraphQL with DataLoader batching against centralized preference repository and sub-50ms sync latency are exp_2_b6"
+      ],
+      "evidence_ids": [
+        "exp_2_b6",
+        "GraphQL"
+      ]
+    },
+    {
+      "unit_id": "u05",
+      "status": "softened",
+      "reasons": [
+        "Section heading asserts nothing checkable"
+      ],
+      "evidence_ids": []
+    },
+    {
+      "unit_id": "u06",
+      "status": "supported",
+      "reasons": [
+        "Lambda behind API Gateway with rate limiting and circuit breakers at 99.99% availability is exp_2_b5"
+      ],
+      "evidence_ids": [
+        "exp_2_b5",
+        "AWS Lambda",
+        "Amazon API Gateway"
+      ]
+    },
+    {
+      "unit_id": "u07",
+      "status": "supported",
+      "reasons": [
+        "SQS with DLQs and exponential backoff, 500K daily events, 99.9% reliability all in exp_2_b4"
+      ],
+      "evidence_ids": [
+        "exp_2_b4",
+        "Amazon SQS"
+      ]
+    },
+    {
+      "unit_id": "u08",
+      "status": "supported",
+      "reasons": [
+        "Idempotent, paginated REST endpoints and 30% p99 improvement are exp_2_b3"
+      ],
+      "evidence_ids": [
+        "exp_2_b3",
+        "REST"
+      ]
+    },
+    {
+      "unit_id": "u09",
+      "status": "softened",
+      "reasons": [
+        "Section heading asserts nothing checkable"
+      ],
+      "evidence_ids": []
+    },
+    {
+      "unit_id": "u10",
+      "status": "supported",
+      "reasons": [
+        "Spring Boot backend launched end to end with 10K+ DAU within a week is exp_2_b1; 'first-party' restates 'Alexa-owned'"
+      ],
+      "evidence_ids": [
+        "exp_2_b1",
+        "Spring Boot"
+      ]
+    },
+    {
+      "unit_id": "u11",
+      "status": "supported",
+      "reasons": [
+        "DynamoDB GSI, MySQL/RDS read replicas and sub-100ms queries are exp_2_b2; Redis Cluster with Bloom-filter pre-checks and 45% read-load cut are exp_2_b8"
+      ],
+      "evidence_ids": [
+        "exp_2_b2",
+        "exp_2_b8",
+        "DynamoDB",
+        "MySQL",
+        "Amazon RDS",
+        "Redis"
+      ]
+    },
+    {
+      "unit_id": "u12",
+      "status": "supported",
+      "reasons": [
+        "Docker/EKS/GitHub Actions blue-green zero-downtime rollouts are exp_2_b9; CloudWatch+CDK IaC with 40% false-positive reduction is exp_2_b10"
+      ],
+      "evidence_ids": [
+        "exp_2_b9",
+        "exp_2_b10",
+        "Docker",
+        "Amazon EKS",
+        "GitHub Actions",
+        "Amazon CloudWatch",
+        "AWS CDK"
+      ]
+    },
+    {
+      "unit_id": "u13",
+      "status": "supported",
+      "reasons": [
+        "Company, title and dates match exp_1 exactly"
+      ],
+      "evidence_ids": [
+        "exp_1"
+      ]
+    },
+    {
+      "unit_id": "u14",
+      "status": "supported",
+      "reasons": [
+        "FastAPI + LangChain chatbot backend covering Q&A, order tracking and account management for a pet e-commerce platform is exp_1_b1"
+      ],
+      "evidence_ids": [
+        "exp_1_b1",
+        "FastAPI",
+        "LangChain"
+      ]
+    },
+    {
+      "unit_id": "u15",
+      "status": "supported",
+      "reasons": [
+        "Qdrant vector storage, hybrid semantic+keyword retrieval, 30% relevance gain on a 10K-prompt set are exp_1_b2"
+      ],
+      "evidence_ids": [
+        "exp_1_b2",
+        "Qdrant",
+        "RAG"
+      ]
+    },
+    {
+      "unit_id": "u16",
+      "status": "supported",
+      "reasons": [
+        "Redis embedding cache, async tuning and 45% latency cut are exp_1_b3; Docker on EC2 behind Nginx is exp_1_b4"
+      ],
+      "evidence_ids": [
+        "exp_1_b3",
+        "exp_1_b4",
+        "Redis",
+        "Docker",
+        "AWS EC2",
+        "Nginx"
+      ]
+    },
+    {
+      "unit_id": "u17",
+      "status": "supported",
+      "reasons": [
+        "Project name, sole full-stack creator role and Feb 2026–present match proj_1 one_liner; React/TypeScript/FastAPI/PostgreSQL are in proj_1_b2"
+      ],
+      "evidence_ids": [
+        "proj_1",
+        "proj_1_b2"
+      ]
+    },
+    {
+      "unit_id": "u18",
+      "status": "supported",
+      "reasons": [
+        "Chrome extension and interview-prep platform in proj_1_b1; FastAPI/PostgreSQL/GitHub Actions/Cloud Run/Cloud SQL/Cloudflare Pages in proj_1_b2; two-month solo ship with test suites and CI gates in proj_1_b3"
+      ],
+      "evidence_ids": [
+        "proj_1_b1",
+        "proj_1_b2",
+        "proj_1_b3"
+      ]
+    },
+    {
+      "unit_id": "u19",
+      "status": "supported",
+      "reasons": [
+        "Project name and Google Cloud ADK Hackathon match proj_2; Python, Gemini and FastAPI are listed in proj_2 tools",
+        "Profile one_liner date reads 'May 2026 to Jun 2025', an evident typo; May 2025–Jun 2025 is the only coherent reading"
+      ],
+      "evidence_ids": [
+        "proj_2",
+        "proj_2_b1",
+        "Gemini",
+        "Python",
+        "FastAPI"
+      ]
+    },
+    {
+      "unit_id": "u20",
+      "status": "supported",
+      "reasons": [
+        "Coordinator plus sub-agents over A2A in proj_2_b2; Agent Engine deployment, OpenTelemetry and benchmark evaluation in proj_2_b3; resume-screening system in proj_2_b1"
+      ],
+      "evidence_ids": [
+        "proj_2_b1",
+        "proj_2_b2",
+        "proj_2_b3",
+        "A2A",
+        "Google Cloud Agent Engine",
+        "OpenTelemetry"
+      ]
+    },
+    {
+      "unit_id": "u21",
+      "status": "unsupported",
+      "reasons": [
+        "'gRPC-style service design' — gRPC appears nowhere in the profile's skills or tool_evidence",
+        "'OAuth/OIDC via AWS Cognito' — OAuth/OIDC is not in the profile; the Cognito evidence says identity federation only",
+        "All other listed tools do appear in skills or tool_evidence"
+      ],
+      "evidence_ids": []
+    },
+    {
+      "unit_id": "u22",
+      "status": "supported",
+      "reasons": [
+        "Both schools, degrees and date ranges match edu_1 and edu_2"
+      ],
+      "evidence_ids": [
+        "edu_1",
+        "edu_2"
+      ]
+    }
+  ],
+  "agreement": {
+    "compared": 22,
+    "agreed": 13,
+    "rate": 0.591,
+    "disagreements": [
+      "u01  rules=unsupported  judge=supported\n    text  : Generalist backend engineer with 2 years building foundational, high-availability platform systems at Amazon (\n    rules : credential 'M.S. in Computer Science' matches no profile entry\n    judge : Amazon / Alexa Kitchen role, 99.99% availability, JWT+Cognito RBAC, 500K daily events at 99.9% all appear in exp_2 bullets; Solo zero-to-production in two months matches proj_1_b3; M.S. CS matches edu_1; '2 years' is a rounding of Jul 2022–Apr 2024 (21 months)",
+      "u02  rules=unsupported  judge=supported\n    text  : Amazon.com Services LLC | Software Development Engineer – Alexa Kitchen | Jul 2022 – Apr 2024 **Identity & Acc\n    rules : date 'Jul 2022 – Apr 2024' matches no profile entry\n    judge : Company, title and dates match exp_2 exactly",
+      "u05  rules=supported  judge=softened\n    text  : **Core Platform Reliability & Scale**\n    rules : -\n    judge : Section heading asserts nothing checkable",
+      "u09  rules=supported  judge=softened\n    text  : **Ownership End to End**\n    rules : -\n    judge : Section heading asserts nothing checkable",
+      "u11  rules=unsupported  judge=supported\n    text  : Modeled data in DynamoDB with GSI query acceleration and MySQL (RDS) with read replicas, holding sub-100ms que\n    rules : tool 'MySQL (RDS)' [unsupported] -- no tool_evidence entry\n    judge : DynamoDB GSI, MySQL/RDS read replicas and sub-100ms queries are exp_2_b2; Redis Cluster with Bloom-filter pre-checks and 45% read-load cut are exp_2_b8",
+      "u13  rules=unsupported  judge=supported\n    text  : AIPetique LLC | Software Development Engineer Intern | May 2025 – Aug 2025\n    rules : date 'May 2025 – Aug 2025' matches no profile entry\n    judge : Company, title and dates match exp_1 exactly",
+      "u17  rules=unsupported  judge=supported\n    text  : NextRound | Creator & Sole Full-Stack Engineer — React, TypeScript, FastAPI, PostgreSQL | Feb 2026 – Present\n    rules : title 'Creator & Sole Full-Stack Engineer' matches no profile entry; date 'Feb 2026 – Present' matches no profile entry\n    judge : Project name, sole full-stack creator role and Feb 2026–present match proj_1 one_liner; React/TypeScript/FastAPI/PostgreSQL are in proj_1_b2",
+      "u19  rules=unsupported  judge=supported\n    text  : AI Talent Match Agent | Google Cloud ADK Hackathon — Python, Gemini, FastAPI | May 2025 – Jun 2025\n    rules : date 'May 2025 – Jun 2025' matches no profile entry\n    judge : Project name and Google Cloud ADK Hackathon match proj_2; Python, Gemini and FastAPI are listed in proj_2 tools; Profile one_liner date reads 'May 2026 to Jun 2025', an evident typo; May 2025–Jun 2025 is the only coherent reading",
+      "u22  rules=unsupported  judge=supported\n    text  : **Northeastern University** — M.S. in Computer Science | Sept 2024 – May 2026 **University of Minnesota–Twin C\n    rules : credential 'M.S. in Computer Science' matches no profile entry; date 'Sept 2024 – May 2026' matches no profile entry; credential 'B.A. in Computer Science' matches no profile entry; date 'Aug 2019 – May 2022' matches no profile entry\n    judge : Both schools, degrees and date ranges match edu_1 and edu_2"
+    ]
+  },
+  "writing_preference_violations": [
+    "document is 4503 chars; resume_max_pages=1 allows roughly 4000"
+  ]
+}

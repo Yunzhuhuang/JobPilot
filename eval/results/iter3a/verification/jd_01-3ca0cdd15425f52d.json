@@ -1,0 +1,88 @@
+{
+  "document": "/Users/qiarara/Desktop/JobPilot/output/iter3a/2026-08-30/packets/jd_01/resume.md",
+  "profile": "fixture/profile.json",
+  "model": "claude-opus-5",
+  "verified_at": "2026-08-30",
+  "units": [
+    {
+      "unit_id": "u01",
+      "text": "I can't produce a resume for this step: the candidate packet (roles, projects, education, bullets, and the two tool lists) and the job posting were not included in this conversation.",
+      "section": "other",
+      "container_id": null,
+      "elements": []
+    },
+    {
+      "unit_id": "u02",
+      "text": "Every line of this document has to be traceable to supplied material — names copied character-for-character, metrics reproduced exactly, tools attached only to the role or project whose evidence points at them. With no material on hand, anything I wrote here would be invented, which is precisely the failure this process exists to prevent.",
+      "section": "other",
+      "container_id": null,
+      "elements": []
+    },
+    {
+      "unit_id": "u03",
+      "text": "Please resend with: the candidate's name and contact line, each role (exact employer name, title, dates) with its bullets and its tool list, each project (exact name) with its bullets and tool list, the skills-only tool list, education (exact school names), and the posting plus its extracted requirements. I'll return the full packet in the required format.",
+      "section": "other",
+      "container_id": null,
+      "elements": []
+    }
+  ],
+  "rules": [
+    {
+      "unit_id": "u01",
+      "status": "softened",
+      "reasons": [
+        "asserts nothing checkable against the profile"
+      ],
+      "evidence_ids": []
+    },
+    {
+      "unit_id": "u02",
+      "status": "softened",
+      "reasons": [
+        "asserts nothing checkable against the profile"
+      ],
+      "evidence_ids": []
+    },
+    {
+      "unit_id": "u03",
+      "status": "softened",
+      "reasons": [
+        "asserts nothing checkable against the profile"
+      ],
+      "evidence_ids": []
+    }
+  ],
+  "judge": [
+    {
+      "unit_id": "u01",
+      "status": "softened",
+      "reasons": [
+        "Meta-statement about missing inputs; asserts no checkable fact about the candidate"
+      ],
+      "evidence_ids": []
+    },
+    {
+      "unit_id": "u02",
+      "status": "softened",
+      "reasons": [
+        "Statement of process constraints; no specific profile claim to verify"
+      ],
+      "evidence_ids": []
+    },
+    {
+      "unit_id": "u03",
+      "status": "softened",
+      "reasons": [
+        "Request for information; no candidate-specific assertions"
+      ],
+      "evidence_ids": []
+    }
+  ],
+  "agreement": {
+    "compared": 3,
+    "agreed": 3,
+    "rate": 1.0,
+    "disagreements": []
+  },
+  "writing_preference_violations": []
+}

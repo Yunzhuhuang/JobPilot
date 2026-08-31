@@ -1,0 +1,109 @@
+{
+  "jd_id": "jd_07",
+  "extracted_at": "2026-08-30",
+  "model": "claude-opus-5",
+  "requirements": [
+    {
+      "name": "BS/MS/PhD in Computer Science",
+      "type": "credential",
+      "required": true,
+      "aliases": [
+        "B.S. in Computer Science",
+        "M.S. in Computer Science",
+        "PhD in Computer Science"
+      ]
+    },
+    {
+      "name": "Swift",
+      "type": "language",
+      "required": true,
+      "aliases": []
+    },
+    {
+      "name": "iOS SDK",
+      "type": "framework",
+      "required": true,
+      "aliases": [
+        "iOS"
+      ]
+    },
+    {
+      "name": "Networking",
+      "type": "concept",
+      "required": true,
+      "aliases": []
+    },
+    {
+      "name": "Storage",
+      "type": "concept",
+      "required": true,
+      "aliases": []
+    },
+    {
+      "name": "CocoaPods",
+      "type": "framework",
+      "required": true,
+      "aliases": [
+        "Cocoapods"
+      ]
+    },
+    {
+      "name": "Object-Oriented Programming",
+      "type": "concept",
+      "required": true,
+      "aliases": [
+        "OOP"
+      ]
+    },
+    {
+      "name": "Systems knowledge",
+      "type": "concept",
+      "required": true,
+      "aliases": []
+    },
+    {
+      "name": "Experience building, launching, and iterating on mobile apps",
+      "type": "experience",
+      "required": true,
+      "aliases": []
+    },
+    {
+      "name": "Unit testing",
+      "type": "testing",
+      "required": true,
+      "aliases": [
+        "unit tests"
+      ]
+    },
+    {
+      "name": "API development",
+      "type": "concept",
+      "required": true,
+      "aliases": [
+        "APIs"
+      ]
+    },
+    {
+      "name": "Refactoring",
+      "type": "concept",
+      "required": true,
+      "aliases": []
+    },
+    {
+      "name": "Real-time data transfer and synchronization",
+      "type": "concept",
+      "required": true,
+      "aliases": [
+        "data synchronization"
+      ]
+    },
+    {
+      "name": "Mobile infrastructure at scale",
+      "type": "concept",
+      "required": false,
+      "aliases": [
+        "scaling mobile infrastructure"
+      ]
+    }
+  ]
+}

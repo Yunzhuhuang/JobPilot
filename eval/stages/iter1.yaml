@@ -1,0 +1,12 @@
+# Capability: context. Expected signal: triage agreement up.
+name: iter1
+description: profile.json context + triage rubric
+flags:
+  profile_context: true
+  triage: true
+  tailor: false
+  h1b_filter: false
+  self_verify: false
+  verifier_node: false
+  gap_memory: false
+  style_exemplars: false

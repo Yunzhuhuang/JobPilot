@@ -216,3 +216,19 @@ __marimo__/
 
 # Streamlit
 .streamlit/secrets.toml
+
+# JobPilot
+# eval/results/, fixture/cache/ and trajectories/ are deliberately NOT ignored --
+# they are submission evidence and must be committed.
+# generated run artifacts (PRD 4.4)
+output/
+# may hold a key; .mcp.json.example is committed
+.mcp.json
+# full USCIS extract; the sample CSV is committed
+data/h1b_employers.csv
+.DS_Store
+
+# xelatex build artifacts from the resume render node
+*.aux
+*.fls
+*.fdb_latexmk

@@ -1,0 +1,5 @@
+# Development-only dependencies. Judges reproducing the results need
+# requirements.txt alone; this file is for working on the code.
+-r requirements.txt
+
+ruff>=0.6

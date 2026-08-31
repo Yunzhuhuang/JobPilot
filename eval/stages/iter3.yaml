@@ -1,0 +1,14 @@
+# Capability: generation. First stage that produces documents, so the first the
+# primary metric can score. Deliberately WITHOUT self_verify, so iter3a's delta
+# isolates self-verification rather than bundling it with tailoring itself.
+name: iter3
+description: tailoring node, no verification of any kind
+flags:
+  profile_context: true
+  triage: true
+  tailor: true
+  h1b_filter: true
+  self_verify: false
+  verifier_node: false
+  gap_memory: false
+  style_exemplars: false

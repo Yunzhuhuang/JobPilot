@@ -1,0 +1,112 @@
+{
+  "stage": "iter3",
+  "description": "tailoring node, no verification of any kind",
+  "flags": {
+    "profile_context": true,
+    "triage": true,
+    "tailor": true,
+    "h1b_filter": true,
+    "self_verify": false,
+    "verifier_node": false,
+    "gap_memory": false,
+    "style_exemplars": false
+  },
+  "run_dir": "/Users/qiarara/Desktop/JobPilot/output/iter3/2026-08-30",
+  "run_date": "2026-08-30",
+  "model": "claude-opus-5",
+  "judge_enabled": true,
+  "scores": {
+    "fabricated_claims_per_resume": {
+      "value": 0.2,
+      "unit": "claims/resume",
+      "detail": "1 across 5 resumes; worst jd_01 with 1",
+      "unavailable": null
+    },
+    "softened_claims_per_resume": {
+      "value": 0.4,
+      "unit": "claims/resume",
+      "detail": "2 across 5 resumes",
+      "unavailable": null
+    },
+    "rules_vs_judge_agreement": {
+      "value": 97.6,
+      "unit": "%",
+      "detail": "120/123 claim verdicts matched",
+      "unavailable": null
+    },
+    "triage_agreement": {
+      "value": 73.3,
+      "unit": "%",
+      "detail": "11/15 exact matches against fixture/labels.json",
+      "unavailable": null
+    },
+    "jd_keyword_coverage": {
+      "value": 60.9,
+      "unit": "%",
+      "detail": "14/23 required tool-typed items present -- jd_01 4/7, jd_03 5/8, jd_09 3/6, jd_13 2/2",
+      "unavailable": null
+    },
+    "baseline_same_jds": {
+      "value": 2.4,
+      "unit": "claims/resume",
+      "detail": "12 across the same 5 postings (jd_01, jd_03, jd_09, jd_10, jd_13)",
+      "unavailable": null
+    },
+    "revision_rounds_per_doc": {
+      "value": null,
+      "unit": "rounds",
+      "detail": "",
+      "unavailable": "this stage ran no verifier node"
+    },
+    "non_sponsors_dropped": {
+      "value": null,
+      "unit": "count",
+      "detail": "0 dropped, 0 of them false",
+      "unavailable": "no posting in the fixture states that the employer will not sponsor, so there are no true positives for this metric to find; the two constrained postings (jd_06, jd_14) are barred at the role level, which employer-level USCIS data cannot see"
+    },
+    "h1b_resolution": {
+      "value": 100.0,
+      "unit": "%",
+      "detail": "15/15 employers correctly identified; 16 index searches issued",
+      "unavailable": null
+    },
+    "gap_questions_run1_to_run2": {
+      "value": 0.0,
+      "unit": "questions",
+      "detail": "0 asked in this run",
+      "unavailable": "only one run of this stage exists; run twice to see the drop"
+    },
+    "cost_per_jd_usd": {
+      "value": 0.0875,
+      "unit": "USD/JD",
+      "detail": "147275 in / 23045 out over 15 JDs at claude-opus-5",
+      "unavailable": null
+    },
+    "wall_clock_per_jd_s": {
+      "value": 28.85,
+      "unit": "s/JD",
+      "detail": "432.8s over 15 JDs",
+      "unavailable": null
+    },
+    "resumes_scored": 5,
+    "jds_total": 15,
+    "jds_failed": 0,
+    "confusion": {
+      "most_matched": {
+        "most_matched": 4,
+        "less_matched": 2,
+        "skip": 0
+      },
+      "less_matched": {
+        "most_matched": 1,
+        "less_matched": 4,
+        "skip": 1
+      },
+      "skip": {
+        "most_matched": 0,
+        "less_matched": 0,
+        "skip": 3
+      }
+    }
+  }
+}

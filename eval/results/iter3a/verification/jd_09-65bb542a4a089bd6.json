@@ -1,0 +1,203 @@
+{
+  "document": "/Users/qiarara/Desktop/JobPilot/output/iter3a/2026-08-30/packets/jd_09/resume.md",
+  "profile": "fixture/profile.json",
+  "model": "claude-opus-5",
+  "verified_at": "2026-08-30",
+  "units": [
+    {
+      "unit_id": "u01",
+      "text": "No candidate material was provided in this conversation — there are no roles, projects, education entries, bullets, or tool lists to select from, and no job posting or extracted requirements to tailor against.",
+      "section": "other",
+      "container_id": null,
+      "elements": []
+    },
+    {
+      "unit_id": "u02",
+      "text": "Writing a resume here would require inventing every name, date, employer, school, metric and tool, which is exactly the failure this process exists to prevent. Please supply:",
+      "section": "other",
+      "container_id": null,
+      "elements": []
+    },
+    {
+      "unit_id": "u03",
+      "text": "The candidate's name and contact line",
+      "section": "other",
+      "container_id": null,
+      "elements": []
+    },
+    {
+      "unit_id": "u04",
+      "text": "Roles (exact company names, titles, start/end dates) with their bullets and their attached tools",
+      "section": "other",
+      "container_id": null,
+      "elements": []
+    },
+    {
+      "unit_id": "u05",
+      "text": "Projects (exact names) with their bullets and attached tools",
+      "section": "other",
+      "container_id": null,
+      "elements": []
+    },
+    {
+      "unit_id": "u06",
+      "text": "Education (exact school names)",
+      "section": "other",
+      "container_id": null,
+      "elements": []
+    },
+    {
+      "unit_id": "u07",
+      "text": "The skills-only tool list",
+      "section": "other",
+      "container_id": null,
+      "elements": []
+    },
+    {
+      "unit_id": "u08",
+      "text": "The job posting and its extracted requirements Once that material is supplied, I will produce the one-page resume in the required `## Experience` / `## Projects` / `## Skills` / `## Education` structure, with every heading copied character-for-character and every claim traceable to the source.",
+      "section": "other",
+      "container_id": null,
+      "elements": []
+    }
+  ],
+  "rules": [
+    {
+      "unit_id": "u01",
+      "status": "softened",
+      "reasons": [
+        "asserts nothing checkable against the profile"
+      ],
+      "evidence_ids": []
+    },
+    {
+      "unit_id": "u02",
+      "status": "softened",
+      "reasons": [
+        "asserts nothing checkable against the profile"
+      ],
+      "evidence_ids": []
+    },
+    {
+      "unit_id": "u03",
+      "status": "softened",
+      "reasons": [
+        "asserts nothing checkable against the profile"
+      ],
+      "evidence_ids": []
+    },
+    {
+      "unit_id": "u04",
+      "status": "softened",
+      "reasons": [
+        "asserts nothing checkable against the profile"
+      ],
+      "evidence_ids": []
+    },
+    {
+      "unit_id": "u05",
+      "status": "softened",
+      "reasons": [
+        "asserts nothing checkable against the profile"
+      ],
+      "evidence_ids": []
+    },
+    {
+      "unit_id": "u06",
+      "status": "softened",
+      "reasons": [
+        "asserts nothing checkable against the profile"
+      ],
+      "evidence_ids": []
+    },
+    {
+      "unit_id": "u07",
+      "status": "softened",
+      "reasons": [
+        "asserts nothing checkable against the profile"
+      ],
+      "evidence_ids": []
+    },
+    {
+      "unit_id": "u08",
+      "status": "softened",
+      "reasons": [
+        "asserts nothing checkable against the profile"
+      ],
+      "evidence_ids": []
+    }
+  ],
+  "judge": [
+    {
+      "unit_id": "u01",
+      "status": "softened",
+      "reasons": [
+        "Meta-statement about missing input; asserts nothing about the candidate that can be checked against the profile"
+      ],
+      "evidence_ids": []
+    },
+    {
+      "unit_id": "u02",
+      "status": "softened",
+      "reasons": [
+        "Process commentary, no specific candidate claim to verify"
+      ],
+      "evidence_ids": []
+    },
+    {
+      "unit_id": "u03",
+      "status": "softened",
+      "reasons": [
+        "Request for information; no factual claim about the candidate"
+      ],
+      "evidence_ids": []
+    },
+    {
+      "unit_id": "u04",
+      "status": "softened",
+      "reasons": [
+        "Request for information; no employer, title, date or tool is asserted"
+      ],
+      "evidence_ids": []
+    },
+    {
+      "unit_id": "u05",
+      "status": "softened",
+      "reasons": [
+        "Request for information; no project name or tool is asserted"
+      ],
+      "evidence_ids": []
+    },
+    {
+      "unit_id": "u06",
+      "status": "softened",
+      "reasons": [
+        "Request for information; no school or credential is asserted"
+      ],
+      "evidence_ids": []
+    },
+    {
+      "unit_id": "u07",
+      "status": "softened",
+      "reasons": [
+        "Request for information; no tools listed"
+      ],
+      "evidence_ids": []
+    },
+    {
+      "unit_id": "u08",
+      "status": "softened",
+      "reasons": [
+        "Statement of intent about output format; no candidate-specific claim to verify"
+      ],
+      "evidence_ids": []
+    }
+  ],
+  "agreement": {
+    "compared": 8,
+    "agreed": 8,
+    "rate": 1.0,
+    "disagreements": []
+  },
+  "writing_preference_violations": []
+}

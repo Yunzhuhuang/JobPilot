@@ -1,0 +1,15 @@
+# Everything that worked. Two exclusions, both deliberate:
+#   self_verify    -- iter3a measured it and it was removed.
+#   style_exemplars -- iter5 was cut for time (first on the PRD's cut list);
+#                      the README says so rather than leaving it unexplained.
+name: final
+description: iter1 + iter2 + iter3b + iter4 (iter5 cut for time)
+flags:
+  profile_context: true
+  triage: true
+  tailor: true
+  h1b_filter: true
+  self_verify: false
+  verifier_node: true
+  gap_memory: true
+  style_exemplars: false

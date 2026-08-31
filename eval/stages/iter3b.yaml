@@ -1,0 +1,12 @@
+# Capability: verification. Expected: fabrications -> 0; coverage may fall.
+name: iter3b
+description: separate verifier node with a revision loop
+flags:
+  profile_context: true
+  triage: true
+  tailor: true
+  h1b_filter: true
+  self_verify: false
+  verifier_node: true
+  gap_memory: false
+  style_exemplars: false

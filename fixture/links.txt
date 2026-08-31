@@ -1,0 +1,36 @@
+# JobPilot fixture -- 15 public postings from boards whose terms permit simple
+# GETs (Greenhouse, Lever, Ashby). Order fixes jd_01..jd_15; ids are pinned by
+# url_hash once cached, so reordering this file will not renumber the fixture.
+#
+# Hard cases the fixture must contain (PRD 4.2) are marked below.
+
+# --- Greenhouse ---
+https://job-boards.greenhouse.io/canonical/jobs/4647417
+https://job-boards.greenhouse.io/zyngacareers/jobs/6151865004
+https://job-boards.greenhouse.io/figma/jobs/5691911004
+# hard case A: Go infrastructure. Same company as the line above, different
+# stack -- if triage gives both the same label it is reading the company.
+https://job-boards.greenhouse.io/figma/jobs/6102379004
+https://job-boards.greenhouse.io/checkr/jobs/6917810
+# non-sponsor: Starshield is ITAR-restricted; the H-1B filter must drop it.
+https://job-boards.greenhouse.io/spacex/jobs/8605075002
+# hard case A: Swift/iOS, a stack absent from profile.json.
+# hard case B candidate: USCIS files this employer as "DoorDash, Inc."
+https://job-boards.greenhouse.io/doordashusa/jobs/5630454
+https://job-boards.greenhouse.io/imc/jobs/4908708101
+
+# --- Ashby (fetched via the posting API; the web pages are JS-rendered) ---
+https://jobs.ashbyhq.com/Abridge/7d6ae2be-cd53-466c-8151-2dae2e87aace
+https://jobs.ashbyhq.com/mercor/cb67851b-0269-4cf5-996c-34c3a88a19c8
+# hard case A: asks for Rust.
+https://jobs.ashbyhq.com/mercor/cae88190-a2fd-4d04-9352-9f48fedb56a7
+# likely skip: support role, not a SWE role.
+https://jobs.ashbyhq.com/oneapp/f674db0a-4af2-42c7-8004-15ef4bb0b6f3
+# hard case B candidate: USCIS files this employer as "Ramp Business Corporation".
+https://jobs.ashbyhq.com/ramp/4e64ab86-4e30-403b-b1b9-41dc052570ce
+# adversarial non-sponsor: says candidates must receive export-controlled tech
+# "without sponsorship for an export license" -- a keyword match on "sponsor"
+# reads this exactly backwards.
+https://jobs.ashbyhq.com/mach/2b8407b6-cf0e-4124-9b45-9e855349726f
+# hard case B candidate: Canadian-headquartered, hiring in New York.
+https://jobs.ashbyhq.com/cohere/6aa3cb2b-ee8b-4c92-b505-3a7509f80d7f

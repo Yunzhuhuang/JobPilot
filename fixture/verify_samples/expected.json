@@ -1,0 +1,43 @@
+{
+  "_comment": "Regression baseline for the verifier. Each sample document lists the rules-path verdict every claim must receive, keyed by a distinctive fragment of the claim text rather than by unit_id, so adding a line to a sample does not invalidate the file.",
+  "clean_resume.md": {
+    "fabricated_claims": 0,
+    "note": "Assembled only from real profile bullets. Any unsupported verdict here is a false reject, which is the failure mode a fabrication-only metric hides.",
+    "claims": {
+      "Amazon.com Services LLC": "supported",
+      "Designed and launched a Spring Boot backend": "supported",
+      "Configured SQS ingestion pipelines": "supported",
+      "Deployed distributed caching with Redis Cluster": "supported",
+      "Modeled recipe metadata in DynamoDB": "supported",
+      "Designed a RAG pipeline with Qdrant": "supported",
+      "Containerized backend services with Docker": "supported",
+      "Developed a responsive React/TypeScript frontend": "supported",
+      "Automated CI/CD with GitHub Actions": "supported",
+      "Java, Python, TypeScript, Go, Kafka": "supported"
+    }
+  },
+  "fabricated_resume.md": {
+    "fabricated_claims": 5,
+    "note": "One planted defect per failure mode.",
+    "claims": {
+      "Seasoned engineer with a strong background": "softened",
+      "Configured Kafka ingestion pipelines": "unsupported",
+      "Developed event-driven Lambda functions": "unsupported",
+      "Built a Qdrant vector store": "unsupported",
+      "Stripe": "unsupported",
+      "Trained and served retrieval models on a Kubeflow": "unsupported",
+      "Led payments infrastructure work": "softened"
+    },
+    "planted_defects": {
+      "Configured Kafka ingestion pipelines": "unplaced -- Kafka is a skills-line mention with no role behind it; the Amazon streaming work used SQS",
+      "Developed event-driven Lambda functions": "metric -- 99.999% availability; the profile says 99.99%",
+      "Built a Qdrant vector store": "misplaced -- Qdrant evidence points at exp_1 (AIPetique), not exp_2 (Amazon)",
+      "Stripe": "company and title -- an employer never worked at",
+      "Trained and served retrieval models on a Kubeflow": "unsupported -- Kubeflow appears nowhere in the profile",
+      "Seasoned engineer with a strong background": "softened -- asserts nothing checkable"
+    },
+    "known_blind_spot": {
+      "Led payments infrastructure work": "The rules path returns `softened` because the sentence names no tool, company, or metric. The LLM judge returns `unsupported`, correctly: no payments or billing work exists anywhere in the profile. A fabrication told without proper nouns is invisible to element-based checking, which is why both paths are run."
+    }
+  }
+}

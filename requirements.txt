@@ -1,0 +1,24 @@
+# Runtime dependencies. Python 3.11+. Install into the repo-root .venv only.
+#
+# google-adk is pinned exactly: the project verifies every ADK symbol against the
+# ../adk-python checkout on the matching tag, so the version must not drift.
+google-adk==2.8.0
+
+# Pinned to the version ADK 2.8.0 is tested against (adk-python
+# constraints-3.12.txt). ADK's own floor is >=0.78, but an anthropic 1.x major
+# exists and would risk breaking AnthropicLlm, so this is an exact pin.
+anthropic==0.117.0
+
+# Arrive transitively via google-adk, but JobPilot imports them directly.
+pydantic>=2.13,<3
+PyYAML>=6.0
+python-dotenv>=1.2
+httpx>=0.28
+
+# JD text extraction (PRD 5.4) and H-1B employer fuzzy matching (PRD 4.3).
+# lxml_html_clean is a hard runtime requirement of trafilatura's justext
+# fallback: lxml 6.x moved lxml.html.clean out into its own distribution, and
+# trafilatura's `lxml[html_clean]` extra no longer resolves.
+trafilatura>=2.0
+lxml_html_clean>=0.4
+rapidfuzz>=3.0

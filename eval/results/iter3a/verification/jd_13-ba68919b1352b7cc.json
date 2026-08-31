@@ -1,0 +1,203 @@
+{
+  "document": "/Users/qiarara/Desktop/JobPilot/output/iter3a/2026-08-30/packets/jd_13/resume.md",
+  "profile": "fixture/profile.json",
+  "model": "claude-opus-5",
+  "verified_at": "2026-08-30",
+  "units": [
+    {
+      "unit_id": "u01",
+      "text": "No candidate material (roles, projects, education, bullets, tool lists) and no job posting were included in this conversation, so there is nothing to select from. Every line of a resume produced here would have to be invented, which is exactly what this process forbids.",
+      "section": "other",
+      "container_id": null,
+      "elements": []
+    },
+    {
+      "unit_id": "u02",
+      "text": "Please resend:",
+      "section": "other",
+      "container_id": null,
+      "elements": []
+    },
+    {
+      "unit_id": "u03",
+      "text": "The candidate's name, location, email, LinkedIn",
+      "section": "other",
+      "container_id": null,
+      "elements": []
+    },
+    {
+      "unit_id": "u04",
+      "text": "Each role: exact company name, title, start and end dates, bullets, and the tools attached to that role",
+      "section": "other",
+      "container_id": null,
+      "elements": []
+    },
+    {
+      "unit_id": "u05",
+      "text": "Each project: exact project name, bullets, attached tools",
+      "section": "other",
+      "container_id": null,
+      "elements": []
+    },
+    {
+      "unit_id": "u06",
+      "text": "Education: exact school name(s)",
+      "section": "other",
+      "container_id": null,
+      "elements": []
+    },
+    {
+      "unit_id": "u07",
+      "text": "The skills-only tool list",
+      "section": "other",
+      "container_id": null,
+      "elements": []
+    },
+    {
+      "unit_id": "u08",
+      "text": "The job posting and its extracted requirements Once that material is in hand, the packet will be returned in the required format on the first try.",
+      "section": "other",
+      "container_id": null,
+      "elements": []
+    }
+  ],
+  "rules": [
+    {
+      "unit_id": "u01",
+      "status": "softened",
+      "reasons": [
+        "asserts nothing checkable against the profile"
+      ],
+      "evidence_ids": []
+    },
+    {
+      "unit_id": "u02",
+      "status": "softened",
+      "reasons": [
+        "asserts nothing checkable against the profile"
+      ],
+      "evidence_ids": []
+    },
+    {
+      "unit_id": "u03",
+      "status": "softened",
+      "reasons": [
+        "asserts nothing checkable against the profile"
+      ],
+      "evidence_ids": []
+    },
+    {
+      "unit_id": "u04",
+      "status": "softened",
+      "reasons": [
+        "asserts nothing checkable against the profile"
+      ],
+      "evidence_ids": []
+    },
+    {
+      "unit_id": "u05",
+      "status": "softened",
+      "reasons": [
+        "asserts nothing checkable against the profile"
+      ],
+      "evidence_ids": []
+    },
+    {
+      "unit_id": "u06",
+      "status": "softened",
+      "reasons": [
+        "asserts nothing checkable against the profile"
+      ],
+      "evidence_ids": []
+    },
+    {
+      "unit_id": "u07",
+      "status": "softened",
+      "reasons": [
+        "asserts nothing checkable against the profile"
+      ],
+      "evidence_ids": []
+    },
+    {
+      "unit_id": "u08",
+      "status": "softened",
+      "reasons": [
+        "asserts nothing checkable against the profile"
+      ],
+      "evidence_ids": []
+    }
+  ],
+  "judge": [
+    {
+      "unit_id": "u01",
+      "status": "softened",
+      "reasons": [
+        "Meta-statement about the conversation, not a claim about the candidate; asserts no profile-checkable specific"
+      ],
+      "evidence_ids": []
+    },
+    {
+      "unit_id": "u02",
+      "status": "softened",
+      "reasons": [
+        "Procedural request; no candidate specifics asserted"
+      ],
+      "evidence_ids": []
+    },
+    {
+      "unit_id": "u03",
+      "status": "softened",
+      "reasons": [
+        "Requests identity fields; asserts nothing about the candidate"
+      ],
+      "evidence_ids": []
+    },
+    {
+      "unit_id": "u04",
+      "status": "softened",
+      "reasons": [
+        "Requests role data; no company, title, date, or tool is asserted"
+      ],
+      "evidence_ids": []
+    },
+    {
+      "unit_id": "u05",
+      "status": "softened",
+      "reasons": [
+        "Requests project data; no project name or tool is asserted"
+      ],
+      "evidence_ids": []
+    },
+    {
+      "unit_id": "u06",
+      "status": "softened",
+      "reasons": [
+        "Requests education data; no school or credential asserted"
+      ],
+      "evidence_ids": []
+    },
+    {
+      "unit_id": "u07",
+      "status": "softened",
+      "reasons": [
+        "Requests a skills list; no tool claim made"
+      ],
+      "evidence_ids": []
+    },
+    {
+      "unit_id": "u08",
+      "status": "softened",
+      "reasons": [
+        "Procedural statement about next steps; nothing specific to verify against the profile"
+      ],
+      "evidence_ids": []
+    }
+  ],
+  "agreement": {
+    "compared": 8,
+    "agreed": 8,
+    "rate": 1.0,
+    "disagreements": []
+  },
+  "writing_preference_violations": []
+}

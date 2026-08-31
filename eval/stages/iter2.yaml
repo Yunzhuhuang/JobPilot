@@ -1,0 +1,12 @@
+# Capability: tools. Expected signal: non-sponsors dropped.
+name: iter2
+description: H-1B lookup tool + filter node
+flags:
+  profile_context: true
+  triage: true
+  tailor: false
+  h1b_filter: true
+  self_verify: false
+  verifier_node: false
+  gap_memory: false
+  style_exemplars: false

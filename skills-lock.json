@@ -1,0 +1,17 @@
+{
+  "version": 1,
+  "skills": {
+    "google-agents-cli-adk-code": {
+      "source": "google/agents-cli",
+      "sourceType": "github",
+      "skillPath": "skills/google-agents-cli-adk-code/SKILL.md",
+      "computedHash": "45ae30699ff1361be8122e33ec37f95bd8004b6680c85d62eccf22cf75f6bef0"
+    },
+    "google-agents-cli-eval": {
+      "source": "google/agents-cli",
+      "sourceType": "github",
+      "skillPath": "skills/google-agents-cli-eval/SKILL.md",
+      "computedHash": "347b03cdb10492ef19c878707012b758bdc5e1d1f369efc94347c21ab87e3097"
+    }
+  }
+}

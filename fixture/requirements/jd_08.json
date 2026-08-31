@@ -1,0 +1,190 @@
+{
+  "jd_id": "jd_08",
+  "extracted_at": "2026-08-30",
+  "model": "claude-opus-5",
+  "requirements": [
+    {
+      "name": "3-5+ years professional software engineering experience",
+      "type": "experience",
+      "required": true,
+      "aliases": []
+    },
+    {
+      "name": "Java",
+      "type": "language",
+      "required": true,
+      "aliases": []
+    },
+    {
+      "name": "Python",
+      "type": "language",
+      "required": true,
+      "aliases": []
+    },
+    {
+      "name": "Production systems experience",
+      "type": "experience",
+      "required": true,
+      "aliases": [
+        "building and supporting production systems"
+      ]
+    },
+    {
+      "name": "Financial markets",
+      "type": "concept",
+      "required": true,
+      "aliases": [
+        "capital markets",
+        "trading"
+      ]
+    },
+    {
+      "name": "Risk management",
+      "type": "concept",
+      "required": true,
+      "aliases": []
+    },
+    {
+      "name": "Data science",
+      "type": "ai_ml",
+      "required": true,
+      "aliases": []
+    },
+    {
+      "name": "Quantitative analysis",
+      "type": "concept",
+      "required": true,
+      "aliases": [
+        "quantitative research"
+      ]
+    },
+    {
+      "name": "Data visualization and dashboards",
+      "type": "concept",
+      "required": true,
+      "aliases": [
+        "dashboarding",
+        "BI dashboards"
+      ]
+    },
+    {
+      "name": "Data pipelines",
+      "type": "data",
+      "required": true,
+      "aliases": [
+        "ETL pipelines"
+      ]
+    },
+    {
+      "name": "Distributed systems",
+      "type": "concept",
+      "required": false,
+      "aliases": []
+    },
+    {
+      "name": "Service-oriented architecture",
+      "type": "concept",
+      "required": false,
+      "aliases": [
+        "SOA"
+      ]
+    },
+    {
+      "name": "Kubernetes",
+      "type": "cloud_infra",
+      "required": false,
+      "aliases": [
+        "K8s"
+      ]
+    },
+    {
+      "name": "Containerization",
+      "type": "cloud_infra",
+      "required": false,
+      "aliases": [
+        "containers",
+        "containerized applications"
+      ]
+    },
+    {
+      "name": "React",
+      "type": "framework",
+      "required": false,
+      "aliases": [
+        "React.js",
+        "ReactJS"
+      ]
+    },
+    {
+      "name": "Modern web development",
+      "type": "concept",
+      "required": false,
+      "aliases": [
+        "front-end development"
+      ]
+    },
+    {
+      "name": "PostgreSQL",
+      "type": "data",
+      "required": false,
+      "aliases": [
+        "Postgres"
+      ]
+    },
+    {
+      "name": "ClickHouse",
+      "type": "data",
+      "required": false,
+      "aliases": []
+    },
+    {
+      "name": "Analytical databases",
+      "type": "data",
+      "required": false,
+      "aliases": [
+        "OLAP databases"
+      ]
+    },
+    {
+      "name": "Parquet",
+      "type": "data",
+      "required": false,
+      "aliases": [
+        "Apache Parquet"
+      ]
+    },
+    {
+      "name": "Hadoop",
+      "type": "data",
+      "required": false,
+      "aliases": [
+        "Apache Hadoop",
+        "HDFS"
+      ]
+    },
+    {
+      "name": "Large-scale data platforms",
+      "type": "data",
+      "required": false,
+      "aliases": [
+        "big data platforms"
+      ]
+    },
+    {
+      "name": "ETL frameworks",
+      "type": "data",
+      "required": false,
+      "aliases": [
+        "ETL"
+      ]
+    },
+    {
+      "name": "APIs",
+      "type": "concept",
+      "required": false,
+      "aliases": [
+        "API development"
+      ]
+    }
+  ]
+}

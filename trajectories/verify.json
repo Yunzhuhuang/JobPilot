@@ -1,0 +1,39 @@
+{
+  "node": "verify",
+  "stage": "final",
+  "source": "trajectory.json",
+  "step": {
+    "node": "verify",
+    "instruction": "verify.md",
+    "inputs": {
+      "jd_id": "jd_12",
+      "max_revisions": 2,
+      "sees_tailor_context": false
+    },
+    "output": {
+      "revision_rounds": 1,
+      "lines_dropped": 0,
+      "fabricated_remaining": 0,
+      "softened": 2,
+      "supported": 26
+    },
+    "tool_calls": [
+      {
+        "round": 1,
+        "rejected": [
+          {
+            "text": "Backend engineer with two years at Amazon building and operating production APIs on AWS, plus recent work shipping AI-assisted products solo. I debug across services, databases and queues, and I write",
+            "section": "summary",
+            "reason": "\"two years at Amazon\" overstates the profile's 2022-07 to 2024-04 tenure (~21 months); the duration figure does not appear in the profile; Amazon and AWS work themselves are evidenced (exp_2), but the tenure number is a new fact"
+          }
+        ]
+      }
+    ],
+    "retries": 1,
+    "human_checkpoint": null,
+    "error": null,
+    "wall_clock_s": 163.601,
+    "input_tokens": 6619,
+    "output_tokens": 3023
+  }
+}

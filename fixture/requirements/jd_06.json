@@ -1,0 +1,212 @@
+{
+  "jd_id": "jd_06",
+  "extracted_at": "2026-08-30",
+  "model": "claude-opus-5",
+  "requirements": [
+    {
+      "name": "Bachelor's degree in Computer Science, Engineering, Math, or Scientific Discipline",
+      "type": "credential",
+      "required": true,
+      "aliases": [
+        "BS in Computer Science",
+        "BS in Engineering",
+        "BS in Mathematics"
+      ]
+    },
+    {
+      "name": "2+ years of professional software development experience (in lieu of degree)",
+      "type": "experience",
+      "required": false,
+      "aliases": []
+    },
+    {
+      "name": "C",
+      "type": "language",
+      "required": true,
+      "aliases": []
+    },
+    {
+      "name": "C++",
+      "type": "language",
+      "required": true,
+      "aliases": [
+        "CPP"
+      ]
+    },
+    {
+      "name": "Python",
+      "type": "language",
+      "required": true,
+      "aliases": []
+    },
+    {
+      "name": "Full stack development",
+      "type": "concept",
+      "required": true,
+      "aliases": [
+        "Full-stack software development"
+      ]
+    },
+    {
+      "name": "Linux",
+      "type": "cloud_infra",
+      "required": false,
+      "aliases": []
+    },
+    {
+      "name": "ARM",
+      "type": "concept",
+      "required": false,
+      "aliases": []
+    },
+    {
+      "name": "PowerPC",
+      "type": "concept",
+      "required": false,
+      "aliases": []
+    },
+    {
+      "name": "x86",
+      "type": "concept",
+      "required": false,
+      "aliases": []
+    },
+    {
+      "name": "Embedded microcontroller development",
+      "type": "concept",
+      "required": false,
+      "aliases": [
+        "Microcontrollers",
+        "Embedded systems"
+      ]
+    },
+    {
+      "name": "Networking",
+      "type": "concept",
+      "required": false,
+      "aliases": [
+        "Computer networks"
+      ]
+    },
+    {
+      "name": "Computer architecture",
+      "type": "concept",
+      "required": false,
+      "aliases": []
+    },
+    {
+      "name": "Debugging",
+      "type": "concept",
+      "required": false,
+      "aliases": []
+    },
+    {
+      "name": "Performance optimization",
+      "type": "concept",
+      "required": false,
+      "aliases": []
+    },
+    {
+      "name": "Unit testing",
+      "type": "testing",
+      "required": false,
+      "aliases": []
+    },
+    {
+      "name": "Hardware-in-the-loop testing",
+      "type": "testing",
+      "required": false,
+      "aliases": [
+        "HIL testing"
+      ]
+    },
+    {
+      "name": "Continuous integration",
+      "type": "concept",
+      "required": false,
+      "aliases": [
+        "CI",
+        "CI/CD"
+      ]
+    },
+    {
+      "name": "Modeling and simulation",
+      "type": "concept",
+      "required": false,
+      "aliases": [
+        "Simulation development"
+      ]
+    },
+    {
+      "name": "TCP",
+      "type": "concept",
+      "required": false,
+      "aliases": [
+        "TCP/IP"
+      ]
+    },
+    {
+      "name": "UDP",
+      "type": "concept",
+      "required": false,
+      "aliases": []
+    },
+    {
+      "name": "Linux kernel development",
+      "type": "concept",
+      "required": false,
+      "aliases": []
+    },
+    {
+      "name": "High performance systems in C++",
+      "type": "concept",
+      "required": false,
+      "aliases": []
+    },
+    {
+      "name": "Image data processing",
+      "type": "data",
+      "required": false,
+      "aliases": [
+        "Image processing"
+      ]
+    },
+    {
+      "name": "Machine learning",
+      "type": "ai_ml",
+      "required": false,
+      "aliases": [
+        "ML"
+      ]
+    },
+    {
+      "name": "Background in math and physics",
+      "type": "concept",
+      "required": false,
+      "aliases": []
+    },
+    {
+      "name": "Top Secret security clearance",
+      "type": "credential",
+      "required": true,
+      "aliases": [
+        "TS clearance",
+        "TS/SCI"
+      ]
+    },
+    {
+      "name": "ITAR eligibility (US citizen, permanent resident, refugee, or asylee)",
+      "type": "credential",
+      "required": true,
+      "aliases": [
+        "US person status"
+      ]
+    },
+    {
+      "name": "Willingness to work extended hours and weekends",
+      "type": "concept",
+      "required": true,
+      "aliases": []
+    }
+  ]
+}

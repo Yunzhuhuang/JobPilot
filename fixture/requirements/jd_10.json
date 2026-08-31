@@ -1,0 +1,50 @@
+{
+  "jd_id": "jd_10",
+  "extracted_at": "2026-08-30",
+  "model": "claude-opus-5",
+  "requirements": [
+    {
+      "name": "2+ years building production systems at scale",
+      "type": "experience",
+      "required": true,
+      "aliases": []
+    },
+    {
+      "name": "Backend engineering",
+      "type": "concept",
+      "required": true,
+      "aliases": [
+        "Backend development",
+        "Server-side engineering"
+      ]
+    },
+    {
+      "name": "Identity and access management systems",
+      "type": "concept",
+      "required": false,
+      "aliases": [
+        "IAM",
+        "Access control",
+        "Enterprise access management"
+      ]
+    },
+    {
+      "name": "Scalable distributed systems",
+      "type": "concept",
+      "required": true,
+      "aliases": [
+        "Scalability",
+        "Systems at scale"
+      ]
+    },
+    {
+      "name": "In-person work in San Francisco, NYC, or London",
+      "type": "credential",
+      "required": true,
+      "aliases": [
+        "On-site work",
+        "Relocation"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,135 @@
+{
+  "_readme": [
+    "Ground truth for the H-1B node (PRD 7.1). Three separate questions live",
+    "here, and conflating them is the mistake this file exists to prevent:",
+    "",
+    "  expected_entity -- ENTITY RESOLUTION. Which row of the USCIS FY2026",
+    "                     export is this company? A list, because more than one",
+    "                     answer is sometimes defensible. `[]` means the company",
+    "                     is genuinely absent and `unknown` is the right answer.",
+    "  sponsors        -- EMPLOYER level. Does this company ever file H-1B",
+    "                     petitions? `null` where the posting does not say and",
+    "                     the data cannot settle it. Only `false` where a",
+    "                     posting states in its own words that the employer",
+    "                     will not sponsor -- no posting in this fixture does.",
+    "  role_eligible   -- ROLE level. Could this candidate (F-1, needs future",
+    "                     sponsorship, not a US person) be hired into THIS",
+    "                     posting? Export control, clearance and citizenship",
+    "                     decide this, and filing history is irrelevant to it.",
+    "",
+    "SpaceX and Mach Industries force the split: both appear in the USCIS data",
+    "as active filers, and both bar this candidate from this posting. An",
+    "employer-level lookup is structurally incapable of seeing that, which is",
+    "why triage keeps the eligibility question and the H-1B node must not.",
+    "",
+    "Entity choices were made from the export itself -- name, filing state, and",
+    "volume against the posting's own location -- not from memory. Each `basis`",
+    "records that evidence so the call can be checked or overturned. Postings",
+    "are frozen in fixture/cache/ and the export in data/h1b_employers.json."
+  ],
+  "jd_01": {
+    "company": "Canonical",
+    "expected_entity": ["CANONICAL USA INC."],
+    "sponsors": null,
+    "role_eligible": null,
+    "basis": "sole Canonical entity in the export (NJ, 1 continuing approval); posting is 'Home Based - Americas' so state gives no signal either way"
+  },
+  "jd_02": {
+    "company": "Zynga",
+    "expected_entity": ["ZYNGA INC"],
+    "sponsors": null,
+    "role_eligible": null,
+    "basis": "sole Zynga entity (CA, 13); posting lists Bay Area, CA among its locations"
+  },
+  "jd_03": {
+    "company": "Figma",
+    "expected_entity": ["FIGMA, INC.", "FIGMA INC"],
+    "sponsors": null,
+    "role_eligible": null,
+    "basis": "the export carries the same company under two spellings -- FIGMA, INC. (CA, 28) and FIGMA INC (CA, 2) -- so both are accepted; posting is San Francisco, CA"
+  },
+  "jd_04": {
+    "company": "Figma",
+    "expected_entity": ["FIGMA, INC.", "FIGMA INC"],
+    "sponsors": null,
+    "role_eligible": null,
+    "basis": "the export carries the same company under two spellings -- FIGMA, INC. (CA, 28) and FIGMA INC (CA, 2) -- so both are accepted; posting is San Francisco, CA"
+  },
+  "jd_05": {
+    "company": "Checkr",
+    "expected_entity": ["CHECKR, INC."],
+    "sponsors": null,
+    "role_eligible": null,
+    "basis": "sole Checkr entity (CA, 8); posting is San Francisco, CA"
+  },
+  "jd_06": {
+    "company": "SpaceX",
+    "expected_entity": ["SPACE EXPLORATION TECHNOLOGIES CORP"],
+    "sponsors": null,
+    "role_eligible": false,
+    "basis": "HARD CASE -- the brand shares no token with the legal name, so no string metric at any threshold retrieves it; the shortlist for 'SpaceX' is ISPACE INC and DSPACE INC. Role bars the candidate regardless: Top Secret / TS-SCI clearance, and 'to conform to U.S. Government export regulations, applicant must be a (i) U.S. citizen or national, (ii) U.S. lawful permanent resident, (iii) Refugee ... or (iv) Asylee'. The employer files 13 petitions; the role is still closed."
+  },
+  "jd_07": {
+    "company": "DoorDash USA",
+    "expected_entity": ["DOORDASH INC"],
+    "sponsors": null,
+    "role_eligible": null,
+    "basis": "sole DoorDash entity (CA, 238); posting includes Sunnyvale and San Francisco, CA"
+  },
+  "jd_08": {
+    "company": "IMC",
+    "expected_entity": ["IMC AMERICAS INC", "POLAR OPERATIONS LLC D B A IMC MARKETS"],
+    "sponsors": null,
+    "role_eligible": null,
+    "basis": "AMBIGUOUS BY DESIGN -- two Illinois entities plausibly cover IMC Trading's Chicago operation (IMC AMERICAS INC, 9; POLAR OPERATIONS LLC D B A IMC MARKETS, 21) and the posting is Chicago. Either is accepted. IMC CAPITAL INVESTMENT LLC (CA, 1) is not: wrong state, wrong line of business."
+  },
+  "jd_09": {
+    "company": "Abridge",
+    "expected_entity": ["ABRIDGE AI INC"],
+    "sponsors": null,
+    "role_eligible": null,
+    "basis": "HARD CASE -- ABRIDGE AI INC (CA/PA, 12) and ABRIDGE INFO SYSTEMS INC (MA, 4) both score 100 on name similarity. The posting is 'SF Office' and Abridge's offices are San Francisco and Pittsburgh, which is exactly CA/PA. State breaks the tie; the string cannot."
+  },
+  "jd_10": {
+    "company": "Mercor",
+    "expected_entity": ["MERCOR IO CORPORATION"],
+    "sponsors": null,
+    "role_eligible": null,
+    "basis": "sole Mercor entity (CA, 31); posting is San Francisco"
+  },
+  "jd_11": {
+    "company": "Mercor",
+    "expected_entity": ["MERCOR IO CORPORATION"],
+    "sponsors": null,
+    "role_eligible": null,
+    "basis": "sole Mercor entity (CA, 31); posting is San Francisco"
+  },
+  "jd_12": {
+    "company": "OnePay",
+    "expected_entity": [],
+    "sponsors": null,
+    "role_eligible": null,
+    "basis": "GENUINELY ABSENT -- no substring match for 'onepay' or 'one pay' anywhere in 42,877 employers, and the best fuzzy candidate is OMNEA INC at 73. The correct output is `unknown`. Naming any entity here is a false positive, and this is the posting that tests whether the agent invents one under pressure."
+  },
+  "jd_13": {
+    "company": "Ramp",
+    "expected_entity": ["RAMP BUSINESS CORPORATION"],
+    "sponsors": null,
+    "role_eligible": null,
+    "basis": "RAMP BUSINESS CORPORATION (NY, 28) against a posting at 'New York, NY (HQ)'; the other RAMP-containing rows are LIVERAMP, ONRAMP FUNDS, CLOUDRAMP and SKYRAMP, none of them this company"
+  },
+  "jd_14": {
+    "company": "Mach Industries",
+    "expected_entity": ["MACH INDUSTRIES INC"],
+    "sponsors": null,
+    "role_eligible": false,
+    "basis": "MACH INDUSTRIES INC (CA, 1) against a posting in Huntington Beach, CA. The employer DOES file. The role still bars the candidate: 'may require access to information protected under U.S. export control laws ... including the EAR and ITAR', with any offer conditioned on authorization to receive that technology without sponsorship for an export license. This is the pair that proves employer-level data cannot answer the eligibility question."
+  },
+  "jd_15": {
+    "company": "Cohere",
+    "expected_entity": ["COHERE US, INC."],
+    "sponsors": null,
+    "role_eligible": null,
+    "basis": "HARD CASE -- normalization collision. Stripping 'technologies', 'us' and 'inc' maps COHERE US, INC. (CA, 6) and COHERE TECHNOLOGIES INC (CA, 0) onto the same key, so an exact-match lookup names one and sums both. COHERE TECHNOLOGIES is a wireless company with zero approvals; COHERE HEALTH (MA/NH, 10) is a different company again. COHERE US, INC. is the US entity of the AI lab that posted this role."
+  }
+}
