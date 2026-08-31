@@ -1,7 +1,12 @@
 """`python -m jobpilot` -- the command line.
 
-Only `ingest` exists so far. The other PRD 8 subcommands (`profile`, `run`,
-`eval`) arrive with the features behind them.
+    ingest   fetch and cache job postings from links.txt
+    verify   check any markdown document against the profile
+    run      execute the pipeline for one stage
+
+Scoring lives in its own entry point, `python -m jobpilot.eval`, because it
+reads a completed run rather than producing one. See REPRODUCE.md for the exact
+commands that regenerate every published number.
 """
 
 from __future__ import annotations
